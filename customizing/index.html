@@ -5,13 +5,14 @@
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
       
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
     
     
       
@@ -19,10 +20,10 @@
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-f98ca285f9.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-a20f419c8e.css">
       
     
     
@@ -58,10 +59,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href=".." title="My Docs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -80,17 +82,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -102,11 +104,7 @@
 </div>
         
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="md-header-nav__source">
-          
-        </div>
-      </div>
+      
     </div>
   </nav>
 </header>
@@ -123,9 +121,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     My Docs
   </label>
   
@@ -402,6 +402,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#making-extra-keyvalue-pairs-in-info-field-public" title="Making extra key/value pairs in info field public" class="md-nav__link">
+    Making extra key/value pairs in info field public
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adding-your-own-templates" title="Adding your own templates" class="md-nav__link">
     Adding your own templates
   </a>
@@ -418,6 +425,13 @@
         <li class="md-nav__item">
   <a href="#validation-of-new-user-accounts" title="Validation of new user accounts" class="md-nav__link">
     Validation of new user accounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication-on-login" title="Two factor authentication on login" class="md-nav__link">
+    Two factor authentication on login
   </a>
   
 </li>
@@ -513,6 +527,96 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ignore-specific-keys-when-exporting-data-in-csv-format" title="Ignore specific keys when exporting data in CSV format" class="md-nav__link">
+    Ignore specific keys when exporting data in CSV format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-task-presenter-check-for-pure-javascript-apps" title="Disable task presenter check for pure JavaScript apps" class="md-nav__link">
+    Disable task presenter check for pure JavaScript apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consent-field-for-users" title="Consent field for users" class="md-nav__link">
+    Consent field for users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-leaderboards" title="Custom Leaderboards" class="md-nav__link">
+    Custom Leaderboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ldap-integration" title="LDAP integration" class="md-nav__link">
+    LDAP integration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldap95host" title="LDAP_HOST" class="md-nav__link">
+    LDAP_HOST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95base95dn" title="LDAP_BASE_DN" class="md-nav__link">
+    LDAP_BASE_DN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95username" title="LDAP_USERNAME" class="md-nav__link">
+    LDAP_USERNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95password" title="LDAP_PASSWORD" class="md-nav__link">
+    LDAP_PASSWORD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95objects95dn" title="LDAP_OBJECTS_DN" class="md-nav__link">
+    LDAP_OBJECTS_DN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95openldap" title="LDAP_OPENLDAP" class="md-nav__link">
+    LDAP_OPENLDAP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldat95user95object95filter" title="LDAT_USER_OBJECT_FILTER" class="md-nav__link">
+    LDAT_USER_OBJECT_FILTER
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
     </ul>
@@ -566,18 +670,6 @@
   <li class="md-nav__item">
     <a href="../installing_pybossa/" title="Installing pybossa" class="md-nav__link">
       Installing pybossa
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../juju_pybossa/" title="Juju pybossa" class="md-nav__link">
-      Juju pybossa
     </a>
   </li>
 
@@ -661,13 +753,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-18">
+    <label class="md-nav__link" for="nav-17">
       Changelog
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-18">
+      <label class="md-nav__title" for="nav-17">
         Changelog
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -973,13 +1065,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
     
-    <label class="md-nav__link" for="nav-19">
+    <label class="md-nav__link" for="nav-18">
       User
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
+      <label class="md-nav__title" for="nav-18">
         User
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1249,6 +1341,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#making-extra-keyvalue-pairs-in-info-field-public" title="Making extra key/value pairs in info field public" class="md-nav__link">
+    Making extra key/value pairs in info field public
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adding-your-own-templates" title="Adding your own templates" class="md-nav__link">
     Adding your own templates
   </a>
@@ -1265,6 +1364,13 @@
         <li class="md-nav__item">
   <a href="#validation-of-new-user-accounts" title="Validation of new user accounts" class="md-nav__link">
     Validation of new user accounts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor-authentication-on-login" title="Two factor authentication on login" class="md-nav__link">
+    Two factor authentication on login
   </a>
   
 </li>
@@ -1357,6 +1463,96 @@
   <a href="#web-push-notifications" title="Web Push notifications" class="md-nav__link">
     Web Push notifications
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignore-specific-keys-when-exporting-data-in-csv-format" title="Ignore specific keys when exporting data in CSV format" class="md-nav__link">
+    Ignore specific keys when exporting data in CSV format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-task-presenter-check-for-pure-javascript-apps" title="Disable task presenter check for pure JavaScript apps" class="md-nav__link">
+    Disable task presenter check for pure JavaScript apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consent-field-for-users" title="Consent field for users" class="md-nav__link">
+    Consent field for users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-leaderboards" title="Custom Leaderboards" class="md-nav__link">
+    Custom Leaderboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ldap-integration" title="LDAP integration" class="md-nav__link">
+    LDAP integration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldap95host" title="LDAP_HOST" class="md-nav__link">
+    LDAP_HOST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95base95dn" title="LDAP_BASE_DN" class="md-nav__link">
+    LDAP_BASE_DN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95username" title="LDAP_USERNAME" class="md-nav__link">
+    LDAP_USERNAME
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95password" title="LDAP_PASSWORD" class="md-nav__link">
+    LDAP_PASSWORD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95objects95dn" title="LDAP_OBJECTS_DN" class="md-nav__link">
+    LDAP_OBJECTS_DN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldap95openldap" title="LDAP_OPENLDAP" class="md-nav__link">
+    LDAP_OPENLDAP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ldat95user95object95filter" title="LDAT_USER_OBJECT_FILTER" class="md-nav__link">
+    LDAT_USER_OBJECT_FILTER
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2016,6 +2212,40 @@ This feature is disabled by default.
 
 </div>
 
+<h2 id="making-extra-keyvalue-pairs-in-info-field-public">Making extra key/value pairs in info field public</h2>
+<p>By default PYBOSSA protects all the information the info field except
+for those values that are public like the url of the image of the
+project, the container where that picture is stored and a few extra.
+While this will be more than enough for most projects, sometimes, a
+server will need to expose more information publicly via the info field
+for the User and Project Domain Objects.</p>
+<p>Imagine that you want to give badges to users. You can store that
+information in the User domain object, within the info field in a field
+named <em>badges</em>. While this will work, the API will hide all that
+information except for the owner. Thus, it will be impossible to show
+user&rsquo;s badges to anonymous people.</p>
+<p>With projects it could be the same. You want to highlight some info to
+anyone, but hide everything else.</p>
+<p>As PYBOSSA hides everything by default, you can always turn on which
+other fields from the info field can be shown to anonymous users, making
+them public.</p>
+<div class="admonition note">
+
+WARNING: be very careful. This is your responsibility, and it's not
+enabled by default. If you expose your own private data via this field,
+it's your own responsibility as this is not enabled by default in
+PYBOSSA.
+
+</div>
+
+<p>If you want to make some key/values public, all you have to do is add to
+the settings_local.py file the following config variables:</p>
+<pre><code>PROJECT_INFO_PUBLIC_FIELDS = ['key1', 'key2']
+USER_INFO_PUBLIC_FIELDS = ['badges', 'key2', ...]
+CATEGORY_INFO_PUBLIC_FIELDS = ['key1', 'key2']
+</code></pre>
+<p>Add as many as you want, need. But please, be careful about which
+information you disclose.</p>
 <h2 id="adding-your-own-templates">Adding your own templates</h2>
 <p>PYBOSSA supports different types of templates that you can offer for
 every project. By default, PYBOSSA comes with the following templates:</p>
@@ -2076,6 +2306,15 @@ real email account.</p>
 default) with this configuration parameter:</p>
 <pre><code>ACCOUNT_CONFIRMATION_DISABLED = True
 </code></pre>
+<h2 id="two-factor-authentication-on-login">Two factor authentication on login</h2>
+<p>If you need an extra layer of security for user authentication, PYBOSSA
+allows you to enable two factor authentication by setting this
+configuration value:</p>
+<pre><code>ENABLE_TWO_FACTOR_AUTH = True
+</code></pre>
+<p>With this parameter set, after password verification users will receive
+a one-time code in their email, and will be redirected to a page where
+they can insert the code to complete the login process.</p>
 <h2 id="sending-weekly-email-stats-to-project-owners">Sending weekly email stats to project owners</h2>
 <p>Project owners that have the pro flag set to True can receive every week
 an update with the latest statistics about their projects in their email
@@ -2285,6 +2524,115 @@ another, we do not provide a template but some guidelines:</p>
 </blockquote>
 <p>For more info regarding Onesignal JS SDK, check their
 <a href="https://documentation.onesignal.com/docs/web-push-sdk">documentation.</a></p>
+<h2 id="ignore-specific-keys-when-exporting-data-in-csv-format">Ignore specific keys when exporting data in CSV format</h2>
+<p>Sometimes your PYBOSSA project saves information like GeoJSON within the
+tasks or task_runs. This is a bad thing for the exporter, as it will
+try to flatten it. In such scenarios, you want to instruct PYBOSSA to
+ignore those keys, as they will be included in the JSON export files,
+and reduce all the overhead (as well as destroying the format due to the
+normalization).</p>
+<p>For ignoring a key (or a list of keys), just add the following config
+variable to your settings_local.py file:</p>
+<pre><code>IGNORE_FLAT_KEYS = [ 'geojson', 'key1', ...]
+</code></pre>
+<h2 id="disable-task-presenter-check-for-pure-javascript-apps">Disable task presenter check for pure JavaScript apps</h2>
+<p>When you are using PYBOSSA native JSON support, you will not be building
+your project presenter within the PYBOSSA structure, but within the JS
+framework of your choice.</p>
+<p>In such a case, you would like to disable the check for the
+task_presenter when publishing a project. If you need this, just add
+this flag to your settings_local.py file:</p>
+<pre><code>DISABLE_TASK_PRESENTER = True
+</code></pre>
+<h2 id="consent-field-for-users">Consent field for users</h2>
+<p>Sometimes you will need the users to click in a check box before
+creating an account to get the agreement for sending them email
+notifications or of any other type. By default PYBOSSA provides this
+flag, and it&rsquo;s set to False.</p>
+<p>Change in the theme (or your frontend) the label of the field to
+whatever you prefer: Terms of Service, Communications, etc. so you will
+be able to keep track of who has accepted/declined to get notifications
+from you.</p>
+<h2 id="custom-leaderboards">Custom Leaderboards</h2>
+<p>By default PYBOSSA provides a unique leaderboard. This leaderboard is
+based on the number of task runs that a user has submitted, however, you
+may want more flexibility. For this reason, you can use use the
+&ldquo;user&rdquo;.info field to store any other &ldquo;badges&rdquo; or values that you want to
+score your users.</p>
+<p>If your users have identified very complicated stuff, and you want to
+give points to them based on that, just use the info field and instruct
+PYBOSSA to create a leaderboard for you.</p>
+<div class="admonition note">
+
+It is imoportant that this key,value pair is computed by you. You can
+
+:   use the API to update these values, so this will not be handled by
+    PYBOSSA but by yourself.
+
+</div>
+
+<p>Imagine the score is named: foo, then, PYBOSSA will create for you a
+leaderboard using that key like this: edit the settings_local.py file
+and add the following config variable:</p>
+<p>``` {.sourceCode .python}
+LEADERBOARDS = [&lsquo;foo&rsquo;]</p>
+<pre><code>
+Then, you can access the specific leaderboard using the endpoint:
+/leaderboard/?info=foo
+
+As simple as that.
+
+&lt;div class=&quot;admonition note&quot;&gt;
+
+This feature relies on background jobs. Be sure that you are running
+them.
+
+&lt;/div&gt;
+
+Unpublish inactive projects
+---------------------------
+
+PYBOSSA by default unpublishes projects that have not been active in the
+last 3 months. You can disable this feature by changing this config
+variable in your settings\_local.py file:
+
+``` {.sourceCode .python}
+UNPUBLISH_PROJECTS = False
+</code></pre>
+
+<h2 id="ldap-integration">LDAP integration</h2>
+<p>PYBOSSA can use LDAP for authenticating users. Basically, you will need
+to add a few config variables to the settings_local.py file in order to
+make it work.</p>
+<p>PYBOSSA supports LDAP and OpenLDAP protocols, so you should be able to
+use any of them.</p>
+<div class="admonition note">
+
+By enabling PYBOSSA LDAP integration, all other means for creating accounts and/or
+
+:   signin will be disabled.
+
+</div>
+
+<h3 id="ldap95host">LDAP_HOST</h3>
+<p>This variable should have the IP or domain name of your LDAP server.</p>
+<h3 id="ldap95base95dn">LDAP_BASE_DN</h3>
+<p>This is the LDAP Base DN for your organization.</p>
+<h3 id="ldap95username">LDAP_USERNAME</h3>
+<p>This variable should have the admin account, so PYBOSSA can access the
+LDAP server and search for users.</p>
+<h3 id="ldap95password">LDAP_PASSWORD</h3>
+<p>The admin account password.</p>
+<h3 id="ldap95objects95dn">LDAP_OBJECTS_DN</h3>
+<p>The DN.</p>
+<h3 id="ldap95openldap">LDAP_OPENLDAP</h3>
+<p>Set it to True if you are using it.</p>
+<h3 id="ldat95user95object95filter">LDAT_USER_OBJECT_FILTER</h3>
+<p>This is really important. The filter that you write in here needs to be
+adapted to your institution, otherwise it will not work when
+authenticating and validating your users.</p>
+<p>Don&rsquo;t use the default configuration in the settings template. You will
+need to adapt it to your needs.</p>
                 
                   
                 
@@ -2354,7 +2702,7 @@ another, we do not provide a template but some guidelines:</p>
       
     </div>
     
-      <script src="../assets/javascripts/application-e3caa82af6.js"></script>
+      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
       
       
       <script>app.initialize({url:{base:".."}})</script>

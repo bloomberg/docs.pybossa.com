@@ -5,13 +5,14 @@
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
       
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
     
     
       
@@ -19,10 +20,10 @@
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-f98ca285f9.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-a20f419c8e.css">
       
     
     
@@ -58,10 +59,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href=".." title="My Docs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -80,17 +82,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -102,11 +104,7 @@
 </div>
         
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="md-header-nav__source">
-          
-        </div>
-      </div>
+      
     </div>
   </nav>
 </header>
@@ -123,9 +121,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     My Docs
   </label>
   
@@ -195,6 +195,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-of-project-of-project-ids" title="List of project of project IDs" class="md-nav__link">
+    List of project of project IDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#created" title="Created" class="md-nav__link">
+    Created
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#order-by" title="Order by" class="md-nav__link">
     Order by
   </a>
@@ -217,6 +231,13 @@
         <li class="md-nav__item">
   <a href="#get" title="Get" class="md-nav__link">
     Get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excluding-contributed-tasks-from-get-queries" title="Excluding contributed tasks from GET queries" class="md-nav__link">
+    Excluding contributed tasks from GET queries
   </a>
   
 </li>
@@ -412,36 +433,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-category-draft" title="Project Category Draft" class="md-nav__link">
-    Project Category Draft
+  <a href="#project-category-featured" title="Project Category Featured" class="md-nav__link">
+    Project Category Featured
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-blog-list" title="Project Blog list" class="md-nav__link">
-    Project Blog list
+  <a href="#project-creation" title="Project Creation" class="md-nav__link">
+    Project Creation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-delete" title="Project Delete" class="md-nav__link">
-    Project Delete
+  <a href="#project-task-presenter-editor" title="Project Task Presenter Editor" class="md-nav__link">
+    Project Task Presenter Editor
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-update" title="Project update" class="md-nav__link">
-    Project update
+  <a href="#project-reset-secret-key" title="Project reset secret key" class="md-nav__link">
+    Project reset secret key
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-tasks-browse" title="Project tasks browse" class="md-nav__link">
-    Project tasks browse
+  <a href="#project-tasks-import" title="Project tasks import" class="md-nav__link">
+    Project tasks import
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-tutorial" title="Project tutorial" class="md-nav__link">
+    Project tutorial
   </a>
   
 </li>
@@ -550,18 +578,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../juju_pybossa/" title="Juju pybossa" class="md-nav__link">
-      Juju pybossa
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../model/" title="Model" class="md-nav__link">
       Model
     </a>
@@ -635,13 +651,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-18">
+    <label class="md-nav__link" for="nav-17">
       Changelog
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-18">
+      <label class="md-nav__title" for="nav-17">
         Changelog
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -947,13 +963,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
     
-    <label class="md-nav__link" for="nav-19">
+    <label class="md-nav__link" for="nav-18">
       User
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
+      <label class="md-nav__title" for="nav-18">
         User
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1052,6 +1068,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#list-of-project-of-project-ids" title="List of project of project IDs" class="md-nav__link">
+    List of project of project IDs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#created" title="Created" class="md-nav__link">
+    Created
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#order-by" title="Order by" class="md-nav__link">
     Order by
   </a>
@@ -1074,6 +1104,13 @@
         <li class="md-nav__item">
   <a href="#get" title="Get" class="md-nav__link">
     Get
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#excluding-contributed-tasks-from-get-queries" title="Excluding contributed tasks from GET queries" class="md-nav__link">
+    Excluding contributed tasks from GET queries
   </a>
   
 </li>
@@ -1269,36 +1306,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-category-draft" title="Project Category Draft" class="md-nav__link">
-    Project Category Draft
+  <a href="#project-category-featured" title="Project Category Featured" class="md-nav__link">
+    Project Category Featured
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-blog-list" title="Project Blog list" class="md-nav__link">
-    Project Blog list
+  <a href="#project-creation" title="Project Creation" class="md-nav__link">
+    Project Creation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-delete" title="Project Delete" class="md-nav__link">
-    Project Delete
+  <a href="#project-task-presenter-editor" title="Project Task Presenter Editor" class="md-nav__link">
+    Project Task Presenter Editor
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-update" title="Project update" class="md-nav__link">
-    Project update
+  <a href="#project-reset-secret-key" title="Project reset secret key" class="md-nav__link">
+    Project reset secret key
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-tasks-browse" title="Project tasks browse" class="md-nav__link">
-    Project tasks browse
+  <a href="#project-tasks-import" title="Project tasks import" class="md-nav__link">
+    Project tasks import
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-tutorial" title="Project tutorial" class="md-nav__link">
+    Project tutorial
   </a>
   
 </li>
@@ -1442,6 +1486,32 @@ GET http://{pybossa-site-url}/api/taskrun?api_key=YOURKEY&amp;all=1
 <p>Finally, you can get a list of users by doing:</p>
 <pre><code>GET http://{pybossa-site-url}/api/user
 </code></pre>
+<h2 id="list-of-project-of-project-ids">List of project of project IDs</h2>
+<p>In PYBOSSA most of the domain objects are related to a project.
+Therefore, you can query (or filter) a list of project IDs directly via
+the API to reduce the number of queries that you need to do. This is
+specially useful for Single Page Applications that only use the PYBOSSA
+JSON endpoints.</p>
+<p>For example, you can get all the tasks for a list of projects like this:</p>
+<pre><code>GET http://{pybossa-site-url}/api/task?project_id=[1,2,3]
+</code></pre>
+<p>That filter will return tasks for project IDs 1, 2 and 3. The same can
+be done for task runs and blogposts.</p>
+<h2 id="created">Created</h2>
+<p>If you want, you can use the the domain attribute <em>created</em> to get items
+from the DB. Basically, you can specify a year, year-month,
+year-month-day to get all the values for those ranges. For example, if
+you want all the tasks that have been created in 2015, just use:</p>
+<pre><code>GET http://{pybossa-site-url}/api/task?created=2015&amp;all=1
+</code></pre>
+<p>If you want all the task runs from 2015-05:</p>
+<pre><code>GET http://{pybossa-site-url}/api/taskrun?created=2015-05&amp;all=1
+</code></pre>
+<p>You can for example get all the task runs that a user has submitted on a
+given day like this:</p>
+<pre><code>GET http://{pybossa-site-url}/api/taskrun?created=2015-05-03&amp;user_id=3
+</code></pre>
+<p>This filter works for any object that has the <em>created</em> attribute.</p>
 <h2 id="order-by">Order by</h2>
 <p>Any query can be ordered by an attribute of the domain object that you
 are querying. For example you can get a list of tasks ordered by ID:</p>
@@ -1450,7 +1520,7 @@ are querying. For example you can get a list of tasks ordered by ID:</p>
 <p>If you want, you can order them in descending order:</p>
 <pre><code>GET http://{pybossa-site-url}/api/task?orderby=id&amp;desc=true
 </code></pre>
-<p>Check all the attritbutes that you can use to order by in the <a href="http://docs.pybossa.com/en/latest/model.html">Domain
+<p>Check all the attributes that you can use to order by in the <a href="http://docs.pybossa.com/en/latest/model.html">Domain
 Object section</a>.</p>
 <div class="admonition note">
 
@@ -1548,7 +1618,7 @@ It is possible to limit the number of returned objects:
     GET http://{pybossa-site-url}/api/{domain-object}[?field1=value&amp;limit=20]
 
 It is possible to access first level JSON keys within the **info** field
-of Projects, Tasks, Task Runs and Results:
+of Categories, Projects, Tasks, Task Runs and Results:
 
     GET http://{pybossa-site-url}/api/{domain-object}[?field1=value&amp;info=foo::bar&amp;limit=20]
 
@@ -1597,7 +1667,7 @@ objects enriched with the following two fields:
 Here you have an example of the expected output for an api call like
 this:
 
-    /api/task?project_id=1&amp;info=name::ipsum%26bravo&amp;fulltextsearch=1 
+    /api/task?project_id=1&amp;info=name::ipsum%26bravo&amp;fulltextsearch=1
 
 ``` {.sourceCode .python}
 [
@@ -1665,6 +1735,18 @@ If the search does not find anything, the server will return an empty JSON
 
 </div>
 
+<h2 id="excluding-contributed-tasks-from-get-queries">Excluding contributed tasks from GET queries</h2>
+<p>For the Tasks endpoint, you can do also something else, which could be
+pretty handy for PYBOSSA projects that are built using only Javascript
+(Single Page Applications) and do not want to use the /newtask endpoint.</p>
+<p>Basically, you can use any of the previous filters for the /api/task
+endpoint and add the following argument: <strong>participated=1</strong> to remove
+from the results, the tasks that the user has participated in. In this
+way, you will be completely in charge of how the tasks are presented to
+your users. You will design how they will be delivered.</p>
+<p>This endpoint now accepts as well the <strong>external_uid</strong> parameter, as by
+default it identifies authenticated users, as well as anonymouse users.
+If you are using the external UID, include it.</p>
 <h2 id="create">Create</h2>
 <p>Create a domain object. Returns created domain object.:</p>
 <pre><code>POST http://{pybossa-site-url}/api/{domain-object}[?api_key=API-KEY]
@@ -1888,7 +1970,7 @@ database but not to PYBOSSA. Then, once the user has completed the task
 you will be able to submit it like this:
 
     HEADERS Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ
-    POST http://{pybossa-site-url}/api/taskrun
+    POST http://{pybossa-site-url}/api/taskrun?external_uid=1xa
 
 &lt;div class=&quot;admonition note&quot;&gt;
 
@@ -2165,7 +2247,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 <p>It returns a JSON object with the following information:</p>
 <ul>
 <li><strong>flash</strong>: A success message, or error indicating if the request was
-    succesful.</li>
+    successful.</li>
 <li><strong>form</strong>: the form fields with the sent information. It contains the
     csrf token for validating the post, as well as an errors field in
     case that something is wrong.</li>
@@ -2353,6 +2435,7 @@ information:
 {
     &hellip;
     &ldquo;user&rdquo;: {
+        &ldquo;admin&rdquo;: false,
         &ldquo;api_key&rdquo;: &ldquo;aa3ee485-896d-488a-83f7-88a29bf45171&rdquo;,
         &ldquo;confirmation_email_sent&rdquo;: false,
         &ldquo;created&rdquo;: &ldquo;2014-08-11T08:59:32.079599&rdquo;,
@@ -2516,7 +2599,7 @@ It returns a JSON object with the following information:
 <p>To send a valid POST request you need to pass the <em>csrf token</em> in the
 headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 <p>As this endpoint supports <strong>three</strong> different forms, you must specify
-which form are you targetting adding an extra key: <strong>btn</strong>. The options
+which form are you targeting adding an extra key: <strong>btn</strong>. The options
 for this key are:</p>
 <ul>
 <li><strong>Profile</strong>: to update the <strong>form</strong>. <strong>Upload</strong>: to update the
@@ -2533,7 +2616,7 @@ fail.
 <p>It returns a JSON object with the following information:</p>
 <ul>
 <li><strong>flash</strong>: A success message, or error indicating if the request was
-    succesful.</li>
+    successful.</li>
 <li><strong>form</strong>: the form fields with the sent information. It contains the
     csrf token for validating the post, as well as an errors field in
     case that something is wrong.</li>
@@ -2860,6 +2943,7 @@ only public available information for the owner and the project itself.</p>
   &ldquo;n_volunteers&rdquo;: 1,
   &ldquo;overall_progress&rdquo;: 0,
   &ldquo;owner&rdquo;: {
+    &ldquo;admin&rdquo;: false,
     &ldquo;api_key&rdquo;: &ldquo;akjhfd85-8afd6-48af-f7afg-kjhsfdlkjhf1&rdquo;,
     &ldquo;confirmation_email_sent&rdquo;: false,
     &ldquo;created&rdquo;: &ldquo;2014-08-11T08:59:32.079599&rdquo;,
@@ -3294,12 +3378,18 @@ for another project where you are not the owner:
 </code></pre>
 
 <h3 id="leaderboard">Leaderboard</h3>
-<p><strong>Endpoint: /leaderboard/</strong></p>
+<p><strong>Endpoint: /leaderboard/</strong> <strong>Endpoint:
+/leaderboard/window/&lt;int:window&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
 <p>Shows you the top 20 contributors rank in a sorted leaderboard. If you
 are logged in you will also get the rank of yourself even when you are
 not visible on the top public leaderboard.</p>
+<p>By default the window is zero, adding the authenticated user to the
+bottom of the top 20, so the user can know the rank. If you want, you
+can use a window to show the previous and next users taking into account
+authenticated user rank. For example, you can get the previous 3 and
+next 3 accessing this URL: /leaderboard/window/3.</p>
 <ul>
 <li><strong>template</strong>: Jinja2 template.</li>
 <li><strong>title</strong>: the title for the endpoint.</li>
@@ -3364,32 +3454,46 @@ Shows you PYBOSSA wide announcements
             &quot;body&quot;: &quot;test123&quot;,
             &quot;created&quot;: &quot;2017-05-31T15:23:44.858735&quot;,
             &quot;id&quot;: 5,
+            &quot;media_url&quot;: null,
+            &quot;published&quot;: true,
             &quot;title&quot;: &quot;title123&quot;,
+            &quot;updated&quot;: &quot;2017-05-31T15:23:44.858735&quot;,
             &quot;user_id&quot;: 4953
         },
         {
             &quot;body&quot;: &quot;new body&quot;,
             &quot;created&quot;: &quot;2017-05-31T15:23:28.477516&quot;,
             &quot;id&quot;: 4,
+            &quot;media_url&quot;: null,
+            &quot;published&quot;: true,
             &quot;title&quot;: &quot;blogpost title&quot;,
+            &quot;updated&quot;: &quot;2017-05-31T15:23:28.477516&quot;,
             &quot;user_id&quot;: 4953
         },
         {
             &quot;body&quot;: &quot;new body&quot;,
             &quot;created&quot;: &quot;2017-06-01T23:42:45.042010&quot;,
             &quot;id&quot;: 7,
+            &quot;media_url&quot;: null,
+            &quot;published&quot;: true,
             &quot;title&quot;: &quot;blogpost title&quot;,
+            &quot;updated&quot;: &quot;2017-06-01T23:42:45.042010&quot;,
             &quot;user_id&quot;: 4953
         },
         {
             &quot;body&quot;: &quot;new body&quot;,
             &quot;created&quot;: &quot;2017-06-01T23:45:11.612801&quot;,
             &quot;id&quot;: 8,
+            &quot;media_url&quot;: null,
+            &quot;published&quot;: true,
             &quot;title&quot;: &quot;blogpost title&quot;,
+            &quot;updated&quot;: &quot;2017-06-01T23:45:11.612801&quot;,
             &quot;user_id&quot;: 4953
         }
     ],
-    &quot;template&quot;: &quot;&quot;
+    &quot;csrf&quot;: &quot;1504710446.52##6a7fakjsdhsdflkj&quot;,
+    &quot;template&quot;: &quot;admin/announcement.html&quot;,
+    &quot;title&quot;: &quot;Manage global Announcements&quot;
 }
 </code></pre>
 
@@ -3411,34 +3515,46 @@ Shows you PYBOSSA wide announcements
             &ldquo;body&rdquo;: &ldquo;test123&rdquo;,
             &ldquo;created&rdquo;: &ldquo;2017-05-31T15:23:44.858735&rdquo;,
             &ldquo;id&rdquo;: 5,
+            &ldquo;media_url&rdquo;: null,
+            &ldquo;published&rdquo;: true,
             &ldquo;title&rdquo;: &ldquo;title123&rdquo;,
+            &ldquo;updated&rdquo;: &ldquo;2017-05-31T15:23:44.858735&rdquo;,
             &ldquo;user_id&rdquo;: 4953
         },
         {
             &ldquo;body&rdquo;: &ldquo;new body&rdquo;,
             &ldquo;created&rdquo;: &ldquo;2017-05-31T15:23:28.477516&rdquo;,
             &ldquo;id&rdquo;: 4,
+            &ldquo;media_url&rdquo;: null,
+            &ldquo;published&rdquo;: true,
             &ldquo;title&rdquo;: &ldquo;blogpost title&rdquo;,
+            &ldquo;updated&rdquo;: &ldquo;2017-05-31T15:23:28.477516&rdquo;,
             &ldquo;user_id&rdquo;: 4953
         },
         {
             &ldquo;body&rdquo;: &ldquo;new body&rdquo;,
             &ldquo;created&rdquo;: &ldquo;2017-06-01T23:42:45.042010&rdquo;,
             &ldquo;id&rdquo;: 7,
+            &ldquo;media_url&rdquo;: null,
+            &ldquo;published&rdquo;: true,
             &ldquo;title&rdquo;: &ldquo;blogpost title&rdquo;,
+            &ldquo;updated&rdquo;: &ldquo;2017-06-01T23:42:45.042010&rdquo;,
             &ldquo;user_id&rdquo;: 4953
         },
         {
             &ldquo;body&rdquo;: &ldquo;new body&rdquo;,
             &ldquo;created&rdquo;: &ldquo;2017-06-01T23:45:11.612801&rdquo;,
             &ldquo;id&rdquo;: 8,
+            &ldquo;media_url&rdquo;: null,
+            &ldquo;published&rdquo;: true,
             &ldquo;title&rdquo;: &ldquo;blogpost title&rdquo;,
+            &ldquo;updated&rdquo;: &ldquo;2017-06-01T23:45:11.612801&rdquo;,
             &ldquo;user_id&rdquo;: 4953
         }
     ],
-  &ldquo;csrf&rdquo;: &ldquo;1496394861.12##1bfcbb386bae5d1625c023a23b08865b4176579d&rdquo;,
-  &ldquo;template&rdquo;: &ldquo;&rdquo;,
-  &ldquo;title&rdquo;: &ldquo;Manage global Announcements&rdquo;
+    &ldquo;csrf&rdquo;: &ldquo;1504710446.52##6a7fakjsdhsdflkj&rdquo;,
+    &ldquo;template&rdquo;: &ldquo;admin/announcement.html&rdquo;,
+    &ldquo;title&rdquo;: &ldquo;Manage global Announcements&rdquo;
 }</p>
 <pre><code>
 ### Admin announcement new
@@ -3465,7 +3581,7 @@ Creates a new PYBOSSA wide announcement
     &quot;errors&quot;: {},
     &quot;title&quot;: null
   },
-  &quot;template&quot;: &quot;&quot;,
+  &quot;template&quot;: &quot;admin/new_announcement.html&quot;,
   &quot;title&quot;: &quot;Write a new post&quot;
 }
 </code></pre>
@@ -3507,7 +3623,7 @@ Updates a PYBOSSA announcement
     &quot;id&quot;: 4,
     &quot;title&quot;: &quot;test6&quot;
   },
-  &quot;template&quot;: &quot;&quot;,
+  &quot;template&quot;: &quot;admin/new_announcement.html&quot;,
   &quot;title&quot;: &quot;Edit a post&quot;
 }
 </code></pre>
@@ -4445,18 +4561,18 @@ Gives you the terms of use for your PYBOSSA
   }
 }</p>
 <pre><code>
-### Project Category Featured
+### Project Category
 
-**Endpoint: /project/category/featured/**
+**Endpoint: /project/category/&amp;lt;short\_name&amp;gt;/**
 
 *Allowed methods*: **GET**
 
 **GET**
 
-Gives you the list of featured projects.
+Gives you the list of projects in a category.
 
--   **pagination**: A pagination object for getting new featured projets
-    from this category.
+-   **pagination**: A pagination object for getting projects from this
+    category.
 -   **active\_cat**: Active category.
 -   **projects**: List of projects belonging to this category.
 -   **categories**: List of available categories in this server.
@@ -4469,10 +4585,10 @@ Gives you the list of featured projects.
 {
   &quot;active_cat&quot;: {
     &quot;created&quot;: null,
-    &quot;description&quot;: &quot;Featured projects&quot;,
-    &quot;id&quot;: null,
-    &quot;name&quot;: &quot;Featured&quot;,
-    &quot;short_name&quot;: &quot;featured&quot;
+    &quot;description&quot;: &quot;Social projects&quot;,
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Social&quot;,
+    &quot;short_name&quot;: &quot;social&quot;
   },
   &quot;categories&quot;: [
     {
@@ -4529,14 +4645,25 @@ Gives you the list of featured projects.
 }
 </code></pre>
 
-<h3 id="project-category-draft">Project Category Draft</h3>
-<p><strong>Endpoint: /project/category/draft/</strong></p>
+<div class="admonition note">
+
+To override the default ranking you pass the **orderby** query parameter to
+
+:   sort projects by any of the attributes listed above, such as
+    *n\_volunteers* or *n\_tasks*. The **desc** query parameter can also
+    be added to sort in descending order. For example: GET
+    /project/category/&lt;short\_name&gt;/?orderby=n\_tasks&desc=True
+
+</div>
+
+<h3 id="project-category-featured">Project Category Featured</h3>
+<p><strong>Endpoint: /project/category/featured/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
 <p>Gives you the list of featured projects.</p>
 <ul>
-<li><strong>pagination</strong>: A pagination object for getting new draft projets
-    from this category.</li>
+<li><strong>pagination</strong>: A pagination object for getting new featured
+    projects from this category.</li>
 <li><strong>active_cat</strong>: Active category.</li>
 <li><strong>projects</strong>: List of projects belonging to this category.</li>
 <li><strong>categories</strong>: List of available categories in this server.</li>
@@ -4548,18 +4675,18 @@ Gives you the list of featured projects.
 {
   &ldquo;active_cat&rdquo;: {
     &ldquo;created&rdquo;: null,
-    &ldquo;description&rdquo;: &ldquo;Draft projects&rdquo;,
+    &ldquo;description&rdquo;: &ldquo;Featured projects&rdquo;,
     &ldquo;id&rdquo;: null,
-    &ldquo;name&rdquo;: &ldquo;Draft&rdquo;,
-    &ldquo;short_name&rdquo;: &ldquo;draft&rdquo;
+    &ldquo;name&rdquo;: &ldquo;Featured&rdquo;,
+    &ldquo;short_name&rdquo;: &ldquo;featured&rdquo;
   },
   &ldquo;categories&rdquo;: [
     {
       &ldquo;created&rdquo;: null,
-      &ldquo;description&rdquo;: &ldquo;Draft projects&rdquo;,
+      &ldquo;description&rdquo;: &ldquo;Featured projects&rdquo;,
       &ldquo;id&rdquo;: null,
-      &ldquo;name&rdquo;: &ldquo;Draft&rdquo;,
-      &ldquo;short_name&rdquo;: &ldquo;draft&rdquo;
+      &ldquo;name&rdquo;: &ldquo;Featured&rdquo;,
+      &ldquo;short_name&rdquo;: &ldquo;featured&rdquo;
     },
     {
       &ldquo;created&rdquo;: null,
@@ -4586,18 +4713,18 @@ Gives you the list of featured projects.
   &ldquo;projects&rdquo;: [
     {
       &ldquo;created&rdquo;: &ldquo;2014-02-22T15:09:23.691811&rdquo;,
-      &ldquo;description&rdquo;: &ldquo;Draft 1&rdquo;,
-      &ldquo;id&rdquo;: 17,
+      &ldquo;description&rdquo;: &ldquo;Image pattern recognition&rdquo;,
+      &ldquo;id&rdquo;: 1377,
       &ldquo;info&rdquo;: {
         &ldquo;container&rdquo;: &ldquo;7&rdquo;,
         &ldquo;thumbnail&rdquo;: &ldquo;58.png&rdquo;
       },
       &ldquo;last_activity&rdquo;: &ldquo;2 weeks ago&rdquo;,
       &ldquo;last_activity_raw&rdquo;: &ldquo;2017-01-31T09:18:28.450391&rdquo;,
-      &ldquo;n_tasks&rdquo;: 0,
-      &ldquo;n_volunteers&rdquo;: 0,
+      &ldquo;n_tasks&rdquo;: 169671,
+      &ldquo;n_volunteers&rdquo;: 17499,
       &ldquo;name&rdquo;: &ldquo;Name&rdquo;,
-      &ldquo;overall_progress&rdquo;: 0,
+      &ldquo;overall_progress&rdquo;: 80,
       &ldquo;owner&rdquo;: &ldquo;John Doe&rdquo;,
       &ldquo;short_name&rdquo;: &ldquo;name&rdquo;,
       &ldquo;updated&rdquo;: &ldquo;2017-01-31T09:18:28.491496&rdquo;
@@ -4607,231 +4734,246 @@ Gives you the list of featured projects.
   &ldquo;title&rdquo;: &ldquo;Projects&rdquo;
 }</p>
 <pre><code>
-### Project Creation
+&lt;div class=&quot;admonition note&quot;&gt;
 
-**Endpoint: /project/new**
+To override the default ranking you pass the **orderby** query parameter to
 
-*Allowed methods*: **GET/POST**
+:   sort projects by any of the attributes listed above, such as
+    *n\_volunteers* or *n\_tasks*. The **desc** query parameter can also
+    be added to sort in descending order. For example: GET
+    /project/category/featured/?orderby=n\_tasks&amp;desc=True
+
+&lt;/div&gt;
+
+### Project Category Draft
+
+**Endpoint: /project/category/draft/**
+
+*Allowed methods*: **GET**
 
 **GET**
 
-Gives you the list of required fields in the form to create a project.
+Gives you the list of featured projects.
 
+-   **pagination**: A pagination object for getting new draft projets
+    from this category.
+-   **active\_cat**: Active category.
+-   **projects**: List of projects belonging to this category.
+-   **categories**: List of available categories in this server.
 -   **template**: The Jinja2 template that could be rendered.
 -   **title**: the title for the endpoint.
--   **form**: The form fields that need to be sent for creating the
-    project. It contains the CSRF token for validating the POST, as well
-    as an errors field in case that something is wrong.
 
 **Example output**
 
 ``` {.sourceCode .python}
 {
-  &quot;errors&quot;: false,
-  &quot;form&quot;: {
-    &quot;csrf&quot;: &quot;token&quot;,
-    &quot;description&quot;: null,
-    &quot;errors&quot;: {},
-    &quot;long_description&quot;: null,
-    &quot;name&quot;: null,
-    &quot;short_name&quot;: null
+  &quot;active_cat&quot;: {
+    &quot;created&quot;: null,
+    &quot;description&quot;: &quot;Draft projects&quot;,
+    &quot;id&quot;: null,
+    &quot;name&quot;: &quot;Draft&quot;,
+    &quot;short_name&quot;: &quot;draft&quot;
   },
-  &quot;template&quot;: &quot;projects/new.html&quot;,
-  &quot;title&quot;: &quot;Create a Project&quot;
+  &quot;categories&quot;: [
+    {
+      &quot;created&quot;: null,
+      &quot;description&quot;: &quot;Draft projects&quot;,
+      &quot;id&quot;: null,
+      &quot;name&quot;: &quot;Draft&quot;,
+      &quot;short_name&quot;: &quot;draft&quot;
+    },
+    {
+      &quot;created&quot;: null,
+      &quot;description&quot;: &quot;Social projects&quot;,
+      &quot;id&quot;: 2,
+      &quot;name&quot;: &quot;Social&quot;,
+      &quot;short_name&quot;: &quot;social&quot;
+    },
+    {
+      &quot;created&quot;: &quot;2013-06-18T11:13:44.789149&quot;,
+      &quot;description&quot;: &quot;Art projects&quot;,
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;Art&quot;,
+      &quot;short_name&quot;: &quot;art&quot;
+    },
+  ],
+  &quot;pagination&quot;: {
+    &quot;next&quot;: false,
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 20,
+    &quot;prev&quot;: false,
+    &quot;total&quot;: 1
+  },
+  &quot;projects&quot;: [
+    {
+      &quot;created&quot;: &quot;2014-02-22T15:09:23.691811&quot;,
+      &quot;description&quot;: &quot;Draft 1&quot;,
+      &quot;id&quot;: 17,
+      &quot;info&quot;: {
+        &quot;container&quot;: &quot;7&quot;,
+        &quot;thumbnail&quot;: &quot;58.png&quot;
+      },
+      &quot;last_activity&quot;: &quot;2 weeks ago&quot;,
+      &quot;last_activity_raw&quot;: &quot;2017-01-31T09:18:28.450391&quot;,
+      &quot;n_tasks&quot;: 0,
+      &quot;n_volunteers&quot;: 0,
+      &quot;name&quot;: &quot;Name&quot;,
+      &quot;overall_progress&quot;: 0,
+      &quot;owner&quot;: &quot;John Doe&quot;,
+      &quot;short_name&quot;: &quot;name&quot;,
+      &quot;updated&quot;: &quot;2017-01-31T09:18:28.491496&quot;
+    },
+  ],
+  &quot;template&quot;: &quot;/projects/index.html&quot;,
+  &quot;title&quot;: &quot;Projects&quot;
 }
 </code></pre>
 
-<h3 id="project-blog-list">Project Blog list</h3>
-<p><strong>Endpoint: /project/&lt;short_name&gt;/blog</strong></p>
-<p><em>Allowed methods</em>: <strong>GET</strong></p>
+<div class="admonition note">
+
+To override the default ranking you pass the **orderby** query parameter to
+
+:   sort projects by any of the attributes listed above, such as
+    *n\_volunteers* or *n\_tasks*. The **desc** query parameter can also
+    be added to sort in descending order. For example: GET
+    /project/category/draft/?orderby=n\_tasks&desc=True
+
+</div>
+
+<h3 id="project-creation">Project Creation</h3>
+<p><strong>Endpoint: /project/new</strong></p>
+<p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
-<p>Gives you the list of posted blogs by the given project short name.</p>
+<p>Gives you the list of required fields in the form to create a project.</p>
 <ul>
-<li><strong>blogposts</strong>: All the blog posts for the given project.</li>
-<li><strong>project</strong>: Info about the project.</li>
+<li><strong>template</strong>: The Jinja2 template that could be rendered.</li>
+<li><strong>title</strong>: the title for the endpoint.</li>
+<li><strong>form</strong>: The form fields that need to be sent for creating the
+    project. It contains the CSRF token for validating the POST, as well
+    as an errors field in case that something is wrong.</li>
 </ul>
-<p>The project and owner fields will have more information if the onwer of
-the project does the request, providing its private information like
-api_key, password keys, etc. Otherwise it will be removed and only show
-public info.</p>
-<p><strong>Example public output</strong></p>
-<p>``` {.sourceCode .python}
-{
-  &ldquo;blogposts&rdquo;: [
-    {
-      &ldquo;body&rdquo;: &ldquo;Please, e-mail us to alejasan 4t ucm dot es if you find any bug. Thanks.&rdquo;,
-      &ldquo;created&rdquo;: &ldquo;2014-05-14T14:25:04.899079&rdquo;,
-      &ldquo;id&rdquo;: 1,
-      &ldquo;project_id&rdquo;: 1377,
-      &ldquo;title&rdquo;: &ldquo;We are working on the Alpha version.&rdquo;,
-      &ldquo;user_id&rdquo;: 3927
-    },
-  ],
-  &ldquo;n_completed_tasks&rdquo;: 137051,
-  &ldquo;n_task_runs&rdquo;: 1070561,
-  &ldquo;n_tasks&rdquo;: 169671,
-  &ldquo;n_volunteers&rdquo;: 17499,
-  &ldquo;overall_progress&rdquo;: 80,
-  &ldquo;owner&rdquo;: {
-    &ldquo;created&rdquo;: &ldquo;2014-02-13T15:28:08.420187&rdquo;,
-    &ldquo;fullname&rdquo;: &ldquo;John Doe&rdquo;,
-    &ldquo;info&rdquo;: {
-      &ldquo;avatar&rdquo;: &ldquo;avatar.png&rdquo;,
-      &ldquo;container&rdquo;: &ldquo;container&rdquo;
-    },
-    &ldquo;n_answers&rdquo;: 32814,
-    &ldquo;name&rdquo;: &ldquo;johndoe&rdquo;,
-    &ldquo;rank&rdquo;: 4,
-    &ldquo;registered_ago&rdquo;: &ldquo;3 years ago&rdquo;,
-    &ldquo;score&rdquo;: 32814
-  },
-  &ldquo;pro_features&rdquo;: {
-    &ldquo;auditlog_enabled&rdquo;: false,
-    &ldquo;autoimporter_enabled&rdquo;: false,
-    &ldquo;webhooks_enabled&rdquo;: false
-  },
-  &ldquo;project&rdquo;: {
-    &ldquo;created&rdquo;: &ldquo;2014-02-22T15:09:23.691811&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;Image pattern recognition&rdquo;,
-    &ldquo;featured&rdquo;: true,
-    &ldquo;id&rdquo;: 1,
-    &ldquo;info&rdquo;: {
-      &ldquo;container&rdquo;: &ldquo;container&rdquo;,
-      &ldquo;thumbnail&rdquo;: &ldquo;58.png&rdquo;
-    },
-    &ldquo;last_activity&rdquo;: null,
-    &ldquo;last_activity_raw&rdquo;: null,
-    &ldquo;n_tasks&rdquo;: null,
-    &ldquo;n_volunteers&rdquo;: null,
-    &ldquo;name&rdquo;: &ldquo;Dark Skies ISS&rdquo;,
-    &ldquo;overall_progress&rdquo;: null,
-    &ldquo;owner&rdquo;: null,
-    &ldquo;short_name&rdquo;: &ldquo;darkskies&rdquo;,
-    &ldquo;updated&rdquo;: &ldquo;2017-01-31T09:18:28.491496&rdquo;
-  },
-  &ldquo;template&rdquo;: &ldquo;projects/blog.html&rdquo;
-}</p>
-<pre><code>
-### Project Task Presenter Editor
-
-**Endpoint: /project/&amp;lt;short\_name&amp;gt;/tasks/taskpresentereditor**
-
-*Allowed methods*: **GET/POST**
-
-**GET**
-
-This endpoint allows you to get the list of available templates for the
-current project. This will only happen when the project has an empty
-template, otherwise it will load the template for you.
-
--   **template**: The Jinja2 template that could be rendered.
--   **title**: the title for the endpoint.
--   **presenters**: List of available templates (in HTML format). The
-    name of them without the '.html' will be the argument for the
-    endpoint.
--   **last\_activit**: last activity of the project.
--   **n\_task\_runs**: number of task runs.
--   **n\_tasks**: number of tasks.
--   **n\_volunteers**: number of volunteers.
--   **owner**: information about the owner.
--   **pro\_features**: which pro features are enabled.
--   **pro\_features**: which pro features are enabled.
--   **project**: info about the project.
--   **status**: status of the flash message.
--   **flash**: flash message.
-
-**Example output**
-
-``` {.sourceCode .python}
-{
- &quot;flash&quot;: &quot;&lt;strong&gt;Note&lt;/strong&gt; You will need to upload the tasks using the&lt;a href=\&quot;/project/asdf123/tasks/import\&quot;&gt; CSV importer&lt;/a&gt; or download the project bundle and run the &lt;strong&gt;createTasks.py&lt;/strong&gt; script in your computer&quot;,
- &quot;last_activity&quot;: null,
- &quot;n_completed_tasks&quot;: 0,
- &quot;n_task_runs&quot;: 0,
- &quot;n_tasks&quot;: 0,
- &quot;n_volunteers&quot;: 0,
- &quot;overall_progress&quot;: 0,
- &quot;owner&quot;: {
-   &quot;api_key&quot;: &quot;key&quot;,
-   &quot;confirmation_email_sent&quot;: false,
-   &quot;created&quot;: &quot;2016-09-15T11:30:42.660450&quot;,
-   &quot;email_addr&quot;: &quot;prueba@prueba.com&quot;,
-   &quot;facebook_user_id&quot;: null,
-   &quot;fullname&quot;: &quot;prueba de json&quot;,
-   &quot;google_user_id&quot;: null,
-   &quot;id&quot;: 12030,
-   &quot;info&quot;: {
-     &quot;avatar&quot;: &quot;avatar.png&quot;,
-     &quot;container&quot;: &quot;user&quot;
-   },
-   &quot;n_answers&quot;: 5,
-   &quot;name&quot;: &quot;pruebaadfadfa&quot;,
-   &quot;rank&quot;: 4411,
-   &quot;registered_ago&quot;: &quot;6 months ago&quot;,
-   &quot;score&quot;: 5,
-   &quot;total&quot;: 11134,
-   &quot;twitter_user_id&quot;: null,
-   &quot;valid_email&quot;: true
- },
- &quot;presenters&quot;: [
-   &quot;projects/presenters/basic.html&quot;,
-   &quot;projects/presenters/image.html&quot;,
-   &quot;projects/presenters/sound.html&quot;,
-   &quot;projects/presenters/video.html&quot;,
-   &quot;projects/presenters/map.html&quot;,
-   &quot;projects/presenters/pdf.html&quot;
- ],
- &quot;pro_features&quot;: {
-   &quot;auditlog_enabled&quot;: false,
-   &quot;autoimporter_enabled&quot;: false,
-   &quot;webhooks_enabled&quot;: false
- },
- &quot;project&quot;: {
-   &quot;allow_anonymous_contributors&quot;: true,
-   &quot;category_id&quot;: 4,
-   &quot;contacted&quot;: false,
-   &quot;contrib_button&quot;: &quot;draft&quot;,
-   &quot;created&quot;: &quot;2017-01-11T09:37:43.613007&quot;,
-   &quot;description&quot;: &quot;adsf&quot;,
-   &quot;featured&quot;: false,
-   &quot;id&quot;: 3,
-   &quot;info&quot;: {
-     &quot;passwd_hash&quot;: null,
-     &quot;task_presenter&quot;: &quot;&quot;
-   },
-   &quot;long_description&quot;: &quot;adsf&quot;,
-   &quot;n_blogposts&quot;: 0,
-   &quot;n_results&quot;: 0,
-   &quot;name&quot;: &quot;asdf1324&quot;,
-   &quot;owner_id&quot;: 12030,
-   &quot;published&quot;: false,
-   &quot;secret_key&quot;: &quot;73aee9df-be47-4e4c-8192-3a8bf0ab5161&quot;,
-   &quot;short_name&quot;: &quot;asdf123&quot;,
-   &quot;updated&quot;: &quot;2017-03-15T13:20:48.022328&quot;,
-   &quot;webhook&quot;: &quot;&quot;
- },
- &quot;status&quot;: &quot;info&quot;,
- &quot;template&quot;: &quot;projects/task_presenter_options.html&quot;,
- &quot;title&quot;: &quot;Project: asdf1324 &amp;middot; Task Presenter Editor&quot;
-</code></pre>
-
-<blockquote>
-<p>}</p>
-</blockquote>
-<p>If you want to preload the template from one of the available prenters,
-you have to pass the following argument: <strong>?template=basic</strong> for the
-basic or <strong>?template=iamge</strong> for the image template.</p>
 <p><strong>Example output</strong></p>
 <p>``` {.sourceCode .python}
 {
- &ldquo;errors&rdquo;: false,
- &ldquo;flash&rdquo;: &ldquo;Your code will be <em>automagically</em> rendered in                       the <strong>preview section</strong>. Click in the                       preview button!&rdquo;,
- &ldquo;form&rdquo;: {
-   &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
-   &ldquo;editor&rdquo;: &ldquo;<div class=\"row\">\n    <div class=\"col-md-12\">\n        <h1>Write here your HTML Task Presenter</h1>\n    </div>\n</div>\n<script type=\"text/javascript\">\n(function() {\n    // Your JavaScript code\n    pybossa.taskLoaded(function(task, deferred){\n        // When the task is loaded, do....\n    });\n\n    pybossa.presentTask(function(task, deferred){\n        // Present the current task to the user\n        // Load the task data into the HTML DOM\n    });\n\n    pybossa.run(&lsquo;asdf123&rsquo;);\n})();\n</script>&ldquo;,
-   &ldquo;errors&rdquo;: {},
-   &ldquo;id&rdquo;: 3
- },
+  &ldquo;errors&rdquo;: false,
+  &ldquo;form&rdquo;: {
+    &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
+    &ldquo;description&rdquo;: null,
+    &ldquo;errors&rdquo;: {},
+    &ldquo;long_description&rdquo;: null,
+    &ldquo;name&rdquo;: null,
+    &ldquo;short_name&rdquo;: null
+  },
+  &ldquo;template&rdquo;: &ldquo;projects/new.html&rdquo;,
+  &ldquo;title&rdquo;: &ldquo;Create a Project&rdquo;
+}</p>
+<pre><code>
+### Project Blog list
+
+**Endpoint: /project/&amp;lt;short\_name&amp;gt;/blog**
+
+*Allowed methods*: **GET**
+
+**GET**
+
+Gives you the list of posted blogs by the given project short name.
+
+-   **blogposts**: All the blog posts for the given project.
+-   **project**: Info about the project.
+
+The project and owner fields will have more information if the owner of
+the project does the request, providing its private information like
+api\_key, password keys, etc. Otherwise it will be removed and only show
+public info.
+
+**Example public output**
+
+``` {.sourceCode .python}
+{
+  &quot;blogposts&quot;: [
+    {
+      &quot;body&quot;: &quot;Please, e-mail us to alejasan 4t ucm dot es if you find any bug. Thanks.&quot;,
+      &quot;created&quot;: &quot;2014-05-14T14:25:04.899079&quot;,
+      &quot;id&quot;: 1,
+      &quot;project_id&quot;: 1377,
+      &quot;title&quot;: &quot;We are working on the Alpha version.&quot;,
+      &quot;user_id&quot;: 3927
+    },
+  ],
+  &quot;n_completed_tasks&quot;: 137051,
+  &quot;n_task_runs&quot;: 1070561,
+  &quot;n_tasks&quot;: 169671,
+  &quot;n_volunteers&quot;: 17499,
+  &quot;overall_progress&quot;: 80,
+  &quot;owner&quot;: {
+    &quot;created&quot;: &quot;2014-02-13T15:28:08.420187&quot;,
+    &quot;fullname&quot;: &quot;John Doe&quot;,
+    &quot;info&quot;: {
+      &quot;avatar&quot;: &quot;avatar.png&quot;,
+      &quot;container&quot;: &quot;container&quot;
+    },
+    &quot;n_answers&quot;: 32814,
+    &quot;name&quot;: &quot;johndoe&quot;,
+    &quot;rank&quot;: 4,
+    &quot;registered_ago&quot;: &quot;3 years ago&quot;,
+    &quot;score&quot;: 32814
+  },
+  &quot;pro_features&quot;: {
+    &quot;auditlog_enabled&quot;: false,
+    &quot;autoimporter_enabled&quot;: false,
+    &quot;webhooks_enabled&quot;: false
+  },
+  &quot;project&quot;: {
+    &quot;created&quot;: &quot;2014-02-22T15:09:23.691811&quot;,
+    &quot;description&quot;: &quot;Image pattern recognition&quot;,
+    &quot;featured&quot;: true,
+    &quot;id&quot;: 1,
+    &quot;info&quot;: {
+      &quot;container&quot;: &quot;container&quot;,
+      &quot;thumbnail&quot;: &quot;58.png&quot;
+    },
+    &quot;last_activity&quot;: null,
+    &quot;last_activity_raw&quot;: null,
+    &quot;n_tasks&quot;: null,
+    &quot;n_volunteers&quot;: null,
+    &quot;name&quot;: &quot;Dark Skies ISS&quot;,
+    &quot;overall_progress&quot;: null,
+    &quot;owner&quot;: null,
+    &quot;short_name&quot;: &quot;darkskies&quot;,
+    &quot;updated&quot;: &quot;2017-01-31T09:18:28.491496&quot;
+  },
+  &quot;template&quot;: &quot;projects/blog.html&quot;
+}
+</code></pre>
+
+<h3 id="project-task-presenter-editor">Project Task Presenter Editor</h3>
+<p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/taskpresentereditor</strong></p>
+<p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
+<p><strong>GET</strong></p>
+<p>This endpoint allows you to get the list of available templates for the
+current project. This will only happen when the project has an empty
+template, otherwise it will load the template for you.</p>
+<ul>
+<li><strong>template</strong>: The Jinja2 template that could be rendered.</li>
+<li><strong>title</strong>: the title for the endpoint.</li>
+<li><strong>presenters</strong>: List of available templates (in HTML format). The
+    name of them without the &lsquo;.html&rsquo; will be the argument for the
+    endpoint.</li>
+<li><strong>last_activit</strong>: last activity of the project.</li>
+<li><strong>n_task_runs</strong>: number of task runs.</li>
+<li><strong>n_tasks</strong>: number of tasks.</li>
+<li><strong>n_volunteers</strong>: number of volunteers.</li>
+<li><strong>owner</strong>: information about the owner.</li>
+<li><strong>pro_features</strong>: which pro features are enabled.</li>
+<li><strong>pro_features</strong>: which pro features are enabled.</li>
+<li><strong>project</strong>: info about the project.</li>
+<li><strong>status</strong>: status of the flash message.</li>
+<li><strong>flash</strong>: flash message.</li>
+</ul>
+<p><strong>Example output</strong></p>
+<p>``` {.sourceCode .python}
+{
+ &ldquo;flash&rdquo;: &ldquo;<strong>Note</strong> You will need to upload the tasks using the<a href=\"/project/asdf123/tasks/import\"> CSV importer</a> or download the project bundle and run the <strong>createTasks.py</strong> script in your computer&rdquo;,
  &ldquo;last_activity&rdquo;: null,
  &ldquo;n_completed_tasks&rdquo;: 0,
  &ldquo;n_task_runs&rdquo;: 0,
@@ -4839,6 +4981,7 @@ basic or <strong>?template=iamge</strong> for the image template.</p>
  &ldquo;n_volunteers&rdquo;: 0,
  &ldquo;overall_progress&rdquo;: 0,
  &ldquo;owner&rdquo;: {
+   &ldquo;admin&rdquo;: false,
    &ldquo;api_key&rdquo;: &ldquo;key&rdquo;,
    &ldquo;confirmation_email_sent&rdquo;: false,
    &ldquo;created&rdquo;: &ldquo;2016-09-15T11:30:42.660450&rdquo;,
@@ -4846,7 +4989,7 @@ basic or <strong>?template=iamge</strong> for the image template.</p>
    &ldquo;facebook_user_id&rdquo;: null,
    &ldquo;fullname&rdquo;: &ldquo;prueba de json&rdquo;,
    &ldquo;google_user_id&rdquo;: null,
-   &ldquo;id&rdquo;: 0,
+   &ldquo;id&rdquo;: 12030,
    &ldquo;info&rdquo;: {
      &ldquo;avatar&rdquo;: &ldquo;avatar.png&rdquo;,
      &ldquo;container&rdquo;: &ldquo;user&rdquo;
@@ -4860,6 +5003,14 @@ basic or <strong>?template=iamge</strong> for the image template.</p>
    &ldquo;twitter_user_id&rdquo;: null,
    &ldquo;valid_email&rdquo;: true
  },
+ &ldquo;presenters&rdquo;: [
+   &ldquo;projects/presenters/basic.html&rdquo;,
+   &ldquo;projects/presenters/image.html&rdquo;,
+   &ldquo;projects/presenters/sound.html&rdquo;,
+   &ldquo;projects/presenters/video.html&rdquo;,
+   &ldquo;projects/presenters/map.html&rdquo;,
+   &ldquo;projects/presenters/pdf.html&rdquo;
+ ],
  &ldquo;pro_features&rdquo;: {
    &ldquo;auditlog_enabled&rdquo;: false,
    &ldquo;autoimporter_enabled&rdquo;: false,
@@ -4882,7 +5033,7 @@ basic or <strong>?template=iamge</strong> for the image template.</p>
    &ldquo;n_blogposts&rdquo;: 0,
    &ldquo;n_results&rdquo;: 0,
    &ldquo;name&rdquo;: &ldquo;asdf1324&rdquo;,
-   &ldquo;owner_id&rdquo;: 0,
+   &ldquo;owner_id&rdquo;: 12030,
    &ldquo;published&rdquo;: false,
    &ldquo;secret_key&rdquo;: &ldquo;73aee9df-be47-4e4c-8192-3a8bf0ab5161&rdquo;,
    &ldquo;short_name&rdquo;: &ldquo;asdf123&rdquo;,
@@ -4890,404 +5041,197 @@ basic or <strong>?template=iamge</strong> for the image template.</p>
    &ldquo;webhook&rdquo;: &ldquo;&rdquo;
  },
  &ldquo;status&rdquo;: &ldquo;info&rdquo;,
- &ldquo;template&rdquo;: &ldquo;projects/task_presenter_editor.html&rdquo;,
+ &ldquo;template&rdquo;: &ldquo;projects/task_presenter_options.html&rdquo;,
  &ldquo;title&rdquo;: &ldquo;Project: asdf1324 &middot; Task Presenter Editor&rdquo;</p>
 <pre><code>
 &gt; }
 
-Then, you can use that template, or if you prefer you can do a POST
-directly without that information. As in any other request involving a
-POST you will need the CSRFToken to validate it.
-
-**POST**
-
-To send a valid POST request you need to pass the *csrf token* in the
-headers. Use the following header: &quot;X-CSRFToken&quot;. You will have to POST
-the data fields found in the previous example, as it contains the
-information about the fields: specifically **editor** with the
-HTML/CSS/JS that you want to provide.
-
-If the post is successfull, you will get the following output:
+If you want to preload the template from one of the available prenters,
+you have to pass the following argument: **?template=basic** for the
+basic or **?template=iamge** for the image template.
 
 **Example output**
 
 ``` {.sourceCode .python}
 {
-  &quot;flash&quot;: &quot;&lt;i class=\&quot;icon-ok\&quot;&gt;&lt;/i&gt; Task presenter added!&quot;,
-  &quot;next&quot;: &quot;/project/asdf123/tasks/&quot;,
-  &quot;status&quot;: &quot;success&quot;
-}
+ &quot;errors&quot;: false,
+ &quot;flash&quot;: &quot;Your code will be &lt;em&gt;automagically&lt;/em&gt; rendered in                       the &lt;strong&gt;preview section&lt;/strong&gt;. Click in the                       preview button!&quot;,
+ &quot;form&quot;: {
+   &quot;csrf&quot;: &quot;token&quot;,
+   &quot;editor&quot;: &quot;&lt;div class=\&quot;row\&quot;&gt;\n    &lt;div class=\&quot;col-md-12\&quot;&gt;\n        &lt;h1&gt;Write here your HTML Task Presenter&lt;/h1&gt;\n    &lt;/div&gt;\n&lt;/div&gt;\n&lt;script type=\&quot;text/javascript\&quot;&gt;\n(function() {\n    // Your JavaScript code\n    pybossa.taskLoaded(function(task, deferred){\n        // When the task is loaded, do....\n    });\n\n    pybossa.presentTask(function(task, deferred){\n        // Present the current task to the user\n        // Load the task data into the HTML DOM\n    });\n\n    pybossa.run('asdf123');\n})();\n&lt;/script&gt;&quot;,
+   &quot;errors&quot;: {},
+   &quot;id&quot;: 3
+ },
+ &quot;last_activity&quot;: null,
+ &quot;n_completed_tasks&quot;: 0,
+ &quot;n_task_runs&quot;: 0,
+ &quot;n_tasks&quot;: 0,
+ &quot;n_volunteers&quot;: 0,
+ &quot;overall_progress&quot;: 0,
+ &quot;owner&quot;: {
+   &quot;admin&quot;: false,
+   &quot;api_key&quot;: &quot;key&quot;,
+   &quot;confirmation_email_sent&quot;: false,
+   &quot;created&quot;: &quot;2016-09-15T11:30:42.660450&quot;,
+   &quot;email_addr&quot;: &quot;prueba@prueba.com&quot;,
+   &quot;facebook_user_id&quot;: null,
+   &quot;fullname&quot;: &quot;prueba de json&quot;,
+   &quot;google_user_id&quot;: null,
+   &quot;id&quot;: 0,
+   &quot;info&quot;: {
+     &quot;avatar&quot;: &quot;avatar.png&quot;,
+     &quot;container&quot;: &quot;user&quot;
+   },
+   &quot;n_answers&quot;: 5,
+   &quot;name&quot;: &quot;pruebaadfadfa&quot;,
+   &quot;rank&quot;: 4411,
+   &quot;registered_ago&quot;: &quot;6 months ago&quot;,
+   &quot;score&quot;: 5,
+   &quot;total&quot;: 11134,
+   &quot;twitter_user_id&quot;: null,
+   &quot;valid_email&quot;: true
+ },
+ &quot;pro_features&quot;: {
+   &quot;auditlog_enabled&quot;: false,
+   &quot;autoimporter_enabled&quot;: false,
+   &quot;webhooks_enabled&quot;: false
+ },
+ &quot;project&quot;: {
+   &quot;allow_anonymous_contributors&quot;: true,
+   &quot;category_id&quot;: 4,
+   &quot;contacted&quot;: false,
+   &quot;contrib_button&quot;: &quot;draft&quot;,
+   &quot;created&quot;: &quot;2017-01-11T09:37:43.613007&quot;,
+   &quot;description&quot;: &quot;adsf&quot;,
+   &quot;featured&quot;: false,
+   &quot;id&quot;: 3,
+   &quot;info&quot;: {
+     &quot;passwd_hash&quot;: null,
+     &quot;task_presenter&quot;: &quot;&quot;
+   },
+   &quot;long_description&quot;: &quot;adsf&quot;,
+   &quot;n_blogposts&quot;: 0,
+   &quot;n_results&quot;: 0,
+   &quot;name&quot;: &quot;asdf1324&quot;,
+   &quot;owner_id&quot;: 0,
+   &quot;published&quot;: false,
+   &quot;secret_key&quot;: &quot;73aee9df-be47-4e4c-8192-3a8bf0ab5161&quot;,
+   &quot;short_name&quot;: &quot;asdf123&quot;,
+   &quot;updated&quot;: &quot;2017-03-15T13:20:48.022328&quot;,
+   &quot;webhook&quot;: &quot;&quot;
+ },
+ &quot;status&quot;: &quot;info&quot;,
+ &quot;template&quot;: &quot;projects/task_presenter_editor.html&quot;,
+ &quot;title&quot;: &quot;Project: asdf1324 &amp;middot; Task Presenter Editor&quot;
 </code></pre>
 
-<h3 id="project-delete">Project Delete</h3>
-<p><strong>Endpoint: /project/&lt;short_name&gt;/delete</strong></p>
-<p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
-<p><strong>GET</strong></p>
-<p>The GET endpoint allows you to get all the info about the project (see
+<blockquote>
+<p>}</p>
+</blockquote>
+<p>Then, you can use that template, or if you prefer you can do a POST
+directly without that information. As in any other request involving a
+POST you will need the CSRFToken to validate it.</p>
+<p><strong>POST</strong></p>
+<p>To send a valid POST request you need to pass the <em>csrf token</em> in the
+headers. Use the following header: &ldquo;X-CSRFToken&rdquo;. You will have to POST
+the data fields found in the previous example, as it contains the
+information about the fields: specifically <strong>editor</strong> with the
+HTML/CSS/JS that you want to provide.</p>
+<p>If the post is successful, you will get the following output:</p>
+<p><strong>Example output</strong></p>
+<p>``` {.sourceCode .python}
+{
+  &ldquo;flash&rdquo;: &ldquo;<i class=\"icon-ok\"></i> Task presenter added!&rdquo;,
+  &ldquo;next&rdquo;: &ldquo;/project/asdf123/tasks/&rdquo;,
+  &ldquo;status&rdquo;: &ldquo;success&rdquo;
+}</p>
+<pre><code>
+### Project Delete
+
+**Endpoint: /project/&amp;lt;short\_name&amp;gt;/delete**
+
+*Allowed methods*: **GET/POST**
+
+**GET**
+
+The GET endpoint allows you to get all the info about the project (see
 the Project endpoint as well) as well as the csrf token. As this
 endpoint does not have any form, the csrf token is not inside the form
-field.</p>
-<p><strong>Example output</strong></p>
-<p>``` {.sourceCode .python}
-{
-  &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
-  &ldquo;last_activity&rdquo;: null,
-  &ldquo;n_tasks&rdquo;: 0,
-  &ldquo;overall_progress&rdquo;: 0,
-  &ldquo;owner&rdquo;: {
-    &ldquo;api_key&rdquo;: &ldquo;key&rdquo;,
-    &ldquo;confirmation_email_sent&rdquo;: false,
-    &ldquo;created&rdquo;: &ldquo;2016-09-15T11:30:42.660450&rdquo;,
-    &ldquo;email_addr&rdquo;: &ldquo;prueba@prueba.com&rdquo;,
-    &ldquo;facebook_user_id&rdquo;: null,
-    &ldquo;fullname&rdquo;: &ldquo;prueba de json&rdquo;,
-    &ldquo;google_user_id&rdquo;: null,
-    &ldquo;id&rdquo;: 0,
-    &ldquo;info&rdquo;: {
-      &ldquo;avatar&rdquo;: &ldquo;avatar.png&rdquo;,
-      &ldquo;container&rdquo;: &ldquo;0&rdquo;
-    },
-    &ldquo;n_answers&rdquo;: 5,
-    &ldquo;name&rdquo;: &ldquo;pruebaadfadfa&rdquo;,
-    &ldquo;rank&rdquo;: 4411,
-    &ldquo;registered_ago&rdquo;: &ldquo;6 months ago&rdquo;,
-    &ldquo;score&rdquo;: 5,
-    &ldquo;total&rdquo;: 11134,
-    &ldquo;twitter_user_id&rdquo;: null,
-    &ldquo;valid_email&rdquo;: true
-  },
-  &ldquo;pro_features&rdquo;: {
-    &ldquo;auditlog_enabled&rdquo;: false,
-    &ldquo;autoimporter_enabled&rdquo;: false,
-    &ldquo;webhooks_enabled&rdquo;: false
-  },
-  &ldquo;project&rdquo;: {
-    &ldquo;allow_anonymous_contributors&rdquo;: true,
-    &ldquo;category_id&rdquo;: 2,
-    &ldquo;contacted&rdquo;: false,
-    &ldquo;created&rdquo;: &ldquo;2017-03-15T15:02:12.160810&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;asdf&rdquo;,
-    &ldquo;featured&rdquo;: false,
-    &ldquo;id&rdquo;: 3,
-    &ldquo;info&rdquo;: {},
-    &ldquo;long_description&rdquo;: &ldquo;asdf&rdquo;,
-    &ldquo;name&rdquo;: &ldquo;algo&rdquo;,
-    &ldquo;owner_id&rdquo;: 12030,
-    &ldquo;published&rdquo;: false,
-    &ldquo;secret_key&rdquo;: &ldquo;c5a77943-f5a4-484a-86bb-d69559e80357&rdquo;,
-    &ldquo;short_name&rdquo;: &ldquo;algo&rdquo;,
-    &ldquo;updated&rdquo;: &ldquo;2017-03-15T15:02:12.160823&rdquo;,
-    &ldquo;webhook&rdquo;: null
-  },
-  &ldquo;template&rdquo;: &ldquo;/projects/delete.html&rdquo;,
-  &ldquo;title&rdquo;: &ldquo;Project: algo &middot; Delete&rdquo;
-}</p>
-<pre><code>
-**POST**
-
-To send a valid POST request you need to pass the *csrf token* in the
-headers. Use the following header: &quot;X-CSRFToken&quot;.
+field.
 
 **Example output**
 
 ``` {.sourceCode .python}
 {
-  &quot;flash&quot;: &quot;Project deleted!&quot;,
-  &quot;next&quot;: &quot;/account/pruebaadfadfa/&quot;,
-  &quot;status&quot;: &quot;success&quot;
+  &quot;csrf&quot;: &quot;token&quot;,
+  &quot;last_activity&quot;: null,
+  &quot;n_tasks&quot;: 0,
+  &quot;overall_progress&quot;: 0,
+  &quot;owner&quot;: {
+    &quot;admin&quot;: false,
+    &quot;api_key&quot;: &quot;key&quot;,
+    &quot;confirmation_email_sent&quot;: false,
+    &quot;created&quot;: &quot;2016-09-15T11:30:42.660450&quot;,
+    &quot;email_addr&quot;: &quot;prueba@prueba.com&quot;,
+    &quot;facebook_user_id&quot;: null,
+    &quot;fullname&quot;: &quot;prueba de json&quot;,
+    &quot;google_user_id&quot;: null,
+    &quot;id&quot;: 0,
+    &quot;info&quot;: {
+      &quot;avatar&quot;: &quot;avatar.png&quot;,
+      &quot;container&quot;: &quot;0&quot;
+    },
+    &quot;n_answers&quot;: 5,
+    &quot;name&quot;: &quot;pruebaadfadfa&quot;,
+    &quot;rank&quot;: 4411,
+    &quot;registered_ago&quot;: &quot;6 months ago&quot;,
+    &quot;score&quot;: 5,
+    &quot;total&quot;: 11134,
+    &quot;twitter_user_id&quot;: null,
+    &quot;valid_email&quot;: true
+  },
+  &quot;pro_features&quot;: {
+    &quot;auditlog_enabled&quot;: false,
+    &quot;autoimporter_enabled&quot;: false,
+    &quot;webhooks_enabled&quot;: false
+  },
+  &quot;project&quot;: {
+    &quot;allow_anonymous_contributors&quot;: true,
+    &quot;category_id&quot;: 2,
+    &quot;contacted&quot;: false,
+    &quot;created&quot;: &quot;2017-03-15T15:02:12.160810&quot;,
+    &quot;description&quot;: &quot;asdf&quot;,
+    &quot;featured&quot;: false,
+    &quot;id&quot;: 3,
+    &quot;info&quot;: {},
+    &quot;long_description&quot;: &quot;asdf&quot;,
+    &quot;name&quot;: &quot;algo&quot;,
+    &quot;owner_id&quot;: 12030,
+    &quot;published&quot;: false,
+    &quot;secret_key&quot;: &quot;c5a77943-f5a4-484a-86bb-d69559e80357&quot;,
+    &quot;short_name&quot;: &quot;algo&quot;,
+    &quot;updated&quot;: &quot;2017-03-15T15:02:12.160823&quot;,
+    &quot;webhook&quot;: null
+  },
+  &quot;template&quot;: &quot;/projects/delete.html&quot;,
+  &quot;title&quot;: &quot;Project: algo &amp;middot; Delete&quot;
 }
 </code></pre>
 
-<h3 id="project-update">Project update</h3>
-<p><strong>Endpoint: /project/&lt;short_name&gt;/update</strong></p>
-<p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
-<p><strong>GET</strong></p>
-<p>It returns a JSON object with the following information:</p>
-<ul>
-<li><strong>form</strong>: the form fields that need to be sent for updating the
-    project. It contains the csrf token for validating the post, as well
-    as an errors field in case that something is wrong.</li>
-<li><strong>upload_form</strong>: the form fields that need to be sent for updating
-    the project&rsquo;s avatar. It contains the csrf token for validating the
-    post, as well as an errors field in case that something is wrong.</li>
-<li><strong>template</strong>: The Jinja2 template that could be rendered.</li>
-<li><strong>title</strong>: The title for the view.</li>
-</ul>
+<p><strong>POST</strong></p>
+<p>To send a valid POST request you need to pass the <em>csrf token</em> in the
+headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 <p><strong>Example output</strong></p>
 <p>``` {.sourceCode .python}
 {
-  &ldquo;form&rdquo;: {
-    &ldquo;allow_anonymous_contributors&rdquo;: false,
-    &ldquo;category_id&rdquo;: 2,
-    &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;description&rdquo;,
-    &ldquo;errors&rdquo;: {},
-    &ldquo;id&rdquo;: 3117,
-    &ldquo;long_description&rdquo;: &ldquo;long description&rdquo;,
-    &ldquo;name&rdquo;: &ldquo;name&rdquo;,
-    &ldquo;password&rdquo;: null,
-    &ldquo;protect&rdquo;: false,
-    &ldquo;short_name&rdquo;: &ldquo;slug&rdquo;,
-    &ldquo;webhook&rdquo;: null
-  },
-  &ldquo;last_activity&rdquo;: null,
-  &ldquo;n_completed_tasks&rdquo;: 0,
-  &ldquo;n_task_runs&rdquo;: 0,
-  &ldquo;n_tasks&rdquo;: 2,
-  &ldquo;n_volunteers&rdquo;: 0,
-  &ldquo;overall_progress&rdquo;: 0,
-  &ldquo;owner&rdquo;: {
-    &ldquo;api_key&rdquo;: &ldquo;key&rdquo;,
-    &ldquo;confirmation_email_sent&rdquo;: false,
-    &ldquo;created&rdquo;: &ldquo;2012-06-06T06:27:18.760254&rdquo;,
-    &ldquo;email_addr&rdquo;: &ldquo;email.com&rdquo;,
-    &ldquo;facebook_user_id&rdquo;: null,
-    &ldquo;fullname&rdquo;: &ldquo;John Doe&rdquo;,
-    &ldquo;google_user_id&rdquo;: null,
-    &ldquo;id&rdquo;: 0,
-    &ldquo;info&rdquo;: {
-      &ldquo;avatar&rdquo;: &ldquo;avatar.png&rdquo;,
-      &ldquo;container&rdquo;: &ldquo;user&rdquo;,
-      &ldquo;twitter_token&rdquo;: {
-        &ldquo;oauth_token&rdquo;: &ldquo;token&rdquo;,
-        &ldquo;oauth_token_secret&rdquo;: &ldquo;token&rdquo;
-      }
-    },
-    &ldquo;n_answers&rdquo;: 2414,
-    &ldquo;name&rdquo;: &ldquo;johndoe&rdquo;,
-    &ldquo;rank&rdquo;: 69,
-    &ldquo;registered_ago&rdquo;: &ldquo;4 years ago&rdquo;,
-    &ldquo;score&rdquo;: 2414,
-    &ldquo;total&rdquo;: 11134,
-    &ldquo;twitter_user_id&rdquo;: 12,
-    &ldquo;valid_email&rdquo;: false
-  },
-  &ldquo;pro_features&rdquo;: {
-    &ldquo;auditlog_enabled&rdquo;: true,
-    &ldquo;autoimporter_enabled&rdquo;: true,
-    &ldquo;webhooks_enabled&rdquo;: true
-  },
-  &ldquo;project&rdquo;: {
-    &ldquo;allow_anonymous_contributors&rdquo;: false,
-    &ldquo;category_id&rdquo;: 2,
-    &ldquo;contacted&rdquo;: false,
-    &ldquo;contrib_button&rdquo;: &ldquo;can_contribute&rdquo;,
-    &ldquo;created&rdquo;: &ldquo;2015-06-29T08:23:14.201331&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;description&rdquo;,
-    &ldquo;featured&rdquo;: false,
-    &ldquo;id&rdquo;: 0,
-    &ldquo;info&rdquo;: {
-      &ldquo;container&rdquo;: &ldquo;user&rdquo;,
-      &ldquo;passwd_hash&rdquo;: null,
-      &ldquo;task_presenter&rdquo;: &ldquo;HTML+CSS+JS,
-      &ldquo;thumbnail&rdquo;: &ldquo;thumbnail.png&rdquo;
-    },
-    &ldquo;long_description&rdquo;: &ldquo;long description&rdquo;,
-    &ldquo;n_blogposts&rdquo;: 0,
-    &ldquo;n_results&rdquo;: 0,
-    &ldquo;name&rdquo;: &ldquo;name&rdquo;,
-    &ldquo;owner_id&rdquo;: 0,
-    &ldquo;published&rdquo;: true,
-    &ldquo;secret_key&rdquo;: &ldquo;key&rdquo;,
-    &ldquo;short_name&rdquo;: &ldquo;slug&rdquo;,
-    &ldquo;updated&rdquo;: &ldquo;2017-03-16T14:50:45.055331&rdquo;,
-    &ldquo;webhook&rdquo;: null
-  },
-  &ldquo;template&rdquo;: &ldquo;/projects/update.html&rdquo;,
-  &ldquo;title&rdquo;: &ldquo;Project: name &middot; Update&rdquo;,
-  &ldquo;upload_form&rdquo;: {
-    &ldquo;avatar&rdquo;: null,
-    &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
-    &ldquo;errors&rdquo;: {},
-    &ldquo;id&rdquo;: null,
-    &ldquo;x1&rdquo;: 0,
-    &ldquo;x2&rdquo;: 0,
-    &ldquo;y1&rdquo;: 0,
-    &ldquo;y2&rdquo;: 0
-  }
+  &ldquo;flash&rdquo;: &ldquo;Project deleted!&rdquo;,
+  &ldquo;next&rdquo;: &ldquo;/account/pruebaadfadfa/&rdquo;,
+  &ldquo;status&rdquo;: &ldquo;success&rdquo;
 }</p>
 <pre><code>
-**POST**
+### Project update
 
-To send a valid POST request you need to pass the *csrf token* in the
-headers. Use the following header: &quot;X-CSRFToken&quot;.
-
-As this endpoint supports **two** different forms, you must specify
-which form are you targetting adding an extra key: **btn**. The options
-for this key are:
-
-&gt; **Upload**: to update the **upload\_form**.
-
-The other one does not need this extra key.
-
-&lt;div class=&quot;admonition note&quot;&gt;
-
-Be sure to respect the Uppercase in the first letter, otherwise it will
-fail.
-
-&lt;/div&gt;
-
-It returns a JSON object with the following information:
-
--   **flash**: A success message, or error indicating if the request was
-    succesful.
--   **form**: the form fields with the sent information. It contains the
-    csrf token for validating the post, as well as an errors field in
-    case that something is wrong.
-
-**Example output**
-
-``` {.sourceCode .python}
-{
-  &quot;flash&quot;: &quot;Your profile has been updated!&quot;,
-  &quot;next&quot;: &quot;/account/pruebaadfadfa/update&quot;,
-  &quot;status&quot;: &quot;success&quot;
-}
-</code></pre>
-
-<p>If there&rsquo;s an error in the form fields, you will get them in the
-<strong>form.errors</strong> key:</p>
-<p>``` {.sourceCode .python}
-{
-  &ldquo;flash&rdquo;: &ldquo;Please correct the errors&rdquo;,
-  &ldquo;form&rdquo;: {
-    &ldquo;allow_anonymous_contributors&rdquo;: false,
-    &ldquo;category_id&rdquo;: 2,
-    &ldquo;csrf&rdquo;: &ldquo;token&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;description&rdquo;,
-    &ldquo;errors&rdquo;: {
-      &ldquo;short_name&rdquo;: [
-        &ldquo;This field is required.&rdquo;
-      ]
-    },
-    &ldquo;id&rdquo;: 3117,
-    &ldquo;long_description&rdquo;: &ldquo;new description&rdquo;,
-    &ldquo;name&rdquo;: &ldquo;new name&rdquo;,
-    &ldquo;password&rdquo;: null,
-    &ldquo;protect&rdquo;: true,
-    &ldquo;short_name&rdquo;: &ldquo;&rdquo;,
-    &ldquo;webhook&rdquo;: null
-  },
-  &hellip;
-}</p>
-<pre><code>
-&lt;div class=&quot;admonition note&quot;&gt;
-
-For updating the avatar is very important to not set the *Content-Type*. If you
-
-:   are using jQuery, set it to False, so the file is handled properly.
-
-The (x1,x2,y1,y2) are the coordinates for cutting the image and create
-the avatar.
-
-(x1,y1) are the offset left of the cropped area and the offset top of
-the cropped area respectively; and (x2,y2) are the width and height of
-the crop. And don't forget to add an extra key to the form-data: 'btn'
-with a value Upload to select this form.
-
-&lt;/div&gt;
-
-### Project reset secret key
-
-**Endpoint: /project/&amp;lt;short\_name&amp;gt;/resetsecretkey**
-
-*Allowed methods*: **POST**
-
-Resets the secret key of a project.
-
-To send a valid POST request you need to pass the *csrf token* in the
-headers. Use the following header: &quot;X-CSRFToken&quot; retrieved from the GET
-endpont **/project/&amp;lt;short\_name&amp;gt;/update**.
-
-**Example output**
-
-``` {.sourceCode .python}
-{
-  &quot;flash&quot;: &quot;New secret key generated&quot;,
-  &quot;next&quot;: &quot;/project/flickrproject2/update&quot;,
-  &quot;status&quot;: &quot;success&quot;
-}
-</code></pre>
-
-<h3 id="project-tasks-browse">Project tasks browse</h3>
-<p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/browse/</strong> <strong>Endpoint:
-/project/&lt;short_name&gt;/tasks/browse/&lt;int:page&gt;</strong></p>
-<p><em>Allowed methods</em>: <strong>GET</strong></p>
-<ul>
-<li><strong>n_completed_tasks</strong>: number of completed tasks</li>
-<li><strong>n_tasks</strong>: number of tasks</li>
-<li><strong>n_volunteers</strong>: number of volunteers</li>
-<li><strong>overall_progress</strong>: overall progress</li>
-<li><strong>owner</strong>: project owner</li>
-<li><strong>pagination</strong>: pagination information</li>
-<li><strong>pro_features</strong>: pro features enabled or not</li>
-<li><strong>project</strong>: project information</li>
-<li><strong>tasks</strong>: tasks, paginated</li>
-<li><strong>template</strong>: the Jinja2 template that should be rendered in case of
-    text/html.</li>
-<li><strong>title</strong>: the title for the endpoint.</li>
-</ul>
-<p><strong>Example output</strong></p>
-<p>``` {.sourceCode .python}
-{
-  &ldquo;n_completed_tasks&rdquo;: 0,
-  &ldquo;n_tasks&rdquo;: 1,
-  &ldquo;n_volunteers&rdquo;: 0,
-  &ldquo;overall_progress&rdquo;: 0,
-  &ldquo;owner&rdquo;: {
-    &ldquo;created&rdquo;: &ldquo;2017-04-17T23:56:22.892222&rdquo;,
-    &ldquo;fullname&rdquo;: &ldquo;John Doe&rdquo;,
-    &ldquo;info&rdquo;: {},
-    &ldquo;locale&rdquo;: null,
-    &ldquo;n_answers&rdquo;: 0,
-    &ldquo;name&rdquo;: &ldquo;johndoe&rdquo;,
-    &ldquo;rank&rdquo;: null,
-    &ldquo;registered_ago&rdquo;: &ldquo;3 hours ago&rdquo;,
-    &ldquo;score&rdquo;: null
-  },
-  &ldquo;pagination&rdquo;: {
-    &ldquo;next&rdquo;: false,
-    &ldquo;page&rdquo;: 1,
-    &ldquo;per_page&rdquo;: 10,
-    &ldquo;prev&rdquo;: false,
-    &ldquo;total&rdquo;: 1
-  },
-  &ldquo;pro_features&rdquo;: {
-    &ldquo;auditlog_enabled&rdquo;: false,
-    &ldquo;autoimporter_enabled&rdquo;: false,
-    &ldquo;webhooks_enabled&rdquo;: false
-  },
-  &ldquo;project&rdquo;: {
-    &ldquo;created&rdquo;: &ldquo;2017-04-17T23:56:23.416754&rdquo;,
-    &ldquo;description&rdquo;: &ldquo;Description&rdquo;,
-    &ldquo;featured&rdquo;: false,
-    &ldquo;id&rdquo;: 1,
-    &ldquo;info&rdquo;: {},
-    &ldquo;last_activity&rdquo;: null,
-    &ldquo;last_activity_raw&rdquo;: null,
-    &ldquo;n_tasks&rdquo;: null,
-    &ldquo;n_volunteers&rdquo;: null,
-    &ldquo;name&rdquo;: &ldquo;Sample Project&rdquo;,
-    &ldquo;overall_progress&rdquo;: null,
-    &ldquo;owner&rdquo;: null,
-    &ldquo;short_name&rdquo;: &ldquo;sampleapp&rdquo;,
-    &ldquo;updated&rdquo;: &ldquo;2017-04-17T23:56:23.589652&rdquo;
-  },
-  &ldquo;tasks&rdquo;: [
-    {
-      &ldquo;id&rdquo;: 1,
-      &ldquo;n_answers&rdquo;: 10,
-      &ldquo;n_task_runs&rdquo;: 0,
-      &ldquo;pct_status&rdquo;: 0.0
-    }
-  ],
-  &ldquo;template&rdquo;: &ldquo;/projects/tasks_browse.html&rdquo;,
-  &ldquo;title&rdquo;: &ldquo;Project: Sample Project &middot; Tasks&rdquo;
-}</p>
-<pre><code>
-### Project tasks import
-
-**Endpoint: /project/&amp;lt;short\_name&amp;gt;/tasks/import**
+**Endpoint: /project/&amp;lt;short\_name&amp;gt;/update**
 
 *Allowed methods*: **GET/POST**
 
@@ -5295,11 +5239,12 @@ endpont **/project/&amp;lt;short\_name&amp;gt;/update**.
 
 It returns a JSON object with the following information:
 
--   **available\_importers**: A list of available importers for the
-    server. To use one of the items, you have to add to the endpoint the
-    following argument: *?type=name* where name is the string that you
-    will find in the list of importers in the format:
-    *projects/tasks/name.html*.
+-   **form**: the form fields that need to be sent for updating the
+    project. It contains the csrf token for validating the post, as well
+    as an errors field in case that something is wrong.
+-   **upload\_form**: the form fields that need to be sent for updating
+    the project's avatar. It contains the csrf token for validating the
+    post, as well as an errors field in case that something is wrong.
 -   **template**: The Jinja2 template that could be rendered.
 -   **title**: The title for the view.
 
@@ -5307,27 +5252,32 @@ It returns a JSON object with the following information:
 
 ``` {.sourceCode .python}
 {
-  &quot;available_importers&quot;: [
-    &quot;projects/tasks/epicollect.html&quot;,
-    &quot;projects/tasks/csv.html&quot;,
-    &quot;projects/tasks/s3.html&quot;,
-    &quot;projects/tasks/twitter.html&quot;,
-    &quot;projects/tasks/youtube.html&quot;,
-    &quot;projects/tasks/gdocs.html&quot;,
-    &quot;projects/tasks/dropbox.html&quot;,
-    &quot;projects/tasks/flickr.html&quot;
-  ],
-  &quot;form&quot;: null,
-  &quot;loading_text&quot;: &quot;Importing tasks, this may take a while, wait...&quot;,
+  &quot;form&quot;: {
+    &quot;allow_anonymous_contributors&quot;: false,
+    &quot;category_id&quot;: 2,
+    &quot;csrf&quot;: &quot;token&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;errors&quot;: {},
+    &quot;id&quot;: 3117,
+    &quot;long_description&quot;: &quot;long description&quot;,
+    &quot;name&quot;: &quot;name&quot;,
+    &quot;password&quot;: null,
+    &quot;protect&quot;: false,
+    &quot;short_name&quot;: &quot;slug&quot;,
+    &quot;webhook&quot;: null
+  },
+  &quot;last_activity&quot;: null,
   &quot;n_completed_tasks&quot;: 0,
-  &quot;n_tasks&quot;: 5,
+  &quot;n_task_runs&quot;: 0,
+  &quot;n_tasks&quot;: 2,
   &quot;n_volunteers&quot;: 0,
   &quot;overall_progress&quot;: 0,
   &quot;owner&quot;: {
+    &quot;admin&quot;: false,
     &quot;api_key&quot;: &quot;key&quot;,
     &quot;confirmation_email_sent&quot;: false,
     &quot;created&quot;: &quot;2012-06-06T06:27:18.760254&quot;,
-    &quot;email_addr&quot;: &quot;johndoe@gmail.com&quot;,
+    &quot;email_addr&quot;: &quot;email.com&quot;,
     &quot;facebook_user_id&quot;: null,
     &quot;fullname&quot;: &quot;John Doe&quot;,
     &quot;google_user_id&quot;: null,
@@ -5336,8 +5286,8 @@ It returns a JSON object with the following information:
       &quot;avatar&quot;: &quot;avatar.png&quot;,
       &quot;container&quot;: &quot;user&quot;,
       &quot;twitter_token&quot;: {
-        &quot;oauth_token&quot;: &quot;&quot;,
-        &quot;oauth_token_secret&quot;: &quot;&quot;
+        &quot;oauth_token&quot;: &quot;token&quot;,
+        &quot;oauth_token_secret&quot;: &quot;token&quot;
       }
     },
     &quot;n_answers&quot;: 2414,
@@ -5360,119 +5310,397 @@ It returns a JSON object with the following information:
     &quot;contacted&quot;: false,
     &quot;contrib_button&quot;: &quot;can_contribute&quot;,
     &quot;created&quot;: &quot;2015-06-29T08:23:14.201331&quot;,
-    &quot;description&quot;: &quot;old&quot;,
+    &quot;description&quot;: &quot;description&quot;,
     &quot;featured&quot;: false,
-    &quot;id&quot;: 3117,
+    &quot;id&quot;: 0,
     &quot;info&quot;: {
       &quot;container&quot;: &quot;user&quot;,
       &quot;passwd_hash&quot;: null,
-      &quot;task_presenter&quot;: &quot;HTML+CSS+JS&quot;
-      &quot;thumbnail&quot;: &quot;avatar.png&quot;
+      &quot;task_presenter&quot;: &quot;HTML+CSS+JS,
+      &quot;thumbnail&quot;: &quot;thumbnail.png&quot;
     },
-    &quot;long_description&quot;: &quot;algo&quot;,
+    &quot;long_description&quot;: &quot;long description&quot;,
     &quot;n_blogposts&quot;: 0,
     &quot;n_results&quot;: 0,
     &quot;name&quot;: &quot;name&quot;,
-    &quot;owner_id&quot;: 3,
+    &quot;owner_id&quot;: 0,
     &quot;published&quot;: true,
-    &quot;secret_key&quot;: &quot;f&quot;,
-    &quot;short_name&quot;: &quot;name&quot;,
-    &quot;updated&quot;: &quot;2017-03-17T09:15:46.867215&quot;,
+    &quot;secret_key&quot;: &quot;key&quot;,
+    &quot;short_name&quot;: &quot;slug&quot;,
+    &quot;updated&quot;: &quot;2017-03-16T14:50:45.055331&quot;,
     &quot;webhook&quot;: null
   },
-  &quot;target&quot;: &quot;project.import_task&quot;,
-  &quot;task_tmpls&quot;: [
-    &quot;projects/tasks/gdocs-sound.html&quot;,
-    &quot;projects/tasks/gdocs-map.html&quot;,
-    &quot;projects/tasks/gdocs-image.html&quot;,
-    &quot;projects/tasks/gdocs-video.html&quot;,
-    &quot;projects/tasks/gdocs-pdf.html&quot;
-  ],
-  &quot;template&quot;: &quot;/projects/task_import_options.html&quot;,
-  &quot;title&quot;: &quot;Project: bevan &amp;middot; Import Tasks&quot;
+  &quot;template&quot;: &quot;/projects/update.html&quot;,
+  &quot;title&quot;: &quot;Project: name &amp;middot; Update&quot;,
+  &quot;upload_form&quot;: {
+    &quot;avatar&quot;: null,
+    &quot;csrf&quot;: &quot;token&quot;,
+    &quot;errors&quot;: {},
+    &quot;id&quot;: null,
+    &quot;x1&quot;: 0,
+    &quot;x2&quot;: 0,
+    &quot;y1&quot;: 0,
+    &quot;y2&quot;: 0
+  }
 }
 </code></pre>
 
-<p>Therefore, if you want to import tasks from a CSV link, you will have to
-do the following GET:</p>
-<pre><code>GET server/project/&lt;short_name&gt;/tasks/import?type=csv
-</code></pre>
-<p>That query will return the same output as before, but instead of the
-available_importers, you will get the the form fields and CSRF token
-for that importer.</p>
 <p><strong>POST</strong></p>
 <p>To send a valid POST request you need to pass the <em>csrf token</em> in the
 headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
+<p>As this endpoint supports <strong>two</strong> different forms, you must specify
+which form are you targeting adding an extra key: <strong>btn</strong>. The options
+for this key are:</p>
+<blockquote>
+<p><strong>Upload</strong>: to update the <strong>upload_form</strong>.</p>
+</blockquote>
+<p>The other one does not need this extra key.</p>
+<div class="admonition note">
+
+Be sure to respect the Uppercase in the first letter, otherwise it will
+fail.
+
+</div>
+
 <p>It returns a JSON object with the following information:</p>
 <ul>
 <li><strong>flash</strong>: A success message, or error indicating if the request was
     succesful.</li>
+<li><strong>form</strong>: the form fields with the sent information. It contains the
+    csrf token for validating the post, as well as an errors field in
+    case that something is wrong.</li>
 </ul>
 <p><strong>Example output</strong></p>
 <p>``` {.sourceCode .python}
 {
-  &ldquo;flash&rdquo;: &ldquo;Tasks imported&rdquo;,
-  &ldquo;next&rdquo;: &ldquo;/project/<short_name>/tasks/&rdquo;,
+  &ldquo;flash&rdquo;: &ldquo;Your profile has been updated!&rdquo;,
+  &ldquo;next&rdquo;: &ldquo;/account/pruebaadfadfa/update&rdquo;,
   &ldquo;status&rdquo;: &ldquo;success&rdquo;
 }</p>
 <pre><code>
-### Project tutorial
+If there's an error in the form fields, you will get them in the
+**form.errors** key:
 
-**Endpoint: /project/&amp;lt;short\_name&amp;gt;/tutorial**
+``` {.sourceCode .python}
+{
+  &quot;flash&quot;: &quot;Please correct the errors&quot;,
+  &quot;form&quot;: {
+    &quot;allow_anonymous_contributors&quot;: false,
+    &quot;category_id&quot;: 2,
+    &quot;csrf&quot;: &quot;token&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;errors&quot;: {
+      &quot;short_name&quot;: [
+        &quot;This field is required.&quot;
+      ]
+    },
+    &quot;id&quot;: 3117,
+    &quot;long_description&quot;: &quot;new description&quot;,
+    &quot;name&quot;: &quot;new name&quot;,
+    &quot;password&quot;: null,
+    &quot;protect&quot;: true,
+    &quot;short_name&quot;: &quot;&quot;,
+    &quot;webhook&quot;: null
+  },
+  ...
+}
+</code></pre>
 
-**GET**
+<div class="admonition note">
 
-It returns a JSON object with the following information:
+For updating the avatar is very important to not set the *Content-Type*. If you
 
--   **owner**: owner information
+:   are using jQuery, set it to False, so the file is handled properly.
+
+The (x1,x2,y1,y2) are the coordinates for cutting the image and create
+the avatar.
+
+(x1,y1) are the offset left of the cropped area and the offset top of
+the cropped area respectively; and (x2,y2) are the width and height of
+the crop. And don't forget to add an extra key to the form-data: 'btn'
+with a value Upload to select this form.
+
+</div>
+
+<h3 id="project-reset-secret-key">Project reset secret key</h3>
+<p><strong>Endpoint: /project/&lt;short_name&gt;/resetsecretkey</strong></p>
+<p><em>Allowed methods</em>: <strong>POST</strong></p>
+<p>Resets the secret key of a project.</p>
+<p>To send a valid POST request you need to pass the <em>csrf token</em> in the
+headers. Use the following header: &ldquo;X-CSRFToken&rdquo; retrieved from the GET
+endpont <strong>/project/&lt;short_name&gt;/update</strong>.</p>
+<p><strong>Example output</strong></p>
+<p>``` {.sourceCode .python}
+{
+  &ldquo;flash&rdquo;: &ldquo;New secret key generated&rdquo;,
+  &ldquo;next&rdquo;: &ldquo;/project/flickrproject2/update&rdquo;,
+  &ldquo;status&rdquo;: &ldquo;success&rdquo;
+}</p>
+<pre><code>
+### Project tasks browse
+
+**Endpoint: /project/&amp;lt;short\_name&amp;gt;/tasks/browse/** **Endpoint:
+/project/&amp;lt;short\_name&amp;gt;/tasks/browse/&amp;lt;int:page&amp;gt;**
+
+*Allowed methods*: **GET**
+
+-   **n\_completed\_tasks**: number of completed tasks
+-   **n\_tasks**: number of tasks
+-   **n\_volunteers**: number of volunteers
+-   **overall\_progress**: overall progress
+-   **owner**: project owner
+-   **pagination**: pagination information
+-   **pro\_features**: pro features enabled or not
 -   **project**: project information
--   **template**: The Jinja2 template that could be rendered.
--   **title**: The title for the view.
+-   **tasks**: tasks, paginated
+-   **template**: the Jinja2 template that should be rendered in case of
+    text/html.
+-   **title**: the title for the endpoint.
 
 **Example output**
 
 ``` {.sourceCode .python}
 {
+  &quot;n_completed_tasks&quot;: 0,
+  &quot;n_tasks&quot;: 1,
+  &quot;n_volunteers&quot;: 0,
+  &quot;overall_progress&quot;: 0,
   &quot;owner&quot;: {
-    &quot;created&quot;: &quot;2014-02-13T15:28:08.420187&quot;,
+    &quot;created&quot;: &quot;2017-04-17T23:56:22.892222&quot;,
     &quot;fullname&quot;: &quot;John Doe&quot;,
-    &quot;info&quot;: {
-      &quot;avatar&quot;: &quot;1410769844.15_avatar.png&quot;,
-      &quot;avatar_url&quot;: null,
-      &quot;container&quot;: &quot;user_3927&quot;,
-      &quot;extra&quot;: null
-    },
+    &quot;info&quot;: {},
     &quot;locale&quot;: null,
-    &quot;n_answers&quot;: 43565,
-    &quot;name&quot;: &quot;jdoe&quot;,
-    &quot;rank&quot;: 3,
-    &quot;registered_ago&quot;: &quot;3 years ago&quot;,
-    &quot;score&quot;: 43565
+    &quot;n_answers&quot;: 0,
+    &quot;name&quot;: &quot;johndoe&quot;,
+    &quot;rank&quot;: null,
+    &quot;registered_ago&quot;: &quot;3 hours ago&quot;,
+    &quot;score&quot;: null
+  },
+  &quot;pagination&quot;: {
+    &quot;next&quot;: false,
+    &quot;page&quot;: 1,
+    &quot;per_page&quot;: 10,
+    &quot;prev&quot;: false,
+    &quot;total&quot;: 1
+  },
+  &quot;pro_features&quot;: {
+    &quot;auditlog_enabled&quot;: false,
+    &quot;autoimporter_enabled&quot;: false,
+    &quot;webhooks_enabled&quot;: false
   },
   &quot;project&quot;: {
-    &quot;created&quot;: &quot;2014-02-22T15:09:23.691811&quot;,
-    &quot;description&quot;: &quot;Image pattern recognition&quot;,
-    &quot;featured&quot;: true,
-    &quot;id&quot;: 1377,
-    &quot;info&quot;: {
-      &quot;container&quot;: &quot;user_3927&quot;,
-      &quot;thumbnail&quot;: &quot;app_1377_thumbnail_1410772569.58.png&quot;,
-      &quot;thumbnail_url&quot;: null
-    },
+    &quot;created&quot;: &quot;2017-04-17T23:56:23.416754&quot;,
+    &quot;description&quot;: &quot;Description&quot;,
+    &quot;featured&quot;: false,
+    &quot;id&quot;: 1,
+    &quot;info&quot;: {},
     &quot;last_activity&quot;: null,
     &quot;last_activity_raw&quot;: null,
     &quot;n_tasks&quot;: null,
     &quot;n_volunteers&quot;: null,
-    &quot;name&quot;: &quot;myproject&quot;,
+    &quot;name&quot;: &quot;Sample Project&quot;,
     &quot;overall_progress&quot;: null,
     &quot;owner&quot;: null,
-    &quot;short_name&quot;: &quot;johndoeproject&quot;,
-    &quot;updated&quot;: &quot;2017-03-02T21:00:33.965587&quot;
+    &quot;short_name&quot;: &quot;sampleapp&quot;,
+    &quot;updated&quot;: &quot;2017-04-17T23:56:23.589652&quot;
   },
-  &quot;template&quot;: &quot;/projects/tutorial.html&quot;,
-  &quot;title&quot;: &quot;Project: myproject&quot;
+  &quot;tasks&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;n_answers&quot;: 10,
+      &quot;n_task_runs&quot;: 0,
+      &quot;pct_status&quot;: 0.0
+    }
+  ],
+  &quot;template&quot;: &quot;/projects/tasks_browse.html&quot;,
+  &quot;title&quot;: &quot;Project: Sample Project &amp;middot; Tasks&quot;
 }
 </code></pre>
+
+<h3 id="project-tasks-import">Project tasks import</h3>
+<p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/import</strong></p>
+<p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
+<p><strong>GET</strong></p>
+<p>It returns a JSON object with the following information:</p>
+<ul>
+<li><strong>available_importers</strong>: A list of available importers for the
+    server. To use one of the items, you have to add to the endpoint the
+    following argument: <em>?type=name</em> where name is the string that you
+    will find in the list of importers in the format:
+    <em>projects/tasks/name.html</em>.</li>
+<li><strong>template</strong>: The Jinja2 template that could be rendered.</li>
+<li><strong>title</strong>: The title for the view.</li>
+</ul>
+<p><strong>Example output</strong></p>
+<p>``` {.sourceCode .python}
+{
+  &ldquo;available_importers&rdquo;: [
+    &ldquo;projects/tasks/epicollect.html&rdquo;,
+    &ldquo;projects/tasks/csv.html&rdquo;,
+    &ldquo;projects/tasks/s3.html&rdquo;,
+    &ldquo;projects/tasks/twitter.html&rdquo;,
+    &ldquo;projects/tasks/youtube.html&rdquo;,
+    &ldquo;projects/tasks/gdocs.html&rdquo;,
+    &ldquo;projects/tasks/dropbox.html&rdquo;,
+    &ldquo;projects/tasks/flickr.html&rdquo;
+  ],
+  &ldquo;form&rdquo;: null,
+  &ldquo;loading_text&rdquo;: &ldquo;Importing tasks, this may take a while, wait&hellip;&rdquo;,
+  &ldquo;n_completed_tasks&rdquo;: 0,
+  &ldquo;n_tasks&rdquo;: 5,
+  &ldquo;n_volunteers&rdquo;: 0,
+  &ldquo;overall_progress&rdquo;: 0,
+  &ldquo;owner&rdquo;: {
+    &ldquo;admin&rdquo;: false,
+    &ldquo;api_key&rdquo;: &ldquo;key&rdquo;,
+    &ldquo;confirmation_email_sent&rdquo;: false,
+    &ldquo;created&rdquo;: &ldquo;2012-06-06T06:27:18.760254&rdquo;,
+    &ldquo;email_addr&rdquo;: &ldquo;johndoe@gmail.com&rdquo;,
+    &ldquo;facebook_user_id&rdquo;: null,
+    &ldquo;fullname&rdquo;: &ldquo;John Doe&rdquo;,
+    &ldquo;google_user_id&rdquo;: null,
+    &ldquo;id&rdquo;: 0,
+    &ldquo;info&rdquo;: {
+      &ldquo;avatar&rdquo;: &ldquo;avatar.png&rdquo;,
+      &ldquo;container&rdquo;: &ldquo;user&rdquo;,
+      &ldquo;twitter_token&rdquo;: {
+        &ldquo;oauth_token&rdquo;: &ldquo;&rdquo;,
+        &ldquo;oauth_token_secret&rdquo;: &ldquo;&rdquo;
+      }
+    },
+    &ldquo;n_answers&rdquo;: 2414,
+    &ldquo;name&rdquo;: &ldquo;johndoe&rdquo;,
+    &ldquo;rank&rdquo;: 69,
+    &ldquo;registered_ago&rdquo;: &ldquo;4 years ago&rdquo;,
+    &ldquo;score&rdquo;: 2414,
+    &ldquo;total&rdquo;: 11134,
+    &ldquo;twitter_user_id&rdquo;: 12,
+    &ldquo;valid_email&rdquo;: false
+  },
+  &ldquo;pro_features&rdquo;: {
+    &ldquo;auditlog_enabled&rdquo;: true,
+    &ldquo;autoimporter_enabled&rdquo;: true,
+    &ldquo;webhooks_enabled&rdquo;: true
+  },
+  &ldquo;project&rdquo;: {
+    &ldquo;allow_anonymous_contributors&rdquo;: false,
+    &ldquo;category_id&rdquo;: 2,
+    &ldquo;contacted&rdquo;: false,
+    &ldquo;contrib_button&rdquo;: &ldquo;can_contribute&rdquo;,
+    &ldquo;created&rdquo;: &ldquo;2015-06-29T08:23:14.201331&rdquo;,
+    &ldquo;description&rdquo;: &ldquo;old&rdquo;,
+    &ldquo;featured&rdquo;: false,
+    &ldquo;id&rdquo;: 3117,
+    &ldquo;info&rdquo;: {
+      &ldquo;container&rdquo;: &ldquo;user&rdquo;,
+      &ldquo;passwd_hash&rdquo;: null,
+      &ldquo;task_presenter&rdquo;: &ldquo;HTML+CSS+JS&rdquo;
+      &ldquo;thumbnail&rdquo;: &ldquo;avatar.png&rdquo;
+    },
+    &ldquo;long_description&rdquo;: &ldquo;algo&rdquo;,
+    &ldquo;n_blogposts&rdquo;: 0,
+    &ldquo;n_results&rdquo;: 0,
+    &ldquo;name&rdquo;: &ldquo;name&rdquo;,
+    &ldquo;owner_id&rdquo;: 3,
+    &ldquo;published&rdquo;: true,
+    &ldquo;secret_key&rdquo;: &ldquo;f&rdquo;,
+    &ldquo;short_name&rdquo;: &ldquo;name&rdquo;,
+    &ldquo;updated&rdquo;: &ldquo;2017-03-17T09:15:46.867215&rdquo;,
+    &ldquo;webhook&rdquo;: null
+  },
+  &ldquo;target&rdquo;: &ldquo;project.import_task&rdquo;,
+  &ldquo;task_tmpls&rdquo;: [
+    &ldquo;projects/tasks/gdocs-sound.html&rdquo;,
+    &ldquo;projects/tasks/gdocs-map.html&rdquo;,
+    &ldquo;projects/tasks/gdocs-image.html&rdquo;,
+    &ldquo;projects/tasks/gdocs-video.html&rdquo;,
+    &ldquo;projects/tasks/gdocs-pdf.html&rdquo;
+  ],
+  &ldquo;template&rdquo;: &ldquo;/projects/task_import_options.html&rdquo;,
+  &ldquo;title&rdquo;: &ldquo;Project: bevan &middot; Import Tasks&rdquo;
+}</p>
+<pre><code>
+Therefore, if you want to import tasks from a CSV link, you will have to
+do the following GET:
+
+    GET server/project/&lt;short_name&gt;/tasks/import?type=csv
+
+That query will return the same output as before, but instead of the
+available\_importers, you will get the the form fields and CSRF token
+for that importer.
+
+**POST**
+
+To send a valid POST request you need to pass the *csrf token* in the
+headers. Use the following header: &quot;X-CSRFToken&quot;.
+
+It returns a JSON object with the following information:
+
+-   **flash**: A success message, or error indicating if the request was
+    succesful.
+
+**Example output**
+
+``` {.sourceCode .python}
+{
+  &quot;flash&quot;: &quot;Tasks imported&quot;,
+  &quot;next&quot;: &quot;/project/&lt;short_name&gt;/tasks/&quot;,
+  &quot;status&quot;: &quot;success&quot;
+}
+</code></pre>
+
+<h3 id="project-tutorial">Project tutorial</h3>
+<p><strong>Endpoint: /project/&lt;short_name&gt;/tutorial</strong></p>
+<p><strong>GET</strong></p>
+<p>It returns a JSON object with the following information:</p>
+<ul>
+<li><strong>owner</strong>: owner information</li>
+<li><strong>project</strong>: project information</li>
+<li><strong>template</strong>: The Jinja2 template that could be rendered.</li>
+<li><strong>title</strong>: The title for the view.</li>
+</ul>
+<p><strong>Example output</strong></p>
+<p><code>{.sourceCode .python}
+{
+  "owner": {
+    "created": "2014-02-13T15:28:08.420187",
+    "fullname": "John Doe",
+    "info": {
+      "avatar": "1410769844.15_avatar.png",
+      "avatar_url": null,
+      "container": "user_3927",
+      "extra": null
+    },
+    "locale": null,
+    "n_answers": 43565,
+    "name": "jdoe",
+    "rank": 3,
+    "registered_ago": "3 years ago",
+    "score": 43565
+  },
+  "project": {
+    "created": "2014-02-22T15:09:23.691811",
+    "description": "Image pattern recognition",
+    "featured": true,
+    "id": 1377,
+    "info": {
+      "container": "user_3927",
+      "thumbnail": "app_1377_thumbnail_1410772569.58.png",
+      "thumbnail_url": null
+    },
+    "last_activity": null,
+    "last_activity_raw": null,
+    "n_tasks": null,
+    "n_volunteers": null,
+    "name": "myproject",
+    "overall_progress": null,
+    "owner": null,
+    "short_name": "johndoeproject",
+    "updated": "2017-03-02T21:00:33.965587"
+  },
+  "template": "/projects/tutorial.html",
+  "title": "Project: myproject"
+}</code></p>
                 
                   
                 
@@ -5542,7 +5770,7 @@ It returns a JSON object with the following information:
       
     </div>
     
-      <script src="../assets/javascripts/application-e3caa82af6.js"></script>
+      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
       
       
       <script>app.initialize({url:{base:".."}})</script>
