@@ -1005,7 +1005,7 @@
               
                 
                 
-                <h1 id="project-tutorial">Project Tutorial</h1>
+                <h1 id="project-tutorial">Project Tutorial<a class="headerlink" href="#project-tutorial" title="Permanent link">&para;</a></h1>
 <p>This tutorial is based in the demo project <strong>Flickr Person</strong> (<a href="https://github.com/Scifabric/app-flickrperson">source
 code</a>) provided with
 PYBOSSA. This demo project is a simple microtasking project where users
@@ -1019,7 +1019,7 @@ photo?</em> The possible answers are: <em>Yes, No</em> and <em>I don&rsquo;t kno
   the tasks to the users and save their answers.</li>
 </ul>
 <p>This tutorial uses the PYBOSSA pbs command line tool.</p>
-<h2 id="setting-things-up">Setting Things Up</h2>
+<h2 id="setting-things-up">Setting Things Up<a class="headerlink" href="#setting-things-up" title="Permanent link">&para;</a></h2>
 <p>In order to run the tutorial, you will need to create an account in a
 PYBOSSA server. The PYBOSSA server could be running in your computer or
 in a third party server.</p>
@@ -1064,7 +1064,7 @@ packager</a>:</p>
 <p>If you need to install <strong>pip</strong> in your system, check <a href="http://www.pip-installer.org/en/latest/installing.html">the official
 documentation.</a></p>
 </div>
-<h2 id="creating-the-project">Creating the Project</h2>
+<h2 id="creating-the-project">Creating the Project<a class="headerlink" href="#creating-the-project" title="Permanent link">&para;</a></h2>
 <p>There are two possible methos for creating a project:</p>
 <ul>
 <li>web-interface: click in your user name, and you will see a section
@@ -1085,7 +1085,7 @@ the PYBOSSA pbs command line tool for interacting with the API.</p>
 <p>If you are running a PYBOSSA server locally, you can omit the URL parameter
 as by default it uses the URL <a href="http://localhost:5000">http://localhost:5000</a></p>
 </div>
-<h3 id="cloning-the-flickr-person-finder-source-code">Cloning the Flickr Person Finder source code</h3>
+<h3 id="cloning-the-flickr-person-finder-source-code">Cloning the Flickr Person Finder source code<a class="headerlink" href="#cloning-the-flickr-person-finder-source-code" title="Permanent link">&para;</a></h3>
 <p>In order to follow the tutorial, you will need to clone the <a href="http://github.com/Scifabric/app-flickrperson">Flickr
 Person Finder public Github
 Repository</a> so you will
@@ -1104,7 +1104,7 @@ commands that you need to clone the repository are:</p>
 
 <p>After running that command a new folder named <strong>app-flickrperson</strong> will
 be created from where you run the command.</p>
-<h3 id="configuring-the-name-short-name-thumbnail-etc">Configuring the name, short name, thumbnail, etc.</h3>
+<h3 id="configuring-the-name-short-name-thumbnail-etc">Configuring the name, short name, thumbnail, etc.<a class="headerlink" href="#configuring-the-name-short-name-thumbnail-etc" title="Permanent link">&para;</a></h3>
 <p>The Flickr Person Finder provides a file called:
 <a href="https://github.com/Scifabric/app-flickrperson/blob/master/project.json">project.json</a>
 that has the following content:</p>
@@ -1152,7 +1152,7 @@ and type in the folling URL http://server/project/short_name</p>
 file: <strong>project.json</strong>. You sould get a project page, with not so much
 information, as we only have created it. Let&rsquo;s add some tasks to the
 project.</p>
-<h3 id="adding-tasks-to-the-project">Adding tasks to the project</h3>
+<h3 id="adding-tasks-to-the-project">Adding tasks to the project<a class="headerlink" href="#adding-tasks-to-the-project" title="Permanent link">&para;</a></h3>
 <p>Now that we have the project created, we can add some tasks to our
 project. PYBOSSA will deliver the tasks for the users (authenticated and
 anonymous ones) and store the submitted answers in the PYBOSSA data
@@ -1259,7 +1259,7 @@ has found when using the API.</p>
 the number of allowed requests, getting a 429 error. Please see
 rate-limiting section.</p>
 </div>
-<h2 id="number-of-answers-or-task-runs-per-task">Number of answers or task runs per task</h2>
+<h2 id="number-of-answers-or-task-runs-per-task">Number of answers or task runs per task<a class="headerlink" href="#number-of-answers-or-task-runs-per-task" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA by default will send a task to different users (authenticated
 and anonymous users) until 30 different task runs are obtained for each
 task.</p>
@@ -1279,7 +1279,7 @@ task to ten, run the following:</p>
 <p>In this case the <strong>n_answers</strong> field will make task-scheduler to try
 and obtain 10 different answers from different users for each task in
 the file.</p>
-<h2 id="changing-the-priority-of-the-tasks">Changing the Priority of the tasks</h2>
+<h2 id="changing-the-priority-of-the-tasks">Changing the Priority of the tasks<a class="headerlink" href="#changing-the-priority-of-the-tasks" title="Permanent link">&para;</a></h2>
 <p>Every task can have its own <strong>priority</strong>. The task-priority can be
 configured using the web interface, or the API.</p>
 <p>A task with a higher priority will be delivered first to the volunteers.
@@ -1294,7 +1294,7 @@ the available ones, you can do it with pbs. Run the following command:</p>
 
 <p>The priority is a number between 0.0 and 1.0. The highest priority is
 1.0 and the lowest is 0.0.</p>
-<h2 id="presenting-the-tasks-to-the-user">Presenting the Tasks to the user</h2>
+<h2 id="presenting-the-tasks-to-the-user">Presenting the Tasks to the user<a class="headerlink" href="#presenting-the-tasks-to-the-user" title="Permanent link">&para;</a></h2>
 <p>In order to present the tasks to the user, you have to create an HTML
 template.</p>
 <p>The template is the skeleton that will be used to load the data of the
@@ -1310,7 +1310,7 @@ answers.</p>
 his user_id. For anonymous users the submitted task will only have
 the user IP address.</p>
 </div>
-<h3 id="1-the-html-skeleton">1. The HTML Skeleton</h3>
+<h3 id="1-the-html-skeleton">1. The HTML Skeleton<a class="headerlink" href="#1-the-html-skeleton" title="Permanent link">&para;</a></h3>
 <p>The
 <a href="https://github.com/Scifabric/app-flickrperson/blob/master/app-flickrperson/template.html">file</a>
 <strong>template.html</strong> has the skeleton to show the tasks. The file has three
@@ -1359,7 +1359,7 @@ it in the HTML skeleton.</p>
 so the template only has to define the structure to present the data
 from the tasks to the users and the action buttons, input methods, etc.
 to retrieve and save the answer from the volunteers.</p>
-<h4 id="11-flickr-person-skeleton">1.1. Flickr Person Skeleton</h4>
+<h4 id="11-flickr-person-skeleton">1.1. Flickr Person Skeleton<a class="headerlink" href="#11-flickr-person-skeleton" title="Permanent link">&para;</a></h4>
 <p>In the Flickr Person Finder demo we have a very simple DOM. At the
 beginning you will find a big div that will be used to show some
 messages to the user about the success of an action, for instance that
@@ -1604,7 +1604,7 @@ code will be like this:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="2-loading-the-task-data">2. Loading the Task data</h3>
+<h3 id="2-loading-the-task-data">2. Loading the Task data<a class="headerlink" href="#2-loading-the-task-data" title="Permanent link">&para;</a></h3>
 <p>Now that we have set up the <em>skeleton</em> to load the task data, let&rsquo;s see
 what JavaScript should we write to populate with the pictures from
 Flickr and how we can grab the answer of the user and save it back in
@@ -1844,7 +1844,7 @@ giving an idea of progress while the contribute to the project.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="3-saving-the-answer">3. Saving the answer</h3>
+<h3 id="3-saving-the-answer">3. Saving the answer<a class="headerlink" href="#3-saving-the-answer" title="Permanent link">&para;</a></h3>
 <p>Once the task has been presented, the users can click on the answer
 buttons: <strong>Yes</strong>, <strong>No</strong> or <strong>I don&rsquo;t know</strong>.</p>
 <p><em>Yes</em> and <em>No</em> save the answer in the DB (check <strong>/api/taskrun</strong>) with
@@ -1883,7 +1883,7 @@ that his answer has been successfully saved:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="4-updating-the-template-for-all-the-tasks">4. Updating the template for all the tasks</h3>
+<h3 id="4-updating-the-template-for-all-the-tasks">4. Updating the template for all the tasks<a class="headerlink" href="#4-updating-the-template-for-all-the-tasks" title="Permanent link">&para;</a></h3>
 <p>It is possible to update the template of the project without having to
 re-create the project and its tasks. In order to update the template,
 you only have to modify the file <em>template.html</em> and run the following
@@ -1895,7 +1895,7 @@ command:</p>
 <p>You can also use the web interface to do it, and see the changes in real
 time before saving the results. Check your project page, go to the tasks
 section, and look for the <strong>Edit the task presenter</strong> button.</p>
-<h3 id="5-test-the-task-presenter">5. Test the task presenter</h3>
+<h3 id="5-test-the-task-presenter">5. Test the task presenter<a class="headerlink" href="#5-test-the-task-presenter" title="Permanent link">&para;</a></h3>
 <p>In order to test the project task presenter, go to the following URL:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>http://PYBOSSA-SERVER/project/SLUG/presenter
 </pre></div>
@@ -1903,11 +1903,11 @@ section, and look for the <strong>Edit the task presenter</strong> button.</p>
 
 <p>The presenter will load one task, and you will be able to submit and
 save one answer for the current task.</p>
-<h2 id="publishing-the-project">Publishing the project</h2>
+<h2 id="publishing-the-project">Publishing the project<a class="headerlink" href="#publishing-the-project" title="Permanent link">&para;</a></h2>
 <p>Once everything is working, you will need to publish the project so
 people can start contributing to it. Please, check the publishing
 section for more details.</p>
-<h2 id="creating-a-tutorial-for-the-users">Creating a tutorial for the users</h2>
+<h2 id="creating-a-tutorial-for-the-users">Creating a tutorial for the users<a class="headerlink" href="#creating-a-tutorial-for-the-users" title="Permanent link">&para;</a></h2>
 <p>In general, users will like to have some feedback when accessing for the
 very first time your project. Usually, the overview page of your project
 will not be enough, so you can actually build a tutorial (a web page)
@@ -1934,7 +1934,7 @@ this endpoint:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="adding-an-advance-tutorial">Adding an advance tutorial</h2>
+<h2 id="adding-an-advance-tutorial">Adding an advance tutorial<a class="headerlink" href="#adding-an-advance-tutorial" title="Permanent link">&para;</a></h2>
 <p>While the previous solution works for most of the projects, your project
 might need something special: visual clues so users can easily identify
 sounds, patterns, etc. easily. The default tutorial does not allow you
@@ -1983,7 +1983,7 @@ use any other programming language):</p>
 <p>You can add as many files as you want. Then, from any place you can
 query the helping material endpoint to retrieve the example/tutorial
 materials for helping your users.</p>
-<h2 id="providing-some-i18n-support">Providing some I18n support</h2>
+<h2 id="providing-some-i18n-support">Providing some I18n support<a class="headerlink" href="#providing-some-i18n-support" title="Permanent link">&para;</a></h2>
 <p>Sometimes, you may want to give the users of your project a little help
 and present them the tutorial and tasks in their language. To allow
 this, you can access their locale via Javascript in a very easy way, as
@@ -2225,7 +2225,7 @@ translated versions of your HTML for the tutorial. The rest of the
 script will only compare the locale of the user that is seeing the
 tutorial and delete all the HTML that is not in his language, so that
 only the tutorial that fits his locale settings is shown.</p>
-<h3 id="another-method-to-support-i18n">Another method to support I18n</h3>
+<h3 id="another-method-to-support-i18n">Another method to support I18n<a class="headerlink" href="#another-method-to-support-i18n" title="Permanent link">&para;</a></h3>
 <p>Another option for translating your project to different languages is
 using a JSON object like this:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -2397,7 +2397,7 @@ code to our <em>template.html</em> file at the function pybossa.presentTask:</p>
 
 <p>Done! When the task is loaded, the strings are translated and the
 project will be shown in the user language.</p>
-<h2 id="providing-more-details-about-the-project">Providing more details about the project</h2>
+<h2 id="providing-more-details-about-the-project">Providing more details about the project<a class="headerlink" href="#providing-more-details-about-the-project" title="Permanent link">&para;</a></h2>
 <p>Up to now we have created the project, added some tasks, but the project
 still lacks a lot of information. For example, a welcome page (or long
 description) of the project, so the users can know what this project is
@@ -2421,14 +2421,14 @@ run pbs to update it:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="adding-an-icon-to-the-project">Adding an icon to the project</h2>
+<h2 id="adding-an-icon-to-the-project">Adding an icon to the project<a class="headerlink" href="#adding-an-icon-to-the-project" title="Permanent link">&para;</a></h2>
 <p>It is possible also to add a nice icon for the project. By default
 PYBOSSA will render a 100x100 pixels empty thumbnail for those projects
 that do not provide it.</p>
 <p>If you want to add an icon you can do it by using the web interface.
 Just go to the <strong>Settings</strong> tab within your project. There, select the
 image file you want to use and push the <strong>Upload</strong> button. That&rsquo;s all!</p>
-<h2 id="protecting-the-project-with-a-password">Protecting the project with a password</h2>
+<h2 id="protecting-the-project-with-a-password">Protecting the project with a password<a class="headerlink" href="#protecting-the-project-with-a-password" title="Permanent link">&para;</a></h2>
 <p>If, for any reason, you want to allow only certain people to contribute
 to your project, you can set a password. Thus, every time a user (either
 anonymous or authenticated) wants to contribute to the project, it will
@@ -2437,7 +2437,7 @@ contribute to the project for 30 minutes (this is a value by default,
 can be changed in every PYBOSSA server). After this time, the user will
 be asked again to introduce the password if wants to continue
 contributing, and so on.</p>
-<h2 id="creating-a-blog-for-the-project">Creating a blog for the project</h2>
+<h2 id="creating-a-blog-for-the-project">Creating a blog for the project<a class="headerlink" href="#creating-a-blog-for-the-project" title="Permanent link">&para;</a></h2>
 <p>You can share the progress of the project creating a blog. Every PYBOSSA
 project includes a very simple blog where you will be able to write
 about your project regularly.</p>
@@ -2483,7 +2483,7 @@ programming language):</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="exporting-the-obtained-results">Exporting the obtained results</h2>
+<h2 id="exporting-the-obtained-results">Exporting the obtained results<a class="headerlink" href="#exporting-the-obtained-results" title="Permanent link">&para;</a></h2>
 <p>You can export all the available tasks and task runs for your project in
 three different ways:</p>
 <ul>
@@ -2550,16 +2550,16 @@ task runs, as by default PYBOSSA API only returns the first 20 items.
 That way you will be able to get all the submitted answers by the
 volunteers for the given task.</p>
 </div>
-<h3 id="exporting-the-task-and-task-runs-in-json">Exporting the task and task runs in JSON</h3>
+<h3 id="exporting-the-task-and-task-runs-in-json">Exporting the task and task runs in JSON<a class="headerlink" href="#exporting-the-task-and-task-runs-in-json" title="Permanent link">&para;</a></h3>
 <p>For the <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> format, you will get
 all the output as a file that your browser will download, named:
 short_name_tasks.json for the tasks, and short_name_task_runs.json
 for the task runs.</p>
-<h3 id="exporting-the-task-and-task-runs-to-a-csv-file">Exporting the task and task runs to a CSV file</h3>
+<h3 id="exporting-the-task-and-task-runs-to-a-csv-file">Exporting the task and task runs to a CSV file<a class="headerlink" href="#exporting-the-task-and-task-runs-to-a-csv-file" title="Permanent link">&para;</a></h3>
 <p>While for the <a href="http://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>
 format, you will get a CSV file that will be automatically saved in your
 computer.</p>
-<h3 id="exporting-the-task-and-task-runs-to-a-ckan-server">Exporting the task and task runs to a CKAN server</h3>
+<h3 id="exporting-the-task-and-task-runs-to-a-ckan-server">Exporting the task and task runs to a CKAN server<a class="headerlink" href="#exporting-the-task-and-task-runs-to-a-ckan-server" title="Permanent link">&para;</a></h3>
 <p>If the server has been configured to allow you to export your
 aplication&rsquo;s data to a CKAN server (see config-ckan), the owner of the
 project will see another box that will give you the option to export the
@@ -2574,7 +2574,7 @@ in the section <strong>External Services</strong>.</p>
 <p><img alt="image" src="http://i.imgur.com/xOezl6C.png" /></p>
 <p>Then, you will be able to actually export the data to the CKAN server
 and host it there.</p>
-<h2 id="publishing-results-of-your-project">Publishing results of your project</h2>
+<h2 id="publishing-results-of-your-project">Publishing results of your project<a class="headerlink" href="#publishing-results-of-your-project" title="Permanent link">&para;</a></h2>
 <p>Since v1.2.0, PYBOSSA automatically creates &ldquo;empty&rdquo; results when a task
 is completed.</p>
 <p>For example, imagine your project is asking the following question in a
@@ -2621,7 +2621,7 @@ your result project section using the API.</p>
 maps, webgl, etc.</p>
 <p>Right now this new feature is evolving, so please contact us if you need
 help. We&rsquo;ll provide result templates soon for our own basic templates.</p>
-<h2 id="keeping-track-of-the-time-spent-by-volunteers">Keeping track of the time spent by volunteers</h2>
+<h2 id="keeping-track-of-the-time-spent-by-volunteers">Keeping track of the time spent by volunteers<a class="headerlink" href="#keeping-track-of-the-time-spent-by-volunteers" title="Permanent link">&para;</a></h2>
 <p>Since v1.1.3, PYBOSSA records a timestamp, for every task run, of the
 instant a volunteer requests a task to contribute to it. This is stored
 in the &ldquo;created&rdquo; attribute of the Task Runs.</p>

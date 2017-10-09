@@ -1625,7 +1625,7 @@
               
                 
                 
-                <h1 id="restful-api">RESTful API</h1>
+                <h1 id="restful-api">RESTful API<a class="headerlink" href="#restful-api" title="Permanent link">&para;</a></h1>
 <p>The RESTful API is located at:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>http://{pybossa-site-url}/api
 </pre></div>
@@ -1686,7 +1686,7 @@ have parents.</p>
 <p>Tasks will have only one parent: the associated project.</p>
 <p>Task Runs will have only two parents: the associated task and associated
 project.</p>
-<h2 id="rate-limiting">Rate Limiting</h2>
+<h2 id="rate-limiting">Rate Limiting<a class="headerlink" href="#rate-limiting" title="Permanent link">&para;</a></h2>
 <p>Rate Limiting has been enabled for all the API endpoints (since PYBOSSA
 v2.0.1). The rate limiting gives any user, using the IP, <strong>a window of
 15 minutes to do at most 300 requests per endpoint</strong>.</p>
@@ -1719,7 +1719,7 @@ PYBOSSA, as it is really simple to check those values:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="list">List</h2>
+<h2 id="list">List<a class="headerlink" href="#list" title="Permanent link">&para;</a></h2>
 <p>List domain objects:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>GET http://{pybossa-site-url}/api/{domain-object}
 </pre></div>
@@ -1786,7 +1786,7 @@ GET http://{pybossa-site-url}/api/taskrun?api_key=YOURKEY&amp;all=1
 </pre></div>
 </td></tr></table>
 
-<h2 id="list-of-project-of-project-ids">List of project of project IDs</h2>
+<h2 id="list-of-project-of-project-ids">List of project of project IDs<a class="headerlink" href="#list-of-project-of-project-ids" title="Permanent link">&para;</a></h2>
 <p>In PYBOSSA most of the domain objects are related to a project.
 Therefore, you can query (or filter) a list of project IDs directly via
 the API to reduce the number of queries that you need to do. This is
@@ -1799,7 +1799,7 @@ JSON endpoints.</p>
 
 <p>That filter will return tasks for project IDs 1, 2 and 3. The same can
 be done for task runs and blogposts.</p>
-<h2 id="created">Created</h2>
+<h2 id="created">Created<a class="headerlink" href="#created" title="Permanent link">&para;</a></h2>
 <p>If you want, you can use the the domain attribute <em>created</em> to get items
 from the DB. Basically, you can specify a year, year-month,
 year-month-day to get all the values for those ranges. For example, if
@@ -1820,7 +1820,7 @@ given day like this:</p>
 </td></tr></table>
 
 <p>This filter works for any object that has the <em>created</em> attribute.</p>
-<h2 id="order-by">Order by</h2>
+<h2 id="order-by">Order by<a class="headerlink" href="#order-by" title="Permanent link">&para;</a></h2>
 <p>Any query can be ordered by an attribute of the domain object that you
 are querying. For example you can get a list of tasks ordered by ID:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>GET http://{pybossa-site-url}/api/task?orderby=id
@@ -1864,7 +1864,7 @@ domain object that you have received and the parameter:
 project ID that you&rsquo;ve received you will write the query like this:
 <code class="codehilite"><span class="err">GET /api/project?last\_id={{last\_id}}</span></code>.</p>
 </div>
-<h3 id="related-data">Related data</h3>
+<h3 id="related-data">Related data<a class="headerlink" href="#related-data" title="Permanent link">&para;</a></h3>
 <p>For Tasks, TaskRuns and Results you can get the associated data using
 the argument: <em>related=True</em>.</p>
 <p>This flag will allow you to get in one call all the TaskRuns and Result
@@ -1873,7 +1873,7 @@ associated Result, and for a Result getting all the task_runs and
 associated Task.</p>
 <p>Projects do not have this feature, as it will be too expensive for the
 API.</p>
-<h2 id="get">Get</h2>
+<h2 id="get">Get<a class="headerlink" href="#get" title="Permanent link">&para;</a></h2>
 <p>Get a specific domain object by id (by default any GET action will
 return only 20 objects, you can get more or less objects using the
 <strong>limit</strong> option). Returns domain object.:</p>
@@ -1907,7 +1907,7 @@ return only 20 objects, you can get more or less objects using the
 
 <p>Any other error will return the same object but with the proper status
 code and error message.</p>
-<h2 id="search">Search</h2>
+<h2 id="search">Search<a class="headerlink" href="#search" title="Permanent link">&para;</a></h2>
 <p>Get a list of domain objects by its fields. Returns a list of domain
 objects matching the query:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>GET http://{pybossa-site-url}/api/{domain-object}[?domain-object-field=value]
@@ -1943,7 +1943,7 @@ have to use the following format:</p>
 
 <p>These parameters will be ANDs, so, it will return objects that have
 those keys with and <strong>and</strong> operator.</p>
-<h2 id="full-text-search">Full text search</h2>
+<h2 id="full-text-search">Full text search<a class="headerlink" href="#full-text-search" title="Permanent link">&para;</a></h2>
 <p>It is also possible to use full text search queries within those first
 level keys (as seen before). For searching like that all you have to do
 is adding the following argument:</p>
@@ -2054,7 +2054,7 @@ amount of 100 objects can be retrieved at once.</p>
 <p>If the search does not find anything, the server will return an empty JSON
 list []</p>
 </div>
-<h2 id="excluding-contributed-tasks-from-get-queries">Excluding contributed tasks from GET queries</h2>
+<h2 id="excluding-contributed-tasks-from-get-queries">Excluding contributed tasks from GET queries<a class="headerlink" href="#excluding-contributed-tasks-from-get-queries" title="Permanent link">&para;</a></h2>
 <p>For the Tasks endpoint, you can do also something else, which could be
 pretty handy for PYBOSSA projects that are built using only Javascript
 (Single Page Applications) and do not want to use the /newtask endpoint.</p>
@@ -2066,7 +2066,7 @@ your users. You will design how they will be delivered.</p>
 <p>This endpoint now accepts as well the <strong>external_uid</strong> parameter, as by
 default it identifies authenticated users, as well as anonymouse users.
 If you are using the external UID, include it.</p>
-<h2 id="create">Create</h2>
+<h2 id="create">Create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h2>
 <p>Create a domain object. Returns created domain object.:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>POST http://{pybossa-site-url}/api/{domain-object}[?api_key=API-KEY]
 </pre></div>
@@ -2097,7 +2097,7 @@ If you are using the external UID, include it.</p>
 </td></tr></table>
 
 <p>Where <strong>target</strong> will refer to a Project, Task or TaskRun object.</p>
-<h2 id="update">Update</h2>
+<h2 id="update">Update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h2>
 <p>Update a domain object:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>PUT http://{pybossa-site-url}/api/{domain-object}/{id}[?api_key=API-KEY]
 </pre></div>
@@ -2128,7 +2128,7 @@ If you are using the external UID, include it.</p>
 </td></tr></table>
 
 <p>Where <strong>target</strong> will refer to a project, Task or TaskRun object.</p>
-<h2 id="delete">Delete</h2>
+<h2 id="delete">Delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h2>
 <p>Delete a domain object:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>DELETE http://{pybossa-site-url}/api/{domain-object}/{id}[?api_key=API-KEY]
 </pre></div>
@@ -2159,7 +2159,7 @@ If you are using the external UID, include it.</p>
 </td></tr></table>
 
 <p>Where <strong>target</strong> will refer to a Project, Task or TaskRun object.</p>
-<h2 id="favorites">Favorites</h2>
+<h2 id="favorites">Favorites<a class="headerlink" href="#favorites" title="Permanent link">&para;</a></h2>
 <p>Authenticated users can mark a task as a favorite. This is useful for
 users when they want to see all the tasks they have done to remember
 them. For example, a user can mark as a favorite a picture that&rsquo;s
@@ -2184,7 +2184,7 @@ marked as favorited.</p>
 
 <p>Be sure to have always the user authenticated, otherwise the user will
 not be able to see it.</p>
-<h2 id="requesting-a-new-task-for-current-user">Requesting a new task for current user</h2>
+<h2 id="requesting-a-new-task-for-current-user">Requesting a new task for current user<a class="headerlink" href="#requesting-a-new-task-for-current-user" title="Permanent link">&para;</a></h2>
 <p>You can request a new task for the current user (anonymous or
 authenticated) by:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>GET http://{pybossa-site-url}/api/{project.id}/newtask
@@ -2228,7 +2228,7 @@ ID, created, etc.) using the following arguments: <strong>orderby</strong> and
 
 <p>That query will return the tasks order by priority in descending order,
 in other words, it will return first the tasks with higher priority.</p>
-<h2 id="requesting-the-users-oauth-tokens">Requesting the user&rsquo;s oAuth tokens</h2>
+<h2 id="requesting-the-users-oauth-tokens">Requesting the user&rsquo;s oAuth tokens<a class="headerlink" href="#requesting-the-users-oauth-tokens" title="Permanent link">&para;</a></h2>
 <p>A user who has registered or signed in with any of the third parties
 supported by PYBOSSA (currently Twitter, Facebook and Google) can
 request his own oAuth tokens by doing:</p>
@@ -2244,7 +2244,7 @@ retrieval is desired:</p>
 
 <p>Where &lsquo;provider&rsquo; will be any of the third parties supported, i.e.
 &lsquo;twitter&rsquo;, &lsquo;facebook&rsquo; or &lsquo;google&rsquo;.</p>
-<h2 id="using-your-own-user-database">Using your own user database</h2>
+<h2 id="using-your-own-user-database">Using your own user database<a class="headerlink" href="#using-your-own-user-database" title="Permanent link">&para;</a></h2>
 <p>Since version v2.3.0 PYBOSSA supports external User IDs. This means that
 you can easily use your own database of users without having to
 registering them in the PYBOSSA server. As a benefit, you will be able
@@ -2300,7 +2300,7 @@ POST http://{pybossa-site-url}/api/taskrun?external_uid=1xa
 1xa.</p>
 </div>
 <p>As simple as that!</p>
-<h2 id="disqus-single-sign-on-sso">Disqus Single Sign On (SSO)</h2>
+<h2 id="disqus-single-sign-on-sso">Disqus Single Sign On (SSO)<a class="headerlink" href="#disqus-single-sign-on-sso" title="Permanent link">&para;</a></h2>
 <p>If the PYBOSSA server is configured with Disqus SSO keys (see disqus),
 then you can get the authentication parameters in this endpoint:
 <em>api/disqus/sso</em></p>
@@ -2310,7 +2310,7 @@ Check their official <a href="">documentation</a>.</p>
 <p>User api endpoint ----------------</p>
 <p>While all the other endpoints behave the same, this one is a bit special
 as we deal with private information like emails.</p>
-<h3 id="anonymous-users">Anonymous users</h3>
+<h3 id="anonymous-users">Anonymous users<a class="headerlink" href="#anonymous-users" title="Permanent link">&para;</a></h3>
 <p>The following actions cannot be done:</p>
 <ol>
 <li>Create a new user via a POST</li>
@@ -2318,7 +2318,7 @@ as we deal with private information like emails.</p>
 <li>Delete an existing user via a DEL</li>
 </ol>
 <p>Read action will only return user name and locale for that user.</p>
-<h3 id="authenticated-users">Authenticated users</h3>
+<h3 id="authenticated-users">Authenticated users<a class="headerlink" href="#authenticated-users" title="Permanent link">&para;</a></h3>
 <p>The following actions cannot be done:</p>
 <ol>
 <li>Create a new user via a POST</li>
@@ -2328,7 +2328,7 @@ as we deal with private information like emails.</p>
 <p>Read action will only return user name and locale for that user. If the
 user access its own page, then all the information will be available to
 him/her.</p>
-<h3 id="admin-users">Admin users</h3>
+<h3 id="admin-users">Admin users<a class="headerlink" href="#admin-users" title="Permanent link">&para;</a></h3>
 <p>The following actions cannot be done:</p>
 <ol>
 <li>Create a new user via a POST</li>
@@ -2339,13 +2339,13 @@ User IDs. This will be helpful in case that you want to give, for
 example badges, for users when using our webhooks solution. Each user
 has in the info field a new field named <strong>extra</strong> where that information
 (or anything else) could be stored.</p>
-<h2 id="command-line-example-usage-of-the-api">Command line Example Usage of the API</h2>
+<h2 id="command-line-example-usage-of-the-api">Command line Example Usage of the API<a class="headerlink" href="#command-line-example-usage-of-the-api" title="Permanent link">&para;</a></h2>
 <p>Create a Project object:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>curl -X POST -H <span class="s2">&quot;Content-Type:application/json&quot;</span> -s -d <span class="s1">&#39;{&quot;name&quot;:&quot;myproject&quot;, &quot;info&quot;:{&quot;xyz&quot;:1}}&#39;</span> <span class="s1">&#39;http://localhost:5000/api/project?api_key=API-KEY&#39;</span>
 </pre></div>
 </td></tr></table>
 
-<h2 id="pybossa-endpoints">PYBOSSA endpoints</h2>
+<h2 id="pybossa-endpoints">PYBOSSA endpoints<a class="headerlink" href="#pybossa-endpoints" title="Permanent link">&para;</a></h2>
 <p>The following endpoints of PYBOSSA server can be requested setting the
 header <em>Content-Type</em> to <em>application/json</em> so you can retrieve the data
 using JavaScript.</p>
@@ -2355,7 +2355,7 @@ using JavaScript.</p>
 that specific field. However, that value should be retrieved in a
 different one. Please, see all the documentation.</p>
 </div>
-<h3 id="account-index">Account index</h3>
+<h3 id="account-index">Account index<a class="headerlink" href="#account-index" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/page/&lt;int:page&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -2465,7 +2465,7 @@ different one. Please, see all the documentation.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-registration">Account registration</h3>
+<h3 id="account-registration">Account registration<a class="headerlink" href="#account-registration" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/register</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -2583,7 +2583,7 @@ email.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-sign-in">Account sign in</h3>
+<h3 id="account-sign-in">Account sign in<a class="headerlink" href="#account-sign-in" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/signin</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -2702,7 +2702,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-sign-out">Account sign out</h3>
+<h3 id="account-sign-out">Account sign out<a class="headerlink" href="#account-sign-out" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/signout</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p>It returns a JSON object with the following information:</p>
@@ -2710,7 +2710,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 <li><strong>next</strong>: suggested redirection after the sign out.</li>
 <li><strong>message</strong>: message displaying success for sign out.</li>
 </ul>
-<h3 id="account-recover-password">Account recover password</h3>
+<h3 id="account-recover-password">Account recover password<a class="headerlink" href="#account-recover-password" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/forgot-password</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -2804,7 +2804,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-name">Account name</h3>
+<h3 id="account-name">Account name<a class="headerlink" href="#account-name" title="Permanent link">&para;</a></h3>
 <p>**Endpoint: /account/&lt;name&gt;</p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -2960,7 +2960,7 @@ information:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-profile">Account profile</h3>
+<h3 id="account-profile">Account profile<a class="headerlink" href="#account-profile" title="Permanent link">&para;</a></h3>
 <p>**Endpoint: /account/profile</p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -2978,7 +2978,7 @@ the following example output</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-projects">Account projects</h3>
+<h3 id="account-projects">Account projects<a class="headerlink" href="#account-projects" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/&lt;name&gt;/projects</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3069,7 +3069,7 @@ following information:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-update-profile">Account update profile</h3>
+<h3 id="account-update-profile">Account update profile<a class="headerlink" href="#account-update-profile" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/&lt;name&gt;/update</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -3290,7 +3290,7 @@ the avatar.</p>
 the cropped area respectively; and (x2,y2) are the width and height of
 the crop.</p>
 </div>
-<h3 id="account-reset-password">Account reset password</h3>
+<h3 id="account-reset-password">Account reset password<a class="headerlink" href="#account-reset-password" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/reset-password</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -3348,7 +3348,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-reset-api-key">Account reset API Key</h3>
+<h3 id="account-reset-api-key">Account reset API Key<a class="headerlink" href="#account-reset-api-key" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/&lt;user&gt;/resetapikey</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -3394,7 +3394,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-subscribe-to-newsletter">Account subscribe to newsletter</h3>
+<h3 id="account-subscribe-to-newsletter">Account subscribe to newsletter<a class="headerlink" href="#account-subscribe-to-newsletter" title="Permanent link">&para;</a></h3>
 <p>**Endpoint: /account/newsletter</p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3432,7 +3432,7 @@ with the following argument: <em>subscribe=true</em></p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="account-confirm-email">Account confirm email</h3>
+<h3 id="account-confirm-email">Account confirm email<a class="headerlink" href="#account-confirm-email" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /account/confirm-email</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3457,7 +3457,7 @@ with the following information:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="home">Home</h3>
+<h3 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3599,7 +3599,7 @@ with the following information:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-shortname">Project shortname</h3>
+<h3 id="project-shortname">Project shortname<a class="headerlink" href="#project-shortname" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3838,7 +3838,7 @@ only public available information for the owner and the project itself.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-settings">Project settings</h3>
+<h3 id="project-settings">Project settings<a class="headerlink" href="#project-settings" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/settings</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3860,7 +3860,7 @@ get a 403 when it&rsquo;s not their own project.</p>
 <li><strong>title</strong>: the title for the endpoint.</li>
 </ul>
 <p>The example output matches <strong>/project/&lt;short_name&gt;/</strong></p>
-<h3 id="project-results">Project results</h3>
+<h3 id="project-results">Project results<a class="headerlink" href="#project-results" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/results</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -3981,7 +3981,7 @@ information and project information.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-stats">Project stats</h3>
+<h3 id="project-stats">Project stats<a class="headerlink" href="#project-stats" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/stats</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -4134,7 +4134,7 @@ only public available information for the owner and the project itself.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-tasks">Project tasks</h3>
+<h3 id="project-tasks">Project tasks<a class="headerlink" href="#project-tasks" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/tasks</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -4259,7 +4259,7 @@ only public available information for the owner and the project itself.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-task-id">Project task id</h3>
+<h3 id="project-task-id">Project task id<a class="headerlink" href="#project-task-id" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/task/&lt;int:task_id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -4352,7 +4352,7 @@ only public available information for the owner and the project itself.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="leaderboard">Leaderboard</h3>
+<h3 id="leaderboard">Leaderboard<a class="headerlink" href="#leaderboard" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /leaderboard/</strong> <strong>Endpoint:
 /leaderboard/window/&lt;int:window&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
@@ -4440,7 +4440,7 @@ next 3 accessing this URL: /leaderboard/window/3.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="announcements">Announcements</h3>
+<h3 id="announcements">Announcements<a class="headerlink" href="#announcements" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /announcements/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -4546,7 +4546,7 @@ next 3 accessing this URL: /leaderboard/window/3.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-announcement">Admin announcement</h3>
+<h3 id="admin-announcement">Admin announcement<a class="headerlink" href="#admin-announcement" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/announcement</strong></p>
 <p><strong>GET</strong></p>
 <p>Shows you PYBOSSA wide announcements</p>
@@ -4653,7 +4653,7 @@ next 3 accessing this URL: /leaderboard/window/3.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-announcement-new">Admin announcement new</h3>
+<h3 id="admin-announcement-new">Admin announcement new<a class="headerlink" href="#admin-announcement-new" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/announcement/new</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -4707,7 +4707,7 @@ get a 200 http code and following output:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-announcement-update">Admin announcement update</h3>
+<h3 id="admin-announcement-update">Admin announcement update<a class="headerlink" href="#admin-announcement-update" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/announcement/&lt;id&gt;/update</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -4763,7 +4763,7 @@ get a 200 http code and following output:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-announcement-delete">Admin announcement delete</h3>
+<h3 id="admin-announcement-delete">Admin announcement delete<a class="headerlink" href="#admin-announcement-delete" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/announcement/&lt;id&gt;/delete</strong></p>
 <p><em>Allowed methods</em>: <strong>POST</strong></p>
 <p>Deletes a PYBOSSA announcement</p>
@@ -4785,7 +4785,7 @@ following output:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-users_1">Admin users</h3>
+<h3 id="admin-users_1">Admin users<a class="headerlink" href="#admin-users_1" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/users</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -5018,7 +5018,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-users-add">Admin users add</h3>
+<h3 id="admin-users-add">Admin users add<a class="headerlink" href="#admin-users-add" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/users/add/&lt;int:user_id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5041,7 +5041,7 @@ following information:</p>
 <p>You will need to use the /admin/users endpoint to get a list of users
 for adding deleting from the admin group.</p>
 </div>
-<h3 id="admin-users-del">Admin users del</h3>
+<h3 id="admin-users-del">Admin users del<a class="headerlink" href="#admin-users-del" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/users/del/&lt;int:user_id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5064,7 +5064,7 @@ the following information:</p>
 <p>You will need to use the /admin/users endpoint to get a list of users
 for adding deleting from the admin group.</p>
 </div>
-<h3 id="admin-categories">Admin categories</h3>
+<h3 id="admin-categories">Admin categories<a class="headerlink" href="#admin-categories" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/categories</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -5232,7 +5232,7 @@ data.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-categories-delete">Admin categories delete</h3>
+<h3 id="admin-categories-delete">Admin categories delete<a class="headerlink" href="#admin-categories-delete" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/categories/del/&lt;int:id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -5294,7 +5294,7 @@ to do a POST and delete it.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-categories-update">Admin categories update</h3>
+<h3 id="admin-categories-update">Admin categories update<a class="headerlink" href="#admin-categories-update" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/categories/update/&lt;int:id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -5364,7 +5364,7 @@ previous action to update it.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-dashboard">Admin dashboard</h3>
+<h3 id="admin-dashboard">Admin dashboard<a class="headerlink" href="#admin-dashboard" title="Permanent link">&para;</a></h3>
 <p>**Endpoint: /admin/dashboard/</p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5654,7 +5654,7 @@ update the data, as this data is only updated every 24 hours.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-featured-projects">Admin featured projects</h3>
+<h3 id="admin-featured-projects">Admin featured projects<a class="headerlink" href="#admin-featured-projects" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/featured</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5805,7 +5805,7 @@ update the data, as this data is only updated every 24 hours.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="admin-un-feature-projects">Admin un-/feature projects</h3>
+<h3 id="admin-un-feature-projects">Admin un-/feature projects<a class="headerlink" href="#admin-un-feature-projects" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /admin/featured/&lt;int:project_id&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>POST / DELETE</strong></p>
 <p><strong>POST</strong></p>
@@ -5936,7 +5936,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="help-api">Help API</h3>
+<h3 id="help-api">Help API<a class="headerlink" href="#help-api" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /help/api</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5960,7 +5960,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="help-privacy">Help privacy</h3>
+<h3 id="help-privacy">Help privacy<a class="headerlink" href="#help-privacy" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /help/privacy</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -5983,7 +5983,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="help-cookie-policy">Help cookie policy</h3>
+<h3 id="help-cookie-policy">Help cookie policy<a class="headerlink" href="#help-cookie-policy" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /help/cookies-policy</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6006,7 +6006,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="help-terms-of-use">Help terms of use</h3>
+<h3 id="help-terms-of-use">Help terms of use<a class="headerlink" href="#help-terms-of-use" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /help/terms-of-use</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6029,7 +6029,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="pybossa-server-stats">PYBOSSA server stats</h3>
+<h3 id="pybossa-server-stats">PYBOSSA server stats<a class="headerlink" href="#pybossa-server-stats" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /stats/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6202,7 +6202,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-category">Project Category</h3>
+<h3 id="project-category">Project Category<a class="headerlink" href="#project-category" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/category/&lt;short_name&gt;/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6349,7 +6349,7 @@ sort projects by any of the attributes listed above, such as
 be added to sort in descending order. For example: GET
 /project/category/&lt;short_name&gt;/?orderby=n_tasks&amp;desc=True</p>
 </div>
-<h3 id="project-category-featured">Project Category Featured</h3>
+<h3 id="project-category-featured">Project Category Featured<a class="headerlink" href="#project-category-featured" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/category/featured/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6496,7 +6496,7 @@ sort projects by any of the attributes listed above, such as
 be added to sort in descending order. For example: GET
 /project/category/featured/?orderby=n_tasks&amp;desc=True</p>
 </div>
-<h3 id="project-category-draft">Project Category Draft</h3>
+<h3 id="project-category-draft">Project Category Draft<a class="headerlink" href="#project-category-draft" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/category/draft/</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6643,7 +6643,7 @@ sort projects by any of the attributes listed above, such as
 be added to sort in descending order. For example: GET
 /project/category/draft/?orderby=n_tasks&amp;desc=True</p>
 </div>
-<h3 id="project-creation">Project Creation</h3>
+<h3 id="project-creation">Project Creation<a class="headerlink" href="#project-creation" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/new</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -6684,7 +6684,7 @@ be added to sort in descending order. For example: GET
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-blog-list">Project Blog list</h3>
+<h3 id="project-blog-list">Project Blog list<a class="headerlink" href="#project-blog-list" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/blog</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
 <p><strong>GET</strong></p>
@@ -6810,7 +6810,7 @@ public info.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-task-presenter-editor">Project Task Presenter Editor</h3>
+<h3 id="project-task-presenter-editor">Project Task Presenter Editor<a class="headerlink" href="#project-task-presenter-editor" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/taskpresentereditor</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -7154,7 +7154,7 @@ HTML/CSS/JS that you want to provide.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-delete">Project Delete</h3>
+<h3 id="project-delete">Project Delete<a class="headerlink" href="#project-delete" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/delete</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -7289,7 +7289,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-update">Project update</h3>
+<h3 id="project-update">Project update<a class="headerlink" href="#project-update" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/update</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -7586,7 +7586,7 @@ the cropped area respectively; and (x2,y2) are the width and height of
 the crop. And don&rsquo;t forget to add an extra key to the form-data: &lsquo;btn&rsquo;
 with a value Upload to select this form.</p>
 </div>
-<h3 id="project-reset-secret-key">Project reset secret key</h3>
+<h3 id="project-reset-secret-key">Project reset secret key<a class="headerlink" href="#project-reset-secret-key" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/resetsecretkey</strong></p>
 <p><em>Allowed methods</em>: <strong>POST</strong></p>
 <p>Resets the secret key of a project.</p>
@@ -7606,7 +7606,7 @@ endpont <strong>/project/&lt;short_name&gt;/update</strong>.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-tasks-browse">Project tasks browse</h3>
+<h3 id="project-tasks-browse">Project tasks browse<a class="headerlink" href="#project-tasks-browse" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/browse/</strong> <strong>Endpoint:
 /project/&lt;short_name&gt;/tasks/browse/&lt;int:page&gt;</strong></p>
 <p><em>Allowed methods</em>: <strong>GET</strong></p>
@@ -7737,7 +7737,7 @@ endpont <strong>/project/&lt;short_name&gt;/update</strong>.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-tasks-import">Project tasks import</h3>
+<h3 id="project-tasks-import">Project tasks import<a class="headerlink" href="#project-tasks-import" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/tasks/import</strong></p>
 <p><em>Allowed methods</em>: <strong>GET/POST</strong></p>
 <p><strong>GET</strong></p>
@@ -7956,7 +7956,7 @@ headers. Use the following header: &ldquo;X-CSRFToken&rdquo;.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="project-tutorial">Project tutorial</h3>
+<h3 id="project-tutorial">Project tutorial<a class="headerlink" href="#project-tutorial" title="Permanent link">&para;</a></h3>
 <p><strong>Endpoint: /project/&lt;short_name&gt;/tutorial</strong></p>
 <p><strong>GET</strong></p>
 <p>It returns a JSON object with the following information:</p>

@@ -731,7 +731,7 @@
               
                 
                 
-                <h1 id="configuring-the-project">Configuring the Project</h1>
+                <h1 id="configuring-the-project">Configuring the Project<a class="headerlink" href="#configuring-the-project" title="Permanent link">&para;</a></h1>
 <p>If you are the owner of a project, you can configure it using the web
 interface. When you are the owner (also an administrator of the PYBOSSA
 server) a new link in the left local navigation bar of the project will
@@ -751,7 +751,7 @@ appear with the name <strong>Settings</strong>.</p>
 <li>project-blog: if you click this button, you will be able to write a
    new blog post to be shared with the volunteers.</li>
 </ol>
-<h2 id="edit-the-project-details">Edit the project details</h2>
+<h2 id="edit-the-project-details">Edit the project details<a class="headerlink" href="#edit-the-project-details" title="Permanent link">&para;</a></h2>
 <p>In this section you can change the following parameters of your project:</p>
 <ul>
 <li><strong>Name</strong>: the full name of your project, i.e. Flickr Person Finder</li>
@@ -780,7 +780,7 @@ appear with the name <strong>Settings</strong>.</p>
   server.</li>
 </ul>
 <p><img alt="image" src="http://i.imgur.com/ZbPoM3f.png" /></p>
-<h2 id="task-settings">Task Settings</h2>
+<h2 id="task-settings">Task Settings<a class="headerlink" href="#task-settings" title="Permanent link">&para;</a></h2>
 <p>The <em>Task Settings</em> is only accessible for the project owner and server
 administrators. The page can be reached via the <strong>Settings</strong> menu, but
 also from the <strong>Tasks</strong> link in the left local navigation bar.</p>
@@ -797,11 +797,11 @@ also from the <strong>Tasks</strong> link in the left local navigation bar.</p>
 <li><strong>Delete Tasks</strong>: this final block allows you to flush all the tasks
    and its associated task runs (answers).</li>
 </ol>
-<h3 id="task-scheduler">Task Scheduler</h3>
+<h3 id="task-scheduler">Task Scheduler<a class="headerlink" href="#task-scheduler" title="Permanent link">&para;</a></h3>
 <p>PYBOSSA provides different task schedulers that will send tasks to the
 users in very different ways.</p>
 <p><img alt="image" src="http://i.imgur.com/CmIylfr.png" /></p>
-<h4 id="default-or-depth-first">Default or Depth First</h4>
+<h4 id="default-or-depth-first">Default or Depth First<a class="headerlink" href="#default-or-depth-first" title="Permanent link">&para;</a></h4>
 <p>The Default task scheduler (also known as Depth First) has the following
 features:</p>
 <ol>
@@ -830,7 +830,7 @@ for the proper task for the given user).</p>
 <p>From the point of view of the project, the scheduler will be trying to
 complete (get all the answers requested by the task-redundancy value)
 all the tasks as soon as possible.</p>
-<h4 id="breadth-first">Breadth First</h4>
+<h4 id="breadth-first">Breadth First<a class="headerlink" href="#breadth-first" title="Permanent link">&para;</a></h4>
 <p>The Breadth First scheduler has the following features:</p>
 <ol>
 <li>It sends the tasks in the order that were created, first in first
@@ -850,7 +850,7 @@ obtain as soon as possible an answer for all the available tasks.</p>
 number of task runs, returning always first the tasks with less number
 of task runs for the user.</p>
 </div>
-<h4 id="random">Random</h4>
+<h4 id="random">Random<a class="headerlink" href="#random" title="Permanent link">&para;</a></h4>
 <p>The Random scheduler has the following features:</p>
 <ol>
 <li>It sends a task randomly to the users.</li>
@@ -878,7 +878,7 @@ plugin infrastructure. We do not recommend to use it in any
 production system, as users can participate several times in the
 same task, making the statistical analysis useless.</p>
 </div>
-<h3 id="task-priority">Task Priority</h3>
+<h3 id="task-priority">Task Priority<a class="headerlink" href="#task-priority" title="Permanent link">&para;</a></h3>
 <p>PYBOSSA allows you to prioritize the tasks, or in other words, which
 tasks should be delivered first to the volunteers.</p>
 <p><img alt="image" src="http://i.imgur.com/drWV1re.png" /></p>
@@ -897,7 +897,7 @@ tasks should be delivered first to the volunteers.</p>
 given user. In case that two or more tasks have the same priority value,
 the first task that will be delivered will be the one with the lower
 Task.ID value.</p>
-<h3 id="task-redundancy">Task Redundancy</h3>
+<h3 id="task-redundancy">Task Redundancy<a class="headerlink" href="#task-redundancy" title="Permanent link">&para;</a></h3>
 <p>The Task Redundancy is a feature that will allow you to analyze
 statistically the results that your project are getting for each of its
 tasks.</p>
@@ -916,7 +916,7 @@ up the redundancy value to 2, and two different users answer
 respectively Yes and No, you will not know the correct answer for the
 task. By increasing the redundancy value to 5 (or even bigger) you will
 be able to run a statistical analysis more accurately.</p>
-<h3 id="delete-tasks">Delete Tasks</h3>
+<h3 id="delete-tasks">Delete Tasks<a class="headerlink" href="#delete-tasks" title="Permanent link">&para;</a></h3>
 <p>This section will allow you to complete remove all the Tasks and
 associated Task Runs (answers) of your project.</p>
 <p><img alt="image" src="http://i.imgur.com/JS4J5D0.png" /></p>
@@ -931,7 +931,7 @@ task runs they will be lost forever.</p>
 </div>
 <p>This feature is useful when you are testing your project, and you are
 deciding the structure that you are going to build in your answers.</p>
-<h2 id="import-tasks-automatically">Import tasks automatically</h2>
+<h2 id="import-tasks-automatically">Import tasks automatically<a class="headerlink" href="#import-tasks-automatically" title="Permanent link">&para;</a></h2>
 <p>Both pro users and server administrators can have access to this
 feature, which allows to schedule a background job that will
 automatically import tasks every 24 hours. This option is accessible
@@ -953,7 +953,7 @@ autoimporter.</p>
 </div>
 <p>Once an autoimporter has been set up, it can also be cancelled anytime.
 Just delete it. And a new one can then be created.</p>
-<h2 id="delete-the-project">Delete the project</h2>
+<h2 id="delete-the-project">Delete the project<a class="headerlink" href="#delete-the-project" title="Permanent link">&para;</a></h2>
 <p>In case that you want to completely remove the project and all its tasks
 and task runs, use this section to delete the project.</p>
 <p><img alt="image" src="http://i.imgur.com/JFAQHu0.png" /></p>
@@ -965,7 +965,7 @@ and task runs, use this section to delete the project.</p>
 <p class="admonition-title">Info</p>
 <p>Only projects without results can be deleted.</p>
 </div>
-<h2 id="transfer-project-ownership">Transfer project ownership</h2>
+<h2 id="transfer-project-ownership">Transfer project ownership<a class="headerlink" href="#transfer-project-ownership" title="Permanent link">&para;</a></h2>
 <p>You can transfer the project ownership to another user in the PYBOSSA
 server.</p>
 <p>For changing the ownership, just add the email of the user that you want

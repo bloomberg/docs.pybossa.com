@@ -649,12 +649,12 @@
               
                 
                 
-                <h1 id="translating-pybossa">Translating PYBOSSA</h1>
+                <h1 id="translating-pybossa">Translating PYBOSSA<a class="headerlink" href="#translating-pybossa" title="Permanent link">&para;</a></h1>
 <p>PYBOSSA supports i18n locales, so you can translate the <strong>User
 Interface</strong> to any language. By default PYBOSSA comes with several
 languages: English, Spanish, Italian, French, German, Greek and
 Japanese.</p>
-<h2 id="enabling-multiple-locales">Enabling multiple locales</h2>
+<h2 id="enabling-multiple-locales">Enabling multiple locales<a class="headerlink" href="#enabling-multiple-locales" title="Permanent link">&para;</a></h2>
 <p>By default the translations are located in the default theme folder.</p>
 <p>You can enable those translations (mostly user interface strings and
 actions) by doing the following: creating a symlink to the translations
@@ -665,7 +665,7 @@ folders:</p>
 
 <p>This will use the default translations of PYBOSSA for your server. We
 recommend to use these translations with the default theme.</p>
-<h2 id="adding-a-new-language">Adding a new language</h2>
+<h2 id="adding-a-new-language">Adding a new language<a class="headerlink" href="#adding-a-new-language" title="Permanent link">&para;</a></h2>
 <p>If you want to translate PYBOSSA to your own language, lets say French,
 all you have to do is create a translation file with this command:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pybabel init -i messages.pot -d translations -l fr
@@ -701,18 +701,18 @@ the translation with this command:</p>
 
 <p>And now enable the new locale in the server local_settings.py file.
 Check for the LOCALES config variable and add your locale.</p>
-<h2 id="updating-translation-and-adding-new-strings-to-the-translation">Updating translation and adding new strings to the translation</h2>
+<h2 id="updating-translation-and-adding-new-strings-to-the-translation">Updating translation and adding new strings to the translation<a class="headerlink" href="#updating-translation-and-adding-new-strings-to-the-translation" title="Permanent link">&para;</a></h2>
 <p>From time to time, the PYBOSSA framework will have new strings to
 translate. In order to add the new strings (or update previous ones) you
 have to follow this 3 simple steps.</p>
-<h3 id="step-1-extract-new-strings-which-should-be-translated">Step 1, extract new strings which should be translated:</h3>
+<h3 id="step-1-extract-new-strings-which-should-be-translated">Step 1, extract new strings which should be translated:<a class="headerlink" href="#step-1-extract-new-strings-which-should-be-translated" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> pybossa
 $ pybabel extract . -F translations/../babel.cfg -k lazy_gettext -o translations/messages.pot
 </pre></div>
 </td></tr></table>
 
-<h3 id="step-2-update-existing-translation-files">Step 2, update existing translation files:</h3>
+<h3 id="step-2-update-existing-translation-files">Step 2, update existing translation files:<a class="headerlink" href="#step-2-update-existing-translation-files" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pybabel update -i translations/messages.pot -d translations
 </pre></div>
 </td></tr></table>
@@ -723,12 +723,12 @@ is really good, sometimes the translation is not good enough, so you
 will get the word: <strong>fuzzy</strong> on top of the translation. Check all the
 <strong>fuzzy</strong> translations and fix them. When you are done, remove the line
 with the word <strong>fuzzy</strong> and re-compile the translations.</p>
-<h3 id="step-3-recompile-translation-files">Step 3, recompile translation files:</h3>
+<h3 id="step-3-recompile-translation-files">Step 3, recompile translation files:<a class="headerlink" href="#step-3-recompile-translation-files" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ pybabel compile -d translations
 </pre></div>
 </td></tr></table>
 
-<h2 id="contributing-your-translation-to-the-upstream-repository">Contributing your translation to the upstream repository</h2>
+<h2 id="contributing-your-translation-to-the-upstream-repository">Contributing your translation to the upstream repository<a class="headerlink" href="#contributing-your-translation-to-the-upstream-repository" title="Permanent link">&para;</a></h2>
 <p>We would love to support more and more languages by default, so if you
 have done a translation and you would like that we include it in the
 default package, send us a github pull request with your translations or

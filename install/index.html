@@ -797,7 +797,7 @@
               
                 
                 
-                <h1 id="installing-pybossa-by-hand">Installing PYBOSSA by hand</h1>
+                <h1 id="installing-pybossa-by-hand">Installing PYBOSSA by hand<a class="headerlink" href="#installing-pybossa-by-hand" title="Permanent link">&para;</a></h1>
 <p>PYBOSSA is a python web application built using the Flask
 micro-framework.</p>
 <p>You need this guide if you want to</p>
@@ -822,7 +822,7 @@ micro-framework.</p>
 <li>Redis &gt;= 2.6</li>
 <li>pip &gt;= 6.1</li>
 </ul>
-<h2 id="setting-things-up">Setting things up</h2>
+<h2 id="setting-things-up">Setting things up<a class="headerlink" href="#setting-things-up" title="Permanent link">&para;</a></h2>
 <p>Before proceeding to install PYBOSSA you will need to configure some
 other applications and libraries in your system. In this page, you will
 get a step by step guide about how to install all the required packages
@@ -831,7 +831,7 @@ Support</a> version available at the moment:</p>
 <ul>
 <li><a href="http://www.ubuntu.com/download/server">Ubuntu 14.04 LTS</a></li>
 </ul>
-<h3 id="installing-git-a-distributed-version-control-system">Installing git - a distributed version control system</h3>
+<h3 id="installing-git-a-distributed-version-control-system">Installing git - a distributed version control system<a class="headerlink" href="#installing-git-a-distributed-version-control-system" title="Permanent link">&para;</a></h3>
 <p>PYBOSSA uses the <a href="http://git-scm.com/">git</a> distributed version control
 system for handling the PYBOSSA server source code as well as the
 template projects.</p>
@@ -843,7 +843,7 @@ projects with seepd and efficiency.</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="installing-the-postgresql-database">Installing the PostgreSQL database</h3>
+<h3 id="installing-the-postgresql-database">Installing the PostgreSQL database<a class="headerlink" href="#installing-the-postgresql-database" title="Permanent link">&para;</a></h3>
 <p><a href="http://www.postgresql.org/">PostgreSQL</a> is a powerful, open source
 object-relational database system. It has more than 15 years of active
 development and a proven architecture that has earned it a strong
@@ -855,7 +855,7 @@ installing it are the following:</p>
 </pre></div>
 </td></tr></table>
 
-<h3 id="installing-virtualenv-optional-but-recommended">Installing virtualenv (optional, but recommended)</h3>
+<h3 id="installing-virtualenv-optional-but-recommended">Installing virtualenv (optional, but recommended)<a class="headerlink" href="#installing-virtualenv-optional-but-recommended" title="Permanent link">&para;</a></h3>
 <p>We recommend to install PYBOSSA using a
 <a href="http://pypi.python.org/pypi/virtualenv">virtualenv</a> as it will create a
 an isolated Python environment, helping you to manage different
@@ -878,7 +878,7 @@ Ubuntu server could be done like this:</p>
 <p>After installing the software, now you will be able to create
 independent virtual environments for the PYBOSSA installation as well as
 for the template projects (see user/tutorial).</p>
-<h3 id="installing-the-pybossa-python-requirements">Installing the PYBOSSA Python requirements</h3>
+<h3 id="installing-the-pybossa-python-requirements">Installing the PYBOSSA Python requirements<a class="headerlink" href="#installing-the-pybossa-python-requirements" title="Permanent link">&para;</a></h3>
 <p>Installing the required libraries for PYBOSSA is a step that will need
 to use some compilers and dev libraries in order to work. Thus, you will
 need to install the following packages:</p>
@@ -976,7 +976,7 @@ your database:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="installing-redis">Installing Redis</h2>
+<h2 id="installing-redis">Installing Redis<a class="headerlink" href="#installing-redis" title="Permanent link">&para;</a></h2>
 <p>Since version v0.2.1, PYBOSSA uses Redis not only for caching objects
 and speed up the site, but also for limiting the usage of the API
 requests.</p>
@@ -995,7 +995,7 @@ instances:</p>
 <li><strong>Redis-sentinel</strong>: as a sentinel node, to configure the master and
   slave Redis nodes.</li>
 </ul>
-<h4 id="server">Server</h4>
+<h4 id="server">Server<a class="headerlink" href="#server" title="Permanent link">&para;</a></h4>
 <p>If you have installed the server via your distribution package system,
 then, the server will be running already. If this is not the case, check
 the official documentation of <a href="http://redis.io/">Redis</a> to configure it
@@ -1011,7 +1011,7 @@ contrib folder, as there is a specific folder for Redis with init.d
 start scripts. You only have to copy that file to /etc/init.d/ and
 adapt it to your needs.</p>
 </div>
-<h4 id="sentinel">Sentinel</h4>
+<h4 id="sentinel">Sentinel<a class="headerlink" href="#sentinel" title="Permanent link">&para;</a></h4>
 <p>Redis can be run in sentinel mode with the <strong>&ndash;sentinel</strong> arg, or by its
 own command named: redis-sentinel. This will vary from your distribution
 and version of Redis, so check its help page to know how you can run it.</p>
@@ -1048,8 +1048,8 @@ contrib folder, as there is a specific folder for Redis with init.d
 start scripts. You only have to copy that file to /etc/init.d/ and
 adapt it to your needs.</p>
 </div>
-<h2 id="speeding-up-the-site">Speeding up the site</h2>
-<h4 id="enabling-the-cache">Enabling the cache</h4>
+<h2 id="speeding-up-the-site">Speeding up the site<a class="headerlink" href="#speeding-up-the-site" title="Permanent link">&para;</a></h2>
+<h4 id="enabling-the-cache">Enabling the cache<a class="headerlink" href="#enabling-the-cache" title="Permanent link">&para;</a></h4>
 <p>PYBOSSA comes with a Cache system that it is enabled by default. PYBOSSA
 uses a <a href="http://redis.io/">Redis</a> server to cache some objects like
 projects, statistics, etc. The system uses the
@@ -1084,7 +1084,7 @@ distribution. If this is the case, you will need to install it by hand,
 but it is really easy and well documented in the official
 <a href="http://redis.io/">Redis</a> site.</p>
 </div>
-<h4 id="running-asynchronous-tasks-in-the-background">Running asynchronous tasks in the background</h4>
+<h4 id="running-asynchronous-tasks-in-the-background">Running asynchronous tasks in the background<a class="headerlink" href="#running-asynchronous-tasks-in-the-background" title="Permanent link">&para;</a></h4>
 <p>PYBOSSA uses the Python libraries <a href="http://python-rq.org/">RQ</a> and
 <a href="https://github.com/ui/rq-scheduler">RQScheduler</a> to allow slow or
 computationally-heavy tasks to be run in the background in an
@@ -1118,7 +1118,7 @@ them), the execution of the worker is mandatory for the normal
 functioning of the PYBOSSA server, so make sure you run the command
 for it.</p>
 </div>
-<h2 id="configuring-the-database">Configuring the DataBase</h2>
+<h2 id="configuring-the-database">Configuring the DataBase<a class="headerlink" href="#configuring-the-database" title="Permanent link">&para;</a></h2>
 <p>You need first to add a user to your <a href="http://www.postgresql.org/">PostgreSQL</a> DB:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>sudo su postgres
@@ -1165,8 +1165,8 @@ questions:</p>
 <p>And if you see the following home page, then, your installation has been
 completed:</p>
 <p><img alt="image" src="http://i.imgur.com/hPtgo6S.png" /></p>
-<h2 id="updating-pybossa">Updating PYBOSSA</h2>
-<h3 id="update-pybossa-core-and-migrating-the-database-table-structure">Update PYBOSSA core and migrating the database table structure</h3>
+<h2 id="updating-pybossa">Updating PYBOSSA<a class="headerlink" href="#updating-pybossa" title="Permanent link">&para;</a></h2>
+<h3 id="update-pybossa-core-and-migrating-the-database-table-structure">Update PYBOSSA core and migrating the database table structure<a class="headerlink" href="#update-pybossa-core-and-migrating-the-database-table-structure" title="Permanent link">&para;</a></h3>
 <p>Sometimes, the PYBOSSA developers add a new column or table to the
 PYBOSSA server, forcing you to carry out a <strong>migration</strong> of the
 database. PYBOSSA uses <a href="http://pypi.python.org/pypi/alembic">Alembic</a>
@@ -1199,7 +1199,7 @@ git pull origin master
 <p>If you are using the <a href="http://pypi.python.org/pypi/virtualenv">virtualenv</a> be sure to activate it before running the
 <a href="http://pypi.python.org/pypi/alembic">Alembic</a> upgrade command.</p>
 </div>
-<h3 id="migrating-your-old-db-records">Migrating Your Old DB Records</h3>
+<h3 id="migrating-your-old-db-records">Migrating Your Old DB Records<a class="headerlink" href="#migrating-your-old-db-records" title="Permanent link">&para;</a></h3>
 <p>In versions prior to v0.2.3, HTML was supported as the default option
 for the &lsquo;long_description&rsquo; field in projects. In new versions of
 PYBOSSA, Markdown has been adopted as the default option. However, you

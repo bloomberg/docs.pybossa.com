@@ -1631,13 +1631,13 @@
               
                 
                 
-                <h1 id="configuring-pybossa">Configuring PYBOSSA</h1>
+                <h1 id="configuring-pybossa">Configuring PYBOSSA<a class="headerlink" href="#configuring-pybossa" title="Permanent link">&para;</a></h1>
 <p>The PYBOSSA
 <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl">settings_local.py.tmpl</a>
 file has all the available configuration options for your server. This
 section, explains each of them and how you should/could use them in your
 server.</p>
-<h2 id="debug-mode">Debug mode</h2>
+<h2 id="debug-mode">Debug mode<a class="headerlink" href="#debug-mode" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L19">DEBUG</a>
 mode is disabled by default in the configuration file, as this should be
 only used when you are running the server for development purposes. You
@@ -1648,7 +1648,7 @@ the PYBOSSA server</p>
 <p>For further details about the DEBUG mode in the PYBOSSA server, please,
 check the official <a href="https://help.disqus.com/customer/portal/articles/236206">documentation</a>.</p>
 </div>
-<h3 id="debug-toolbar">Debug Toolbar</h3>
+<h3 id="debug-toolbar">Debug Toolbar<a class="headerlink" href="#debug-toolbar" title="Permanent link">&para;</a></h3>
 <p>PYBOSSA includes a flag to enable a debug toolbar that can give your
 more insights about the performance of PYBOSSA. We strongly recommend to
 keep the toolbar disabled in production environments, as it will slow
@@ -1659,14 +1659,14 @@ to the settings file:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="host-and-port">Host and Port</h2>
+<h2 id="host-and-port">Host and Port<a class="headerlink" href="#host-and-port" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L22">HOST</a>
 and <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L23">PORT</a>
 config variables can be used to force the server to listen in specific
 addresses of your server, as well as at a given port. Usually, you will
 only need to uncomment the <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L22">HOST</a>
 variable in order to listen in all the net interfaces.</p>
-<h2 id="securing-the-server">Securing the server</h2>
+<h2 id="securing-the-server">Securing the server<a class="headerlink" href="#securing-the-server" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA uses the <a href="http://flask.pocoo.org/docs/quickstart/#sessions">Flask Sessions</a> feature that
 signs the cookies cryptographically for storing information. This
 improves the security of the server, as the user could look at the
@@ -1678,7 +1678,7 @@ and
 SECRET_KEY keys for your server and keep them private</strong>. Please, check
 the <a href="http://flask.pocoo.org/docs/quickstart/#sessions">Flask Sessions</a>
 documentation for instructions about how to create good secret keys.</p>
-<h2 id="database-username-and-password">Database username and password</h2>
+<h2 id="database-username-and-password">Database username and password<a class="headerlink" href="#database-username-and-password" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA uses the <a href="http://www.sqlalchemy.org/">SQLAlchemy</a> SQL toolkit to
 access the DB. In the settings file, you only need to modify the name of
 the user, password and database name so it fits your needs in the field
@@ -1687,7 +1687,7 @@ SQLALCHEMY_DATABASE_URI:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="load-balancing-sql-queries">Load balancing SQL Queries</h2>
+<h2 id="load-balancing-sql-queries">Load balancing SQL Queries<a class="headerlink" href="#load-balancing-sql-queries" title="Permanent link">&para;</a></h2>
 <p>If you have a master/slave PostgreSQL setup, you can instruct PYBOSSA to
 use the slave node for load balancing queries between the master and
 slave node.</p>
@@ -1701,7 +1701,7 @@ settings_local.py config file the following:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="its-dangerous-so-better-sign-this">It&rsquo;s dangerous, so better sign this</h2>
+<h2 id="its-dangerous-so-better-sign-this">It&rsquo;s dangerous, so better sign this<a class="headerlink" href="#its-dangerous-so-better-sign-this" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA uses the It&rsquo;s dangerous Python library that allows you to send
 some data to untrusted environments, but signing it. Basically, it uses
 a key that the server only knows and uses it for signing the data.</p>
@@ -1710,23 +1710,23 @@ PYBOSSA users, sending a link with a signed key that will be verified in
 the server. Thus, <strong>it is very important you create a secure and private
 key for the it&rsquo;s dangerous module in your configuration file</strong>, just
 modify the <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L35">ITSDANGEROUSKEY</a>.</p>
-<h2 id="cors-configuration">CORS configuration</h2>
+<h2 id="cors-configuration">CORS configuration<a class="headerlink" href="#cors-configuration" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA has the api endpoints configured with
 <strong>Access-Control-Allow-Origin:</strong>*. However, you can change it to
 whatever you want via the config file. Take a look into the official
 documentation for Flask-CORS for all the available options.</p>
-<h2 id="modifying-the-brand-name">Modifying the Brand name</h2>
+<h2 id="modifying-the-brand-name">Modifying the Brand name<a class="headerlink" href="#modifying-the-brand-name" title="Permanent link">&para;</a></h2>
 <p>You can configure your project with a different name, instead of the
 default one: PYBOSSA. You only need to change the string
 <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L38">BRAND</a>
 to the name of your organization or project.</p>
-<h2 id="adding-a-logo">Adding a Logo</h2>
+<h2 id="adding-a-logo">Adding a Logo<a class="headerlink" href="#adding-a-logo" title="Permanent link">&para;</a></h2>
 <p>By default, PYBOSSA does not provide a logo for the server side, so you
 will have to copy your logo into the folder:
 <strong>pybossa/pybossa/static/img</strong>. If the logo name is, <strong>my_brand.png</strong>
 the <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L40">LOGO</a>
 variable should be updated with the name of the file.</p>
-<h2 id="multiple-languages">Multiple languages</h2>
+<h2 id="multiple-languages">Multiple languages<a class="headerlink" href="#multiple-languages" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA only speaks English, however the default theme comes
 with a few translations (Spanish, French, Italian, Japanese, Greek and
 German).</p>
@@ -1770,7 +1770,7 @@ language, PYBOSSA looks for a cookie named <strong>language</strong> where it
 expects the key of any of the supported langes in the LOCALES list.
 You can use JavaScript to set it up.</p>
 </div>
-<h2 id="creating-your-own-theme">Creating your own theme</h2>
+<h2 id="creating-your-own-theme">Creating your own theme<a class="headerlink" href="#creating-your-own-theme" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA supports themes. By default, it provides its own theme that you
 can use or if you prefer, copy it and create your own. The default theme
 for PYBOSSA is available in the <a href="https://github.com/Scifabric/pybossa-default-theme">repository
@@ -1800,7 +1800,7 @@ PYBOSSA server without problems.</p>
 the default value in your settings_local.py file of APPS_PER_PAGE
 to the number that you want. By default it gives you access to 20.</p>
 </div>
-<h3 id="using-sass-and-minifying-javascript">Using SASS and minifying JavaScript</h3>
+<h3 id="using-sass-and-minifying-javascript">Using SASS and minifying JavaScript<a class="headerlink" href="#using-sass-and-minifying-javascript" title="Permanent link">&para;</a></h3>
 <p>PYBOSSA supports SASS thanks to Flask-Assets. If you want to compile
 SASS or SCSS just add to your theme static folder a new one named: sass.
 Then, you can request the compiled version from the templates like this:</p>
@@ -1825,7 +1825,7 @@ Then, you can request the compiled version from the templates like this:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="results-page">Results page</h2>
+<h2 id="results-page">Results page<a class="headerlink" href="#results-page" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA allows you to present a results page for your server. Add a file
 named results.html to the home directory in the templates folder and
 you&rsquo;ll be able to show results about your project from one place:</p>
@@ -1833,7 +1833,7 @@ you&rsquo;ll be able to show results about your project from one place:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="adding-your-contact-information">Adding your Contact Information</h2>
+<h2 id="adding-your-contact-information">Adding your Contact Information<a class="headerlink" href="#adding-your-contact-information" title="Permanent link">&para;</a></h2>
 <p>By default, PYBOSSA provides an e-mail and a Twitter handle to contact
 the PYBOSSA infrastructure. If you want, you can change it to your own
 e-mail and Twitter account. You can do it, modifying the following
@@ -1844,22 +1844,22 @@ variables in the <strong>settings_local.py</strong> file:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="terms-of-use">Terms of Use</h2>
+<h2 id="terms-of-use">Terms of Use<a class="headerlink" href="#terms-of-use" title="Permanent link">&para;</a></h2>
 <p>You can change and modify the
 <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L43">TERMSOFUSE</a>
 for your server, by overriding the provided URL that we use by default.
 You can also modify the license used for the data, just change the
 DATAUSE link to the open license that you want to use.</p>
-<h2 id="adding-help-page">Adding Help page</h2>
+<h2 id="adding-help-page">Adding Help page<a class="headerlink" href="#adding-help-page" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA provides a help endpoint where you can have your FAQ
 or similar information for your users. However, it&rsquo;s empty, as each
 project is unique. For adding that information, create in the theme
 folder: templates/help/ a file named <strong>index.html</strong> and write your
 information in there. This will render the information under: <a href="http://youserver.com/help/">http://youserver.com/help/</a></p>
-<h2 id="enabling-twitter-facebook-and-google-authentication">Enabling Twitter, Facebook and Google authentication</h2>
+<h2 id="enabling-twitter-facebook-and-google-authentication">Enabling Twitter, Facebook and Google authentication<a class="headerlink" href="#enabling-twitter-facebook-and-google-authentication" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA supports third party authentication services like Twitter,
 Facebook and Google.</p>
-<h3 id="twitter">Twitter</h3>
+<h3 id="twitter">Twitter<a class="headerlink" href="#twitter" title="Permanent link">&para;</a></h3>
 <p>If you want to enable Twitter, you will need to create an application in
 <a href="https://dev.twitter.com/">Twitter</a> and copy and paste the <strong>Consumer
 key and secret</strong> into the next variables and uncomment them:</p>
@@ -1873,7 +1873,7 @@ key and secret</strong> into the next variables and uncomment them:</p>
 <p class="admonition-title">Note</p>
 <p>This will also enable the Twitter task importer.</p>
 </div>
-<h3 id="facebook">Facebook</h3>
+<h3 id="facebook">Facebook<a class="headerlink" href="#facebook" title="Permanent link">&para;</a></h3>
 <p>If you want to enable Facebook, you will need to create an application
 in <a href="https://developers.facebook.com/apps">Facebook</a> and copy and paste
 the <strong>app ID/API Key and secret</strong> into the next variables and uncomment them:</p>
@@ -1883,7 +1883,7 @@ the <strong>app ID/API Key and secret</strong> into the next variables and uncom
 </pre></div>
 </td></tr></table>
 
-<h3 id="google">Google</h3>
+<h3 id="google">Google<a class="headerlink" href="#google" title="Permanent link">&para;</a></h3>
 <p>If you want to enable Google, you will need to create an application in
 <a href="https://code.google.com/apis/console/">Google</a> and copy and paste the
 <strong>Client ID and secret</strong> into the next variables and uncomment them:
@@ -1892,12 +1892,12 @@ the <strong>app ID/API Key and secret</strong> into the next variables and uncom
 <span class="n">GOOGLE_CLIENT_SECRET</span> <span class="o">=</span> <span class="s1">&#39;secret&#39;</span>
 </pre></div>
 </td></tr></table></p>
-<h2 id="receiving-e-mails-with-errors">Receiving e-mails with errors</h2>
+<h2 id="receiving-e-mails-with-errors">Receiving e-mails with errors<a class="headerlink" href="#receiving-e-mails-with-errors" title="Permanent link">&para;</a></h2>
 <p>If you want to receive an e-mail when an error occurs in the PYBOSSA
 server (webhooks, background jobs, etc.), uncomment the
 <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L64">ADMINS</a>
 config variable and add a list of e-mails.</p>
-<h3 id="background-jobs-error-notifications">Background jobs error notifications</h3>
+<h3 id="background-jobs-error-notifications">Background jobs error notifications<a class="headerlink" href="#background-jobs-error-notifications" title="Permanent link">&para;</a></h3>
 <p>You can change the default behavior for receiving emails regarding
 failed background jobs. The two config variables are the following:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1910,7 +1910,7 @@ failed background jobs. The two config variables are the following:</p>
 days, if you have not solved the issue with the background job.</p>
 <p>FAILED_JOBS_RETRIES instructs the system to retry the job N times. By
 default is 3.</p>
-<h2 id="enabling-logging">Enabling Logging</h2>
+<h2 id="enabling-logging">Enabling Logging<a class="headerlink" href="#enabling-logging" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA can log errors to a
 <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L75">file</a>
 or to a
@@ -1918,13 +1918,13 @@ or to a
 server. If none of the above configurations are used, you will get the
 errors in the log file of the web server that you are using (i.e. in
 nginx the errors will be in /var/log/nginx/error.log).</p>
-<h2 id="mail-setup">Mail Setup</h2>
+<h2 id="mail-setup">Mail Setup<a class="headerlink" href="#mail-setup" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA needs a mail server in order to validate new accounts, send
 e-mails for recovering passwords, etc. , so it is very important you
 configure a server. Please, check the section <a href="https://github.com/Scifabric/pybossa/blob/master/settings_local.py.tmpl#L80">Mail
 setup</a>
 in the config file for configuring it.</p>
-<h2 id="global-announcements-for-the-users">Global Announcements for the users</h2>
+<h2 id="global-announcements-for-the-users">Global Announcements for the users<a class="headerlink" href="#global-announcements-for-the-users" title="Permanent link">&para;</a></h2>
 <p>Sometimes you will need to send a message to all your users while they
 are browsing the server. For example, an scheduled shutdown for
 installing new hardware.</p>
@@ -1963,7 +1963,7 @@ supported keys are:</p>
 example you can display a message for Admins and Owners at the same
 time.</p>
 </div>
-<h2 id="cache">Cache</h2>
+<h2 id="cache">Cache<a class="headerlink" href="#cache" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA uses Redis to cache a lot of data in order to serve
 it as fast as possible. PYBOSSA comes with a default set of timeouts for
 different views that you can change or modify to your own taste. All you
@@ -2005,14 +2005,14 @@ have to do is modify the following variables in your settings file:</p>
 <p>Every value is in seconds, so bear in mind to multiply it by 60 in order to
 have minutes in the configuration values.</p>
 </div>
-<h3 id="disabling-the-cache">Disabling the Cache</h3>
+<h3 id="disabling-the-cache">Disabling the Cache<a class="headerlink" href="#disabling-the-cache" title="Permanent link">&para;</a></h3>
 <p>If you want to disable the cache, you only have to export the following
 env variable:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">PYBOSSA_REDIS_CACHE_DISABLED</span><span class="o">=</span><span class="s1">&#39;1&#39;</span>
 </pre></div>
 </td></tr></table>
 
-<h2 id="rate-limit-for-the-api">Rate limit for the API</h2>
+<h2 id="rate-limit-for-the-api">Rate limit for the API<a class="headerlink" href="#rate-limit-for-the-api" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA limits the usage of the API with the following
 values:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -2031,14 +2031,14 @@ your settings_local.py file, you can adapt it to your own needs.</p>
 the recommended configuration, so do not modify it unless you are
 sure.</p>
 </div>
-<h2 id="configuring-upload-method">Configuring upload method</h2>
+<h2 id="configuring-upload-method">Configuring upload method<a class="headerlink" href="#configuring-upload-method" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA by default allows you to upload avatars for users, icons for
 projects, etc. using the local file system of your server. While this is
 nice for small setups, when you need to add more nodes to serve the same
 content, this feature could become a problem. For this reason, PYBOSSA
 also supports cloud solutions to save the files and serve them from
 there properly.</p>
-<h4 id="local-uploader">Local Uploader</h4>
+<h4 id="local-uploader">Local Uploader<a class="headerlink" href="#local-uploader" title="Permanent link">&para;</a></h4>
 <p>The local uploader is configured by default. We recommend to have a
 separate folder for the assets, outside the pybossa folder. In any case,
 for enabling this method use the following the config settings:</p>
@@ -2048,7 +2048,7 @@ for enabling this method use the following the config settings:</p>
 </pre></div>
 </td></tr></table>
 
-<h4 id="rackspace-cloud-files">Rackspace Cloud Files</h4>
+<h4 id="rackspace-cloud-files">Rackspace Cloud Files<a class="headerlink" href="#rackspace-cloud-files" title="Permanent link">&para;</a></h4>
 <p>PYBOSSA comes with support for Rackspace CloudFiles service, allowing
 you to grow horizontally the services. Suportting cloud based system is
 as simple as having an account in Rackspace, and setting up the
@@ -2065,7 +2065,7 @@ following config variables:</p>
 
 <p>Once the server is started, it will authenticate against Rackspace and
 since that moment, your PYBOSSA server will save files in the cloud.</p>
-<h2 id="customizing-the-layout-and-front-page-text">Customizing the Layout and Front Page text</h2>
+<h2 id="customizing-the-layout-and-front-page-text">Customizing the Layout and Front Page text<a class="headerlink" href="#customizing-the-layout-and-front-page-text" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA allows you to override two items:</p>
 <ul>
 <li><strong>Front Page Text</strong></li>
@@ -2079,7 +2079,7 @@ since that moment, your PYBOSSA server will save files in the cloud.</p>
 <li><strong>The Footer</strong>: create a file named <strong>_footer.html</strong>, and write
   some HTML.</li>
 </ul>
-<h2 id="tracking-the-server-with-google-analytics">Tracking the server with Google Analytics</h2>
+<h2 id="tracking-the-server-with-google-analytics">Tracking the server with Google Analytics<a class="headerlink" href="#tracking-the-server-with-google-analytics" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA provides an easy way to integrate Google Analytics with your
 PYBOSSA server. In order to enable it you only have to create a file
 with the name: <strong>_ga.html</strong> in the <strong>pybossa/template</strong> folder with the
@@ -2110,7 +2110,7 @@ tracking code in every page since that moment.</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="adding-a-search-box-google-custom-search">Adding a Search box: Google Custom Search</h2>
+<h2 id="adding-a-search-box-google-custom-search">Adding a Search box: Google Custom Search<a class="headerlink" href="#adding-a-search-box-google-custom-search" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA provides a simple way to search within the server pages: Google
 Custom Search. In order to enable it you will have to apply for a Google
 Custom Search API key and then follow the next steps:</p>
@@ -2167,7 +2167,7 @@ Custom Search API key and then follow the next steps:</p>
 
 <p>After these steps, your site will be indexed by Google and Google Custom
 Search will be working, providing for your users a search tool.</p>
-<h2 id="adding-web-maps-for-project-statistics">Adding web maps for project statistics</h2>
+<h2 id="adding-web-maps-for-project-statistics">Adding web maps for project statistics<a class="headerlink" href="#adding-web-maps-for-project-statistics" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA creates for each project a statistics page, where the creators
 of the project and the volunteers can check the top 5 anonymous and
 authenticated users, an estimation of time about when all the tasks will
@@ -2187,24 +2187,24 @@ Once you have downloaded the file, all you have to do is to uncompress
 it and place it in the folder <strong>dat</strong> of the pybossa root folder.</p>
 <p>After copying the file, all you have to do to start creating the maps is
 to restart the server.</p>
-<h2 id="using-your-own-terms-of-use">Using your own Terms of Use</h2>
+<h2 id="using-your-own-terms-of-use">Using your own Terms of Use<a class="headerlink" href="#using-your-own-terms-of-use" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA has a default Terms of Service page that you can customize it to
 fit your institutional needs. In the case that you do not want to use
 the default one, please, create a <strong>_tos.html</strong> file in the <strong>custom</strong>
 folder. You can re-use the template <strong>help/_tos.html</strong> and adapt it (it
 is located in the <strong>template/help</strong> folder.</p>
-<h2 id="using-your-own-cookies-policy">Using your own Cookies Policy</h2>
+<h2 id="using-your-own-cookies-policy">Using your own Cookies Policy<a class="headerlink" href="#using-your-own-cookies-policy" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA has a default cookies policy page, but you can customize it to
 fit your institutional needs. In the case that you do not want to use
 the default one, please, create a <strong>_cookies_policy.html</strong> file in the
 <strong>custom</strong> folder. You can re-use the template
 <strong>help/_cookies_policy.html</strong> and adapt it (it is located in the
 <strong>template/help</strong> folder.</p>
-<h2 id="using-your-own-privacy-policy">Using your own Privacy Policy</h2>
+<h2 id="using-your-own-privacy-policy">Using your own Privacy Policy<a class="headerlink" href="#using-your-own-privacy-policy" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA has a blank privacy policy page. We recommend you to add one, so
 your users know how you are using their data. To add it, just create a
 file named <strong>_privacy_policy.html</strong> file in the <strong>custom</strong> folder.</p>
-<h2 id="exporting-data-to-a-ckan-server">Exporting data to a CKAN server</h2>
+<h2 id="exporting-data-to-a-ckan-server">Exporting data to a CKAN server<a class="headerlink" href="#exporting-data-to-a-ckan-server" title="Permanent link">&para;</a></h2>
 <p><a href="http://ckan.org">CKAN</a> is a powerful data management system that makes
 data accessible – by providing tools to streamline publishing, sharing,
 finding and using data. <a href="http://ckan.org">CKAN</a> is aimed at data
@@ -2227,7 +2227,7 @@ generated by your PYBOSSA projects quite easily, making it the data
 repository for your own projects. Another alternative is to use the <a href="http://datahub.io">the
 Data hub</a> service that it is actually a free CKAN
 service for hosting your data.</p>
-<h2 id="enforce-privacy-mode">Enforce Privacy mode</h2>
+<h2 id="enforce-privacy-mode">Enforce Privacy mode<a class="headerlink" href="#enforce-privacy-mode" title="Permanent link">&para;</a></h2>
 <p>Some projects need sometimes a way to protect their contributors due to
 the nature of the project. In this cases, where privacy is really
 important, PYBOSSA allows you to <strong>lock</strong> all the public pages related
@@ -2259,7 +2259,7 @@ you can enable it by changing the following config variable in your
 <p class="admonition-title">Note</p>
 <p>This feature is disabled by default.</p>
 </div>
-<h2 id="making-extra-keyvalue-pairs-in-info-field-public">Making extra key/value pairs in info field public</h2>
+<h2 id="making-extra-keyvalue-pairs-in-info-field-public">Making extra key/value pairs in info field public<a class="headerlink" href="#making-extra-keyvalue-pairs-in-info-field-public" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA protects all the information the info field except
 for those values that are public like the url of the image of the
 project, the container where that picture is stored and a few extra.
@@ -2295,7 +2295,7 @@ the settings_local.py file the following config variables:</p>
 
 <p>Add as many as you want, need. But please, be careful about which
 information you disclose.</p>
-<h2 id="adding-your-own-templates">Adding your own templates</h2>
+<h2 id="adding-your-own-templates">Adding your own templates<a class="headerlink" href="#adding-your-own-templates" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA supports different types of templates that you can offer for
 every project. By default, PYBOSSA comes with the following templates:</p>
 <ul>
@@ -2352,7 +2352,7 @@ the URLs of the spreadsheets changing the value of the variable
 </pre></div>
 </td></tr></table>
 
-<h2 id="setting-an-expiration-time-for-project-passwords">Setting an expiration time for project passwords</h2>
+<h2 id="setting-an-expiration-time-for-project-passwords">Setting an expiration time for project passwords<a class="headerlink" href="#setting-an-expiration-time-for-project-passwords" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA allows the owner of a project to set a password so that only
 people (both anonymous or authenticated) that know it can contribute. By
 entering this password, the user will have access to the project for a
@@ -2362,7 +2362,7 @@ time specified by:</p>
 </td></tr></table>
 
 <p>Which defaults to 30 minutes.</p>
-<h2 id="validation-of-new-user-accounts">Validation of new user accounts</h2>
+<h2 id="validation-of-new-user-accounts">Validation of new user accounts<a class="headerlink" href="#validation-of-new-user-accounts" title="Permanent link">&para;</a></h2>
 <p>Whenever a new user wants to sign up, PYBOSSA allows you to add some
 extra security to the process by making the users have to validate a
 real email account.</p>
@@ -2372,7 +2372,7 @@ default) with this configuration parameter:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="two-factor-authentication-on-login">Two factor authentication on login</h2>
+<h2 id="two-factor-authentication-on-login">Two factor authentication on login<a class="headerlink" href="#two-factor-authentication-on-login" title="Permanent link">&para;</a></h2>
 <p>If you need an extra layer of security for user authentication, PYBOSSA
 allows you to enable two factor authentication by setting this
 configuration value:</p>
@@ -2383,7 +2383,7 @@ configuration value:</p>
 <p>With this parameter set, after password verification users will receive
 a one-time code in their email, and will be redirected to a page where
 they can insert the code to complete the login process.</p>
-<h2 id="sending-weekly-email-stats-to-project-owners">Sending weekly email stats to project owners</h2>
+<h2 id="sending-weekly-email-stats-to-project-owners">Sending weekly email stats to project owners<a class="headerlink" href="#sending-weekly-email-stats-to-project-owners" title="Permanent link">&para;</a></h2>
 <p>Project owners that have the pro flag set to True can receive every week
 an update with the latest statistics about their projects in their email
 box.</p>
@@ -2393,7 +2393,7 @@ settings file by changing it to another day:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="newsletters-with-mailchimp">Newsletters with Mailchimp</h2>
+<h2 id="newsletters-with-mailchimp">Newsletters with Mailchimp<a class="headerlink" href="#newsletters-with-mailchimp" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA can show a subscription page to users when they create an
 account. By default is disabled, but if you want to enable it the system
 will show the page to registered users only once, to check if they want
@@ -2412,7 +2412,7 @@ values:</p>
 <p>Restart the server, and you will be done. Now in your Mailchimp account
 you will be able to create campaigns, and communicate with your
 registered and interested users.</p>
-<h2 id="enabling-the-flickr-task-importer">Enabling the Flickr Task importer</h2>
+<h2 id="enabling-the-flickr-task-importer">Enabling the Flickr Task importer<a class="headerlink" href="#enabling-the-flickr-task-importer" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA has several different types of built-in importers. Users can use
 them to import tasks for their projects directly from the Web interface.
 However, using the Flickr one requires an API key and shared secret from
@@ -2427,7 +2427,7 @@ settings_local.py file:</p>
 
 <p>For more information on how to get a Flickr API key and shared secret,
 please refer to <a href="https://www.flickr.com/services/api/">here</a>.</p>
-<h2 id="enabling-the-dropbox-task-importer">Enabling the Dropbox Task importer</h2>
+<h2 id="enabling-the-dropbox-task-importer">Enabling the Dropbox Task importer<a class="headerlink" href="#enabling-the-dropbox-task-importer" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA also offers the Dropbox importer, which allows to import
 directly all kind of files from a Dropbox account. In order to use it,
 you&rsquo;ll need to register your PYBOSSA server as a Dropbox app, as
@@ -2440,7 +2440,7 @@ your settings_local.py:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="enabling-the-twitter-task-importer">Enabling the Twitter Task importer</h2>
+<h2 id="enabling-the-twitter-task-importer">Enabling the Twitter Task importer<a class="headerlink" href="#enabling-the-twitter-task-importer" title="Permanent link">&para;</a></h2>
 <p>If you already have enabled the Twitter authentication, then the Twitter
 task importer will be enabled too. Otherwise, you will need to create an
 application in <a href="https://dev.twitter.com/">Twitter</a> and copy and paste
@@ -2454,7 +2454,7 @@ the <strong>Consumer key and secret</strong> into the next variables and uncomen
 <p class="admonition-title">Note</p>
 <p>This will also enable PYBOSSA&rsquo;s Twitter login.</p>
 </div>
-<h2 id="enabling-the-youtube-task-importer">Enabling the Youtube Task importer</h2>
+<h2 id="enabling-the-youtube-task-importer">Enabling the Youtube Task importer<a class="headerlink" href="#enabling-the-youtube-task-importer" title="Permanent link">&para;</a></h2>
 <p>The Youtube task importer needs a Youtube server key which you need to
 create in the <a href="https://console.developers.google.com/">Google API
 Console</a> in YouTube Data API.</p>
@@ -2466,7 +2466,7 @@ settings_local.py file:</p>
 
 <p>For more information on how to get a Youtube server key, please refer to
 <a href="https://developers.google.com/youtube/registering_an_application#Create_API_Keys">here</a>.</p>
-<h2 id="enabling-server-sent-events">Enabling Server Sent Events</h2>
+<h2 id="enabling-server-sent-events">Enabling Server Sent Events<a class="headerlink" href="#enabling-server-sent-events" title="Permanent link">&para;</a></h2>
 <p>Since PYBOSSA v1.1.0, PYBOSSA supports Server Sent Events (SSE) in some
 views. This feature is really powerfull, however it brings some issues
 with it: it need to run PYBOSSA in asynchronous mode.</p>
@@ -2485,7 +2485,7 @@ and options, so instead of recommending one solution, we invite you to
 read the <a href="http://uwsgi-docs.readthedocs.org/en/latest/Async.html">uwsgi documentation about
 it</a>, so you can
 take a decission based on your own infrastructure and preferences.</p>
-<h2 id="latest-news-from-pybossa">Latest news from PYBOSSA</h2>
+<h2 id="latest-news-from-pybossa">Latest news from PYBOSSA<a class="headerlink" href="#latest-news-from-pybossa" title="Permanent link">&para;</a></h2>
 <p>Since version v1.2.1 PYBOSSA gets the latest news of its new releases,
 as well as anything related to what it&rsquo;s produced by SciFabric regarding
 the crowdsourcing world. You can add more items if you want, by just
@@ -2494,7 +2494,7 @@ adding to your settings_local.py file new ATOM URLs:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="enabling-pro-user-features">Enabling pro user features</h2>
+<h2 id="enabling-pro-user-features">Enabling pro user features<a class="headerlink" href="#enabling-pro-user-features" title="Permanent link">&para;</a></h2>
 <p>Since version v1.2.2 PYBOSSA allows making available to all the users
 certain features that were before reserved to pro users.</p>
 <p>Just locate them in the settings_local.py file. By default, they look
@@ -2522,7 +2522,7 @@ like:</p>
 <p>By choosing &ldquo;True&rdquo; on each of them, you are making that specific feature
 available only to pro users. On the other hand, selecting &ldquo;False&rdquo; makes
 them available to regular users as well.</p>
-<h2 id="strict-slashes">Strict Slashes</h2>
+<h2 id="strict-slashes">Strict Slashes<a class="headerlink" href="#strict-slashes" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA distinguish between two types of URLs for its
 endpoints: with and without a traling slash. In other words, if an
 endpoint is not declared within the code as accepting both options,
@@ -2541,7 +2541,7 @@ a 404 if you add a trailing slash to it:</p>
 <p>To disable this behavior, just use the STRICT_SLASHES option and set it
 to False. That option willensure that both endpoints works with and
 without the trailing slash.</p>
-<h2 id="disqus-single-sign-on-sso">Disqus Single Sign On (SSO)</h2>
+<h2 id="disqus-single-sign-on-sso">Disqus Single Sign On (SSO)<a class="headerlink" href="#disqus-single-sign-on-sso" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA supports Disqus SSO, however it is disabled by default. You need
 to register a Disqus application (see their
 <a href="https://help.disqus.com/customer/portal/articles/236206">documentation</a>)
@@ -2571,7 +2571,7 @@ PYBOSSA users directly in their Disqus server. The filter is
 <p>Also, if you are building a Single Page Application, you can use our API
 endpoint: <em>api/disqus/sso</em> to get the credentials and authenticate the
 users within your javascript. Check the endpoint information disqus-api.</p>
-<h2 id="background-jobs-timeout">Background jobs timeout</h2>
+<h2 id="background-jobs-timeout">Background jobs timeout<a class="headerlink" href="#background-jobs-timeout" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA timeout for every job is 10 minutes. In principle it
 should be fine, but each project and server is unique, so if you start
 seeing to many jobs failing because the job timed out, then, increase
@@ -2582,7 +2582,7 @@ the value using this config variables:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="web-push-notifications">Web Push notifications</h2>
+<h2 id="web-push-notifications">Web Push notifications<a class="headerlink" href="#web-push-notifications" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You need to have HTTPS enabled for your site, otherwise you will need to
@@ -2631,7 +2631,7 @@ another, we do not provide a template but some guidelines:</p>
 </ul>
 <p>For more info regarding Onesignal JS SDK, check their
 <a href="https://documentation.onesignal.com/docs/web-push-sdk">documentation.</a></p>
-<h2 id="ignore-specific-keys-when-exporting-data-in-csv-format">Ignore specific keys when exporting data in CSV format</h2>
+<h2 id="ignore-specific-keys-when-exporting-data-in-csv-format">Ignore specific keys when exporting data in CSV format<a class="headerlink" href="#ignore-specific-keys-when-exporting-data-in-csv-format" title="Permanent link">&para;</a></h2>
 <p>Sometimes your PYBOSSA project saves information like GeoJSON within the
 tasks or task_runs. This is a bad thing for the exporter, as it will
 try to flatten it. In such scenarios, you want to instruct PYBOSSA to
@@ -2644,7 +2644,7 @@ variable to your settings_local.py file:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="disable-task-presenter-check-for-pure-javascript-apps">Disable task presenter check for pure JavaScript apps</h2>
+<h2 id="disable-task-presenter-check-for-pure-javascript-apps">Disable task presenter check for pure JavaScript apps<a class="headerlink" href="#disable-task-presenter-check-for-pure-javascript-apps" title="Permanent link">&para;</a></h2>
 <p>When you are using PYBOSSA native JSON support, you will not be building
 your project presenter within the PYBOSSA structure, but within the JS
 framework of your choice.</p>
@@ -2655,7 +2655,7 @@ this flag to your settings_local.py file:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="consent-field-for-users">Consent field for users</h2>
+<h2 id="consent-field-for-users">Consent field for users<a class="headerlink" href="#consent-field-for-users" title="Permanent link">&para;</a></h2>
 <p>Sometimes you will need the users to click in a check box before
 creating an account to get the agreement for sending them email
 notifications or of any other type. By default PYBOSSA provides this
@@ -2664,7 +2664,7 @@ flag, and it&rsquo;s set to False.</p>
 whatever you prefer: Terms of Service, Communications, etc. so you will
 be able to keep track of who has accepted/declined to get notifications
 from you.</p>
-<h2 id="custom-leaderboards">Custom Leaderboards</h2>
+<h2 id="custom-leaderboards">Custom Leaderboards<a class="headerlink" href="#custom-leaderboards" title="Permanent link">&para;</a></h2>
 <p>By default PYBOSSA provides a unique leaderboard. This leaderboard is
 based on the number of task runs that a user has submitted, however, you
 may want more flexibility. For this reason, you can use use the
@@ -2694,7 +2694,7 @@ and add the following config variable:</p>
 <p>This feature relies on background jobs. Be sure that you are running
 them.</p>
 </div>
-<h2 id="unpublish-inactive-projects">Unpublish inactive projects</h2>
+<h2 id="unpublish-inactive-projects">Unpublish inactive projects<a class="headerlink" href="#unpublish-inactive-projects" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA by default unpublishes projects that have not been active in the
 last 3 months. You can disable this feature by changing this config
 variable in your settings_local.py file:</p>
@@ -2702,7 +2702,7 @@ variable in your settings_local.py file:</p>
 </pre></div>
 </td></tr></table>
 
-<h2 id="ldap-integration">LDAP integration</h2>
+<h2 id="ldap-integration">LDAP integration<a class="headerlink" href="#ldap-integration" title="Permanent link">&para;</a></h2>
 <p>PYBOSSA can use LDAP for authenticating users. Basically, you will need
 to add a few config variables to the settings_local.py file in order to
 make it work.</p>
@@ -2713,20 +2713,20 @@ use any of them.</p>
 <p>By enabling PYBOSSA LDAP integration, all other means for creating accounts and/or
 signin will be disabled.</p>
 </div>
-<h3 id="ldap_host">LDAP_HOST</h3>
+<h3 id="ldap_host">LDAP_HOST<a class="headerlink" href="#ldap_host" title="Permanent link">&para;</a></h3>
 <p>This variable should have the IP or domain name of your LDAP server.</p>
-<h3 id="ldap_base_dn">LDAP_BASE_DN</h3>
+<h3 id="ldap_base_dn">LDAP_BASE_DN<a class="headerlink" href="#ldap_base_dn" title="Permanent link">&para;</a></h3>
 <p>This is the LDAP Base DN for your organization.</p>
-<h3 id="ldap_username">LDAP_USERNAME</h3>
+<h3 id="ldap_username">LDAP_USERNAME<a class="headerlink" href="#ldap_username" title="Permanent link">&para;</a></h3>
 <p>This variable should have the admin account, so PYBOSSA can access the
 LDAP server and search for users.</p>
-<h3 id="ldap_password">LDAP_PASSWORD</h3>
+<h3 id="ldap_password">LDAP_PASSWORD<a class="headerlink" href="#ldap_password" title="Permanent link">&para;</a></h3>
 <p>The admin account password.</p>
-<h3 id="ldap_objects_dn">LDAP_OBJECTS_DN</h3>
+<h3 id="ldap_objects_dn">LDAP_OBJECTS_DN<a class="headerlink" href="#ldap_objects_dn" title="Permanent link">&para;</a></h3>
 <p>The DN.</p>
-<h3 id="ldap_openldap">LDAP_OPENLDAP</h3>
+<h3 id="ldap_openldap">LDAP_OPENLDAP<a class="headerlink" href="#ldap_openldap" title="Permanent link">&para;</a></h3>
 <p>Set it to True if you are using it.</p>
-<h3 id="ldat_user_object_filter">LDAT_USER_OBJECT_FILTER</h3>
+<h3 id="ldat_user_object_filter">LDAT_USER_OBJECT_FILTER<a class="headerlink" href="#ldat_user_object_filter" title="Permanent link">&para;</a></h3>
 <p>This is really important. The filter that you write in here needs to be
 adapted to your institution, otherwise it will not work when
 authenticating and validating your users.</p>
