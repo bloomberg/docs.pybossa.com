@@ -10,6 +10,52 @@
     
 
     
+        
+    <url>
+     <loc>/build_with_pybossa/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user/overview/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user/pbs/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user/tutorial/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user/project_settings/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/api/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/model/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
     <url>
      <loc>/admin/</loc>
      <lastmod>2017-10-09</lastmod>
@@ -18,16 +64,60 @@
     
 
     
+        
     <url>
-     <loc>/api/</loc>
+     <loc>/installing_pybossa/</loc>
      <lastmod>2017-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/vagrant_pybossa/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/install/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/nginx/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/customizing/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/admin/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/translating/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/plugins/</loc>
+     <lastmod>2017-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
     <url>
-     <loc>/build_with_pybossa/</loc>
+     <loc>/vagrant_pybossa/</loc>
      <lastmod>2017-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -43,266 +133,10 @@
 
     
     <url>
-     <loc>/customizing/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
      <loc>/faq/</loc>
      <lastmod>2017-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-    <url>
-     <loc>/importers/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/install/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/installing_pybossa/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/model/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/nginx/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/overview/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/plugins/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/translating/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/vagrant_pybossa/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-        
-    <url>
-     <loc>/changelog/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v0.2.3/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.0.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.1.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.1.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.1.2/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.1.3/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.2.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.2.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.2.2/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.3.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.4.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.4.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.5.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.5.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.6.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.6.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v1.6.2/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.0.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.1.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.2.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.2.1/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.3.0/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/changelog/v2.3.8/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/user/overview/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user/pbs/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user/project_settings/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/user/tutorial/</loc>
-     <lastmod>2017-10-09</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
 </urlset>
